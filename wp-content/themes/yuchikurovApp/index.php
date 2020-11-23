@@ -16,5 +16,6 @@
 
 <body>
     <div class="main">There is page</div>
+    <div class="second"><?php wp_title(''); ?></div>
 </body>
 </html>
