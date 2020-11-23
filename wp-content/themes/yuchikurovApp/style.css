@@ -1,0 +1,18 @@
+/*
+Theme Name: yuchikurovApp
+Theme URI: http://www/chikurov.com
+Author: Ivan Avraamov
+Author URI: http://www/chikurov.com
+Version: 1.0
+*/
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+body {
+  background: #fff;
+  color: #444;
+  font-family: "Open Sans", sans-serif;
+  min-width: 995px;
+}
