@@ -4,7 +4,7 @@
   
   <!-- /Yandex.Metrika counter -->
   <meta charset="utf-8">
-  <title>Test Page</title>
+  <title><?php wp_title(''); ?></title>
   <meta name="viewport" content="user-scalable=no" />
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -16,6 +16,6 @@
 
 <body>
     <div class="main">There is page</div>
-    <div class="second"><?php wp_title(''); ?></div>
+    <div class="second"></div>
 </body>
 </html>
