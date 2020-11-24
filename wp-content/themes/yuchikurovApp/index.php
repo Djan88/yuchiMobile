@@ -40,17 +40,6 @@
   <?php wp_footer(); ?>
   <script src="<?php bloginfo('template_url'); ?>/js/hummer-touch.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/pull_ref.min.js"></script>
-  <script>
-    PullToRefresh.init({
-      mainElement: '#main', // above which element?
-      onRefresh: function (done) {
-        setTimeout(function () {
-          done(); // end pull to refresh
-          alert('refresh');
-        }, 1500);
-      }
-    });
-  </script>
   <script src="<?php bloginfo('template_url'); ?>/js/script.js"></script>
 </body>
 </html>
