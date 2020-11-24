@@ -1,8 +1,11 @@
 jQuery(document).ready(function () {
-  const ptr = PullToRefresh.init({
-    mainElement: 'body',
-    onRefresh() {
-      window.location.reload();
+  PullToRefresh.init({
+    mainElement: '#main', // above which element?
+    onRefresh: function (done) {
+      setTimeout(function () {
+        done(); // end pull to refresh
+        alert('refresh');
+      }, 1500);
     }
   });
 });
