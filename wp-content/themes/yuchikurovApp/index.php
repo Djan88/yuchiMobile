@@ -36,6 +36,7 @@
     <?php endif; ?>
   </div>
   <?php wp_footer(); ?>
+  <script src="<?php bloginfo('template_url'); ?>/js/jquery.ui.touch-punch.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/pull_ref.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/script.js"></script>
 </body>
