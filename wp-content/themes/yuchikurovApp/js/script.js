@@ -4,7 +4,7 @@ function onDeviceReady() {
     window.addEventListener("orientationchange", function(){
         screen.orientation.lock('portrait'); // e.g. portrait
     });
-    window.orientationchange;
+    window.screen.orientation.lock('portrait');
 }
 
 jQuery(document).ready(function () {
