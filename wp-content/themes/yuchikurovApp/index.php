@@ -14,10 +14,18 @@
   <div id="all" class="container">
     <div class="row">
       <div class="header">
-        <button type="button" class="btn btn-outline-primary btn-app pull-left"><img src="<?php bloginfo('template_url'); ?>/svg/menu.svg" alt="icon name"></button>
-        <button type="button" class="btn btn-outline-primary btn-app pull-right"><img src="<?php bloginfo('template_url'); ?>/svg/magnifying-glass.svg"></button>
+        <button type="button" class="btn btn-outline-primary btn-app pull-left">
+          <svg class="icon">
+            <use xlink:href="<?php bloginfo('template_url'); ?>/svg/open-iconic.svg#menu" class="icon-menu"></use>
+          </svg>
+        </button>
+        <button type="button" class="btn btn-outline-primary btn-app pull-right">
+          <svg class="icon">
+            <use xlink:href="<?php bloginfo('template_url'); ?>/svg/open-iconic.svg#magnifying-glass" class="icon-magnifying-glass"></use>
+          </svg>
+        </button>
       </div>
-      <div class="col page">
+      <div class="col-12 page">
         <nav id="menu">
           <header>
             <h2>Menu</h2>
@@ -29,10 +37,10 @@
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
             <div class="container">
               <div class="row">
-                <div class="col">
+                <div class="col-12">
                   <h2><?php the_title(); ?></h2>
                 </div>
-                <div class="col seminar_content">
+                <div class="col-12 seminar_content">
                   <?php
                   the_content(__('(more...)'));
                   edit_post_link(__('Edit This'));

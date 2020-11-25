@@ -9,12 +9,8 @@ Version: 1.0
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-html
-{
-  background: radial-gradient(circle at center, #794e7a 0%, #4c2b52 70%);
-}
 body {
-  background: #fff;
+  background: radial-gradient(circle at center, #794e7a 0%, #4c2b52 70%);
   color: #444;
   font-family: "Open Sans", sans-serif;
   margin: 0;
@@ -109,6 +105,7 @@ body {
   top: 0;
   left: 0;
   position: fixed;
+  z-index: 999;
 }
 #menu
 {
@@ -127,4 +124,12 @@ body {
   padding: 50px 50px 0;
   width: 100%;
   height: 100vh;
+}
+.btn-app 
+{
+  border-color: #fff0cf;
+}
+.btn-app .icon
+{
+  fill: #fff0cf;
 }
