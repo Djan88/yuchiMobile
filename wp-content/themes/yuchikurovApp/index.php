@@ -15,14 +15,10 @@
     <div class="row">
       <div class="col header">
         <button type="button" class="btn btn-outline-primary btn-app float-left">
-          <svg class="icon">
-            <use xlink:href="<?php bloginfo('template_url'); ?>/svg/open-iconic.svg#menu" class="icon-menu"></use>
-          </svg>
+          <i class="fas fa-diagnoses"></i>
         </button>
         <button type="button" class="btn btn-outline-primary btn-app float-right">
-          <svg class="icon">
-            <use xlink:href="<?php bloginfo('template_url'); ?>/svg/open-iconic.svg#magnifying-glass" class="icon-magnifying-glass"></use>
-          </svg>
+          <i class="fas fa-diagnoses"></i>
         </button>
       </div>
       <div class="col-12 page">
@@ -58,6 +54,7 @@
 
   </div>
   <?php wp_footer(); ?>
+  <script src="<?php bloginfo('template_url'); ?>/js/al.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/bootstrap.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/jquery.ui.touch-punch.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/pull_ref.min.js"></script>
