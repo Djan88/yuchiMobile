@@ -105,6 +105,10 @@ body {
   left: 0;
   position: fixed;
 }
+#menu
+{
+  background: #2f1234;
+}
 #panel
 {
   padding-top: 130px;
