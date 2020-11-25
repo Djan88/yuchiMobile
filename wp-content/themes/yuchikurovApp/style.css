@@ -14,7 +14,6 @@ body {
   background: #fff;
   color: #444;
   font-family: "Open Sans", sans-serif;
-  background: radial-gradient(circle at center, #794e7a 0%, #4c2b52 70%);
   margin: 0;
   padding: 0;
 }
@@ -112,6 +111,7 @@ body {
 #panel
 {
   padding-top: 50px;
+  background: radial-gradient(circle at center, #794e7a 0%, #4c2b52 70%);
   width: 100%;
   height: 100vh;
 }
