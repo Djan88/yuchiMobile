@@ -5,12 +5,7 @@
   <!-- /Yandex.Metrika counter -->
   <meta charset="utf-8">
   <title><?php wp_title(''); ?></title>
-  <meta name="viewport" content="user-scalable=no" />
-  <meta content="" name="keywords">
-  <meta content="" name="description">
-
-
-  <link href="<?php bloginfo('template_url'); ?>/bootstrap.min.css" rel="stylesheet">
+  <link href="<?php bloginfo('template_url'); ?>/css/bootstrap.min.css" rel="stylesheet">
   <link href="<?php bloginfo('template_url'); ?>/style.css" rel="stylesheet">
   <?php wp_head(); ?>
 </head>
