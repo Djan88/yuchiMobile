@@ -6,7 +6,7 @@ function onDeviceReady() {
     //     alert('Orientation is ' + screen.orientation.type);
     // });
     screen.orientation.addEventListener('change', function(){
-        alert(screen.orientation.type); // e.g. portrait
+        alert(window.screen.orientation.type); // e.g. portrait
     });
 }
 
