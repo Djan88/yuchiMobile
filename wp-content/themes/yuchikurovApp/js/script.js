@@ -1,10 +1,7 @@
 function onDeviceReady() {
     // Cordova is now initialized. Have fun!
     alert('ready');
-    window.addEventListener("orientationchange", function(){
-        screen.orientation.lock('portrait'); // e.g. portrait
-    });
-    window.screen.orientation.lock('portrait');
+    window.orientation.lock('portrait');
 }
 
 jQuery(document).ready(function () {
