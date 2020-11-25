@@ -14,7 +14,8 @@
   <div id="all" class="container">
     <div class="row">
       <div class="header">
-        
+        <button type="button" class="btn btn-outline-primary btn-app pull-left"><img src="<?php bloginfo('template_url'); ?>/svg/menu.svg" alt="icon name"></button>
+        <button type="button" class="btn btn-outline-primary btn-app pull-right"><img src="<?php bloginfo('template_url'); ?>/svg/magnifying-glass.svg"></button>
       </div>
       <div class="col page">
         <nav id="menu">
