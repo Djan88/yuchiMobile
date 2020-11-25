@@ -10,42 +10,49 @@
   <meta content="" name="description">
 
 
+  <link href="<?php bloginfo('template_url'); ?>/bootstrap.min.css" rel="stylesheet">
   <link href="<?php bloginfo('template_url'); ?>/style.css" rel="stylesheet">
   <?php wp_head(); ?>
 </head>
 
 <body>
-  <div id="all">
-    <nav id="menu">
-      <header>
-        <h2>Menu</h2>
-      </header>
-    </nav>
+  <div id="all" class="container">
+    <div class="row">
+      <div class="col-xs-12 header"></div>
+      <div class="col-xs-12 page">
+        <nav id="menu">
+          <header>
+            <h2>Menu</h2>
+          </header>
+        </nav>
 
-    <main id="panel">
-      <header>
-        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <h2><?php the_title(); ?></h2>
+        <main id="panel">
+          <header>
+            <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <h2><?php the_title(); ?></h2>
+                </div>
+                <div class="col-md-12 seminar_content">
+                  <?php
+                  the_content(__('(more...)'));
+                  edit_post_link(__('Edit This'));
+                  ?>
+                </div>
+              </div>
             </div>
-            <div class="col-md-12 seminar_content">
-              <?php
-              the_content(__('(more...)'));
-              edit_post_link(__('Edit This'));
-              ?>
-            </div>
-          </div>
-        </div>
-        <?php endwhile; else: ?>
-          <?php _e('Sorry, no posts matched your criteria.'); ?>
-        <?php endif; ?>
-      </header>
-    </main>
+            <?php endwhile; else: ?>
+              <?php _e('Sorry, no posts matched your criteria.'); ?>
+            <?php endif; ?>
+          </header>
+        </main>
+      </div>
+    </div>
 
   </div>
   <?php wp_footer(); ?>
+  <script src="<?php bloginfo('template_url'); ?>/js/bootstrap.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/jquery.ui.touch-punch.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/pull_ref.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/slideout.min.js"></script>

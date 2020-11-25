@@ -89,3 +89,17 @@ body {
 .slideout-open .slideout-menu {
   display: block;
 }
+.header
+{
+  background: #2f1533;
+  width: 100%;
+  height: 30px;
+  position: fixed;
+}
+.page
+{
+  background: #502c52;
+  padding-top: 30px;
+  width: 100%;
+  height: 100vh;
+}
