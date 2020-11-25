@@ -1,10 +1,3 @@
-function onDeviceReady() {
-    // Cordova is now initialized. Have fun!
-    alert('ready');
-    window.addEventListener("orientationchange", function(){
-        alert(screen.orientation.type); // e.g. portrait
-    });
-}
 jQuery(document).ready(function () {
   // Pull to refresh
   PullToRefresh.init({
@@ -21,4 +14,3 @@ jQuery(document).ready(function () {
     'tolerance': 70
   });
 });
-onDeviceReady();
