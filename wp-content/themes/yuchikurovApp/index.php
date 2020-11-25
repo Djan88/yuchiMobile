@@ -13,7 +13,7 @@
 <body>
   <div id="all" class="container">
     <div class="row">
-      <div class="col">
+      <div class="col header">
         <button type="button" class="btn btn-outline-primary btn-app float-left">
           <svg class="icon">
             <use xlink:href="<?php bloginfo('template_url'); ?>/svg/open-iconic.svg#menu" class="icon-menu"></use>

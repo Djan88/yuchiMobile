@@ -133,4 +133,6 @@ body {
 .btn-app .icon
 {
   fill: #fff0cf;
+  width: 30px;
+  height: 30px;
 }
