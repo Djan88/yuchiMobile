@@ -94,6 +94,9 @@ body {
 .container 
 {
   color: #fff;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 .header
 {
@@ -107,6 +110,13 @@ body {
 {
   background: #2f1234;
 }
+.page
+{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
 #panel
 {
   padding: 50px 50px 0;
