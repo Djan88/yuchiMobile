@@ -15,10 +15,10 @@
     <div class="row">
       <div class="col header">
         <button type="button" class="btn btn-outline-primary btn-app float-left">
-          <i class="fas fa-diagnoses"></i>
+          <i class="fas fa-bars"></i>
         </button>
         <button type="button" class="btn btn-outline-primary btn-app float-right">
-          <i class="fas fa-diagnoses"></i>
+          <i class="fas fa-search"></i>
         </button>
       </div>
       <div class="col-12 page">
