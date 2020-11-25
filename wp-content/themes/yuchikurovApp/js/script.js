@@ -1,11 +1,8 @@
 jQuery(document).ready(function () {
   PullToRefresh.init({
-    mainElement: '#main', // above which element?
+    mainElement: '#all', // above which element?
     onRefresh: function (done) {
-      setTimeout(function () {
-        done(); // end pull to refresh
-        alert('refresh');
-      }, 1500);
+      window.location.reload();
     }
   });
 });
