@@ -1,11 +1,11 @@
-function onDeviceReady() {
-    // Cordova is now initialized. Have fun!
-    alert('ready');
-    window.screen.orientation.lock('portrait');
-    alert('Orientation is ' + screen.orientation.type);
-}
-
 jQuery(document).ready(function () {
+  function onDeviceReady() {
+      // Cordova is now initialized. Have fun!
+      alert('ready');
+      screen.orientation.lock('portrait');
+      alert('Orientation is ' + screen.orientation.type);
+  }
+  onDeviceReady();
   // Pull to refresh
   PullToRefresh.init({
     mainElement: '#all', // above which element?
@@ -21,4 +21,3 @@ jQuery(document).ready(function () {
     'tolerance': 70
   });
 });
-onDeviceReady();
