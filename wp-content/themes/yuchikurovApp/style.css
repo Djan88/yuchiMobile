@@ -127,7 +127,8 @@ body {
 }
 .btn-app 
 {
-  border-color: #fff0cf;
+  border-color: transparent;
+  background: transparent;
 }
 .btn-app .icon
 {

@@ -13,13 +13,13 @@
 <body>
   <div id="all" class="container">
     <div class="row">
-      <div class="header">
-        <button type="button" class="btn btn-outline-primary btn-app pull-left">
+      <div class="col">
+        <button type="button" class="btn btn-outline-primary btn-app float-left">
           <svg class="icon">
             <use xlink:href="<?php bloginfo('template_url'); ?>/svg/open-iconic.svg#menu" class="icon-menu"></use>
           </svg>
         </button>
-        <button type="button" class="btn btn-outline-primary btn-app pull-right">
+        <button type="button" class="btn btn-outline-primary btn-app float-right">
           <svg class="icon">
             <use xlink:href="<?php bloginfo('template_url'); ?>/svg/open-iconic.svg#magnifying-glass" class="icon-magnifying-glass"></use>
           </svg>
