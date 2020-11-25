@@ -1,6 +1,6 @@
 function onDeviceReady() {
     // Cordova is now initialized. Have fun!
-    alert('ready');
+    // alert('ready');
     alert('Orientation is ' + screen.orientation.type);
 }
 
