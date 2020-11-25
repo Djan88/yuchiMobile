@@ -13,8 +13,10 @@
 <body>
   <div id="all" class="container">
     <div class="row">
-      <div class="col-xs-12 header"></div>
-      <div class="col-xs-12 page">
+      <div class="header">
+        
+      </div>
+      <div class="col page">
         <nav id="menu">
           <header>
             <h2>Menu</h2>
@@ -26,10 +28,10 @@
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
             <div class="container">
               <div class="row">
-                <div class="col-md-12">
+                <div class="col">
                   <h2><?php the_title(); ?></h2>
                 </div>
-                <div class="col-md-12 seminar_content">
+                <div class="col seminar_content">
                   <?php
                   the_content(__('(more...)'));
                   edit_post_link(__('Edit This'));
