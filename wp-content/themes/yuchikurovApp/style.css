@@ -93,7 +93,6 @@ body {
 }
 .container 
 {
-  padding: 0 20px;
   color: #fff;
 }
 .header
@@ -110,7 +109,7 @@ body {
 }
 #panel
 {
-  padding-top: 50px;
+  padding: 50px 20px 0;
   background: radial-gradient(circle at center, #794e7a 0%, #4c2b52 70%);
   width: 100%;
   height: 100vh;
