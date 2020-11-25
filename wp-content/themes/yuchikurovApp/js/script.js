@@ -1,7 +1,6 @@
 function onDeviceReady() {
     // Cordova is now initialized. Have fun!
     alert('ready');
-    window.orientation.lock('portrait');
 }
 
 jQuery(document).ready(function () {
@@ -19,5 +18,6 @@ jQuery(document).ready(function () {
     'padding': 256,
     'tolerance': 70
   });
+  screen.orientation.lock('portrait');
 });
 onDeviceReady();
