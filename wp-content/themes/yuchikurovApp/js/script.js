@@ -5,7 +5,7 @@ function onDeviceReady() {
     screen.orientation.lock('portrait');
     // StatusBar.backgroundColorByHexString("#000000");
     // StatusBar.styleBlackTranslucent();
-    alert(StatusBar);
+    alert(StatusBar.isVisible);
 }
 
 jQuery(document).ready(function () {
