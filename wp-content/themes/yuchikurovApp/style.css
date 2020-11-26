@@ -107,6 +107,9 @@ body {
   left: 0;
   position: fixed;
   z-index: 999;
+  background: #fff;
+  border-bottom: 6px solid #eee;
+  border-top: 6px solid #eee;
 }
 #menu
 {
