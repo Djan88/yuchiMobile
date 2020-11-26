@@ -6,6 +6,7 @@ function onDeviceReady() {
     // StatusBar.backgroundColorByHexString("#000000");
     // StatusBar.styleBlackTranslucent();
     alert(StatusBar.isVisible);
+    StatusBar.overlaysWebView(true);
 }
 
 jQuery(document).ready(function () {
