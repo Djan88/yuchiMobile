@@ -7,7 +7,7 @@ function onDeviceReady() {
     // StatusBar.styleBlackTranslucent();
     // alert(StatusBar.isVisible);
     console.log(StatusBar);
-    StatusBar.hide();
+    StatusBar.backgroundColorByName("red");
 }
 
 jQuery(document).ready(function () {
