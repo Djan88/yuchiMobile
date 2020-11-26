@@ -4,6 +4,7 @@ function onDeviceReady() {
     const platform = device.platform;
     screen.orientation.lock('portrait');
     StatusBar.backgroundColorByHexString("#fff");
+    StatusBar.styleBlackTranslucent();
 }
 
 jQuery(document).ready(function () {
