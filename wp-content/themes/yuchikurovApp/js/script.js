@@ -1,7 +1,7 @@
 document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady() {
     // Cordova is now initialized. Have fun!
-    const platform = device.platform;
+    // const platform = device.platform;
     screen.orientation.lock('portrait');
 }
 
