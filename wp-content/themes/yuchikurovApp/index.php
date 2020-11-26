@@ -24,11 +24,11 @@
         </button>
       </div>
       <div class="col-12 page">
-        <nav id="menu">
+        <!-- <nav id="menu">
           <header>
             <h2>Menu</h2>
           </header>
-        </nav>
+        </nav> -->
 
         <main id="panel">
           <header>
@@ -60,7 +60,7 @@
   <script src="<?php bloginfo('template_url'); ?>/js/bootstrap.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/jquery.ui.touch-punch.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/pull_ref.min.js"></script>
-  <script src="<?php bloginfo('template_url'); ?>/js/slideout.min.js"></script>
+  <!-- <script src="<?php //bloginfo('template_url'); ?>/js/slideout.min.js"></script> -->
   <script src="<?php bloginfo('template_url'); ?>/js/script.js"></script>
 </body>
 </html>
