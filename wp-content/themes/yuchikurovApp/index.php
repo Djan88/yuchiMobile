@@ -4,6 +4,7 @@
   
   <!-- /Yandex.Metrika counter -->
   <meta charset="utf-8">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <title><?php wp_title(''); ?></title>
   <link href="<?php bloginfo('template_url'); ?>/css/bootstrap.min.css" rel="stylesheet">
   <link href="<?php bloginfo('template_url'); ?>/style.css" rel="stylesheet">
