@@ -3,7 +3,7 @@ function onDeviceReady() {
     // Cordova is now initialized. Have fun!
     const platform = device.platform;
     screen.orientation.lock('portrait');
-    StatusBar.backgroundColorByHexString("#fff");
+    StatusBar.backgroundColorByHexString("#000000");
     StatusBar.styleBlackTranslucent();
 }
 
