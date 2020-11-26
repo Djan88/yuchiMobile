@@ -34,16 +34,14 @@
           <header>
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
             <div class="container">
-              <div class="row">
-                <div class="col-12">
-                  <h2><?php the_title(); ?></h2>
-                </div>
-                <div class="col-12 seminar_content">
-                  <?php
-                  the_content(__('(more...)'));
-                  edit_post_link(__('Edit This'));
-                  ?>
-                </div>
+              <div class="col-12">
+                <h2><?php the_title(); ?></h2>
+              </div>
+              <div class="col-12 seminar_content">
+                <?php
+                the_content(__('(more...)'));
+                edit_post_link(__('Edit This'));
+                ?>
               </div>
             </div>
             <?php endwhile; else: ?>
