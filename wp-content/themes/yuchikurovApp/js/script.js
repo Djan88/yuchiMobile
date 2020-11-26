@@ -3,7 +3,6 @@ function onDeviceReady() {
     // Cordova is now initialized. Have fun!
     // const platform = device.platform;
     screen.orientation.lock('portrait');
-    StatusBar.styleDefault();
 }
 
 jQuery(document).ready(function () {
