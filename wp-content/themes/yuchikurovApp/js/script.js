@@ -13,7 +13,7 @@ function onDeviceReady() {
 jQuery(document).ready(function () {
   // Pull to refresh
   PullToRefresh.init({
-    mainElement: '#all', // above which element?
+    mainElement: '#panel', // above which element?
     onRefresh: function (done) {
       window.location.reload();
     }
