@@ -128,7 +128,7 @@ body {
   padding: 1em 50px 0;
   width: 100%;
 }
-.btn-app 
+.btn-app, .btn-app:hover, .btn-app:active, .btn-app:focus
 {
   color: #404040;
   border-color: transparent;
