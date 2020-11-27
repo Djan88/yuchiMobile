@@ -146,7 +146,7 @@ body {
   overflow-y: auto;
   left: -260px;
   width: 260px;
-  padding-top: 18px;
+  padding-top: 2.5em;
   background: rgba(40, 38, 70, 0.8);
   transition: 0.4s;
 }
