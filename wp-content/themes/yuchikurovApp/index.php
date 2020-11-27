@@ -16,9 +16,6 @@
   <div id="all" class="container">
     <div class="row">
       <div class="col header">
-        <button type="button" class="btn btn-outline-primary btn-app float-left">
-          <i class="fas fa-bars"></i>
-        </button>
         <button type="button" class="btn btn-outline-primary btn-app float-right">
           <i class="fas fa-search"></i>
         </button>
@@ -29,6 +26,12 @@
             <h2>Menu</h2>
           </header>
         </nav> -->
+        <nav class="main-nav float-right d-none d-lg-block">
+          <ul>
+            <li><a href="/">Программа</a></li>
+            <li><a href="/kabinet">Личный кабинет</a></li>
+          </ul>
+        </nav>
 
         <main id="panel">
           <header>
@@ -58,6 +61,7 @@
   <script src="<?php bloginfo('template_url'); ?>/js/bootstrap.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/jquery.ui.touch-punch.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/pull_ref.min.js"></script>
+  <script src="<?php bloginfo('template_url'); ?>/js/mobile-nav.js"></script>
   <!-- <script src="<?php //bloginfo('template_url'); ?>/js/slideout.min.js"></script> -->
   <script src="<?php bloginfo('template_url'); ?>/js/script.js"></script>
 </body>
