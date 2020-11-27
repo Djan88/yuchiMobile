@@ -204,16 +204,10 @@ body {
 .mobile-nav-toggle {
   z-index: 9998;
   background: none;
-  font-size: 24px;
-  transition: all 0.5s;
+  font-size: 1.5em;
   outline: none !important;
-  line-height: 1;
-  cursor: pointer;
-  text-align: center;
-  margin: 10px 18px 0 0;
-  width: 37px;
-  height: 32px;
-  padding: 0;
+  border: none;
+  padding: 1em 50px 0;
 }
 .mobile-nav-toggle:hover {
   border-color: #1bb1dc;
