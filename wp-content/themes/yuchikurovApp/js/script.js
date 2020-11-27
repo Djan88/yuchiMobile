@@ -13,7 +13,7 @@ function onDeviceReady() {
           clearInterval(phaseOne);
           count_animation = 1;
         }
-      }, 2000);
+      }, 1000);
     }
     jQuery('body').on('click', 'button', function(event) {
       v1();
