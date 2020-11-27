@@ -8,13 +8,15 @@ function onDeviceReady() {
         count_animation = 1;
         phaseOne = setInterval(function(){
           if (count_animation <= 5){
-           navigator.vibrate(1000); 
+           navigator.vibrate(1000);
+           count_animation += 1;
           } else {
             clearInterval(phaseOne);
             count_animation = 1;
           }
         }, 1500);
       }
+      v1();
     });
 }
 
