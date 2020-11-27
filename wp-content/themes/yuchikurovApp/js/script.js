@@ -6,7 +6,7 @@ function onDeviceReady() {
     jQuery('body').on('click', 'button', function(event) {
       v1 = function(){
         count_animation = 1;
-        alert('test')l
+        alert('test');
         phaseOne = setInterval(function(){
           if (count_animation <= 5){
            navigator.vibrate(1000);
