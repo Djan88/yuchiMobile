@@ -3,7 +3,10 @@ function onDeviceReady() {
     // Cordova is now initialized. Have fun!
     // const platform = device.platform;
     screen.orientation.lock('portrait');
-    navigator.vibrate(3000);
+    // navigator.vibrate(3000);
+    TapticEngine.impact({
+      style: "heavy" // light | medium | heavy | rigid (iOS 13+) | soft (iOS 13+)
+    });
 }
 
 jQuery(document).ready(function () {
