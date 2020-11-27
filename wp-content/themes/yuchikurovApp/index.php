@@ -21,7 +21,9 @@
           <i class="fas fa-search"></i>
         </button>
       </div>
-      <div class="col-12 page">
+    </div>
+    <div class="row">
+      <div class="col page">
         <!-- <nav id="menu">
           <header>
             <h2>Menu</h2>
