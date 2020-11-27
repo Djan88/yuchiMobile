@@ -19,6 +19,7 @@
         <button type="button" class="btn btn-outline-primary btn-app float-right">
           <i class="fas fa-search"></i>
         </button>
+        <button type="button" class="mobile-nav-toggle mobile-nav-toggle_open d-lg-none"><i class="fa fa-times" aria-hidden="true"></i></button>
       </div>
       <div class="col-12 page">
         <!-- <nav id="menu">
