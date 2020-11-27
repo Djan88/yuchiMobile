@@ -4,7 +4,7 @@ function onDeviceReady() {
     // const platform = device.platform;
     screen.orientation.lock('portrait');
     jQuery('body').on('click', 'button', function(event) {
-      navigator.vibrate(3000);
+      navigator.vibrate([1000, 1000, 3000, 1000, 5000]);
     });
 }
 
