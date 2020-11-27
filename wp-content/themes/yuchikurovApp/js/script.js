@@ -4,7 +4,17 @@ function onDeviceReady() {
     // const platform = device.platform;
     screen.orientation.lock('portrait');
     jQuery('body').on('click', 'button', function(event) {
-      navigator.vibrate(500);
+      v1 = function(){
+        count_animation = 1;
+        phaseOne = setInterval(function(){
+          if (count_animation <= 5){
+           navigator.vibrate(1000); 
+          } else {
+            clearInterval(phaseOne);
+            count_animation = 1;
+          }
+        }, 1500);
+      }
     });
 }
 
