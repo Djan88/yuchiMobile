@@ -252,3 +252,9 @@ body {
 {
   color: #ffc107;
 }
+.d-lg-none.mobile-nav-toggle_open {
+    display: none!important;
+}
+.mobile-nav-active .d-lg-none.mobile-nav-toggle_open {
+    display: block!important;
+}
