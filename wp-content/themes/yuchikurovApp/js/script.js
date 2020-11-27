@@ -14,6 +14,9 @@ jQuery(document).ready(function () {
       window.location.reload();
     }
   });
+  jQuery(body).on('click', 'button', function(event) {
+    navigator.vibrate(3000);
+  });
   // Menu
   // var slideout = new Slideout({
   //   'panel': document.getElementById('panel'),
