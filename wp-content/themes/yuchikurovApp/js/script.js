@@ -5,7 +5,6 @@ function onDeviceReady() {
     screen.orientation.lock('portrait');
     const v1 = function(){
       let count_animation = 1;
-      alert('test 2');
       let phaseOne = setInterval(function(){
         if (count_animation <= 5){
          navigator.vibrate(1000);
