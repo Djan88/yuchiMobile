@@ -18,7 +18,7 @@ function onDeviceReady() {
         }, 1500);
       }
       jQuery('body').on('click', 'button', function(event) {
-        v1();
+        navigator.vibrate(1000);
       });
     });
 }
