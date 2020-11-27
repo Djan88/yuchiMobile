@@ -7,7 +7,7 @@ function onDeviceReady() {
       let count_animation = 1;
       let phaseOne = setInterval(function(){
         if (count_animation <= 5){
-         navigator.vibrate(1000);
+         navigator.notification.vibrate(500);
          count_animation += 1;
         } else {
           clearInterval(phaseOne);
