@@ -216,7 +216,7 @@ body {
   z-index: 9999;
   position: relative;
   color: #fff;
-  padding: .375rem .75rem;
+  padding: .375rem 35px;
 }
 .mobile-nav-toggle i {
   /*margin: 18px 18px 0 0;*/
