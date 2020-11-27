@@ -3,11 +3,12 @@ function onDeviceReady() {
     // Cordova is now initialized. Have fun!
     // const platform = device.platform;
     screen.orientation.lock('portrait');
+    alert('test 1');
     jQuery('body').on('click', 'button', function(event) {
-      v1 = function(){
-        count_animation = 1;
-        alert('test');
-        phaseOne = setInterval(function(){
+      const v1 = function(){
+        let count_animation = 1;
+        alert('test 2');
+        let phaseOne = setInterval(function(){
           if (count_animation <= 5){
            navigator.vibrate(1000);
            count_animation += 1;
@@ -18,7 +19,7 @@ function onDeviceReady() {
         }, 1500);
       }
       jQuery('body').on('click', 'button', function(event) {
-        navigator.vibrate(1000);
+        v1();
       });
     });
 }
