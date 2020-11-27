@@ -8,7 +8,8 @@ function onDeviceReady() {
 jQuery(document).ready(function () {
   // Pull to refresh
   PullToRefresh.init({
-    mainElement: '.header', // above which element?
+    mainElement: '#panel', // above which element?
+    triggerElement: '.header',
     onRefresh: function (done) {
       window.location.reload();
     }
