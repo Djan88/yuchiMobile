@@ -207,12 +207,14 @@ body {
   font-size: 1.5em;
   outline: none !important;
   border: none;
-  padding: 1em 50px 0;
 }
 .mobile-nav-toggle:hover {
   border-color: #1bb1dc;
 }
-
+.mobile-nav-toggle_open {
+    z-index: 9999;
+    position: relative;
+}
 .mobile-nav-toggle i {
   /*margin: 18px 18px 0 0;*/
   color: #413e66;
@@ -246,7 +248,7 @@ body {
 {
   color: #ffc107;
 }
-.d-lg-none.mobile-nav-toggle_open {
+.d-lg-none.mobile-nav-toggle_open, .mobile-nav-active .search-on-page {
     display: none!important;
 }
 .mobile-nav-active .d-lg-none.mobile-nav-toggle_open {

@@ -13,13 +13,13 @@
 </head>
 
 <body>
+  <button type="button" class="mobile-nav-toggle mobile-nav-toggle_open float-right d-lg-none"><i class="fa fa-times" aria-hidden="true"></i></button>
   <div id="all" class="container">
     <div class="row">
       <div class="col header">
-        <button type="button" class="btn btn-outline-primary btn-app float-right">
+        <button type="button" class="btn btn-outline-primary btn-app search-on-page float-right">
           <i class="fas fa-search"></i>
         </button>
-        <button type="button" class="mobile-nav-toggle mobile-nav-toggle_open d-lg-none"><i class="fa fa-times" aria-hidden="true"></i></button>
       </div>
       <div class="col-12 page">
         <!-- <nav id="menu">
