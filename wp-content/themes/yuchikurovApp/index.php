@@ -12,7 +12,7 @@
   <?php wp_head(); ?>
 </head>
 
-<body>
+<body class="wrapper">
   <button type="button" class="mobile-nav-toggle mobile-nav-toggle_open float-right d-lg-none"><i class="fa fa-times" aria-hidden="true"></i></button>
   <div id="all" class="container">
     <div class="row">
@@ -29,8 +29,9 @@
         </nav> -->
         <nav class="main-nav float-right d-none d-lg-block">
           <ul>
-            <li><a href="/">Программа</a></li>
-            <li><a href="/kabinet">Личный кабинет</a></li>
+            <li><a href="/">Пункт 1</a></li>
+            <li><a href="/">Пункт 2</a></li>
+            <li><a href="/">Пункт 3</a></li>
           </ul>
         </nav>
 
