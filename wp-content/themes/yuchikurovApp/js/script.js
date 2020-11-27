@@ -3,23 +3,21 @@ function onDeviceReady() {
     // Cordova is now initialized. Have fun!
     // const platform = device.platform;
     screen.orientation.lock('portrait');
+    const v1 = function(){
+      let count_animation = 1;
+      alert('test 2');
+      let phaseOne = setInterval(function(){
+        if (count_animation <= 5){
+         navigator.vibrate(1000);
+         count_animation += 1;
+        } else {
+          clearInterval(phaseOne);
+          count_animation = 1;
+        }
+      }, 1000);
+    }
     jQuery('body').on('click', 'button', function(event) {
-      const v1 = function(){
-        let count_animation = 1;
-        alert('test 2');
-        let phaseOne = setInterval(function(){
-          if (count_animation <= 5){
-           navigator.vibrate(1000);
-           count_animation += 1;
-          } else {
-            clearInterval(phaseOne);
-            count_animation = 1;
-          }
-        }, 1000);
-      }
-      jQuery('body').on('click', 'button', function(event) {
-        v1();
-      });
+      v1();
     });
 }
 
