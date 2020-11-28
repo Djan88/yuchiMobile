@@ -295,7 +295,7 @@ img
   {
     display: block!important;
   }
-  .d-lg-none.d-none
+  .d-lg-block.d-none
   {
     display: none!important;
   }
