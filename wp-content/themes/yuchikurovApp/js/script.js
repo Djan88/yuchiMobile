@@ -3,20 +3,20 @@ function onDeviceReady() {
     // Cordova is now initialized. Have fun!
     // const platform = device.platform;
     screen.orientation.lock('portrait');
-    const v1 = function(){
-      let count_animation = 1;
-      let phaseOne = setInterval(function(){
-        if (count_animation <= 5){
-         navigator.vibrate(1000);
-         count_animation += 1;
-        } else {
-          clearInterval(phaseOne);
-          count_animation = 1;
-        }
-      }, 1000);
-    }
-    jQuery('body').on('click', 'button', function(event) {
-      // v1();
+    
+    var swiper = new Swiper('.swiper-container', {
+      direction: 'vertical',
+      slidesPerView: 1,
+      spaceBetween: 30,
+      mousewheel: true,
+      pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+      },
+    });
+
+    swiper.on('slideChange', function () {
+      navigator.vibrate(1000);
     });
 }
 
@@ -28,16 +28,6 @@ jQuery(document).ready(function () {
     onRefresh: function (done) {
       window.location.reload();
     }
-  });
-  var swiper = new Swiper('.swiper-container', {
-    direction: 'vertical',
-    slidesPerView: 1,
-    spaceBetween: 30,
-    mousewheel: true,
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
   });
   // Menu
   // var slideout = new Slideout({
