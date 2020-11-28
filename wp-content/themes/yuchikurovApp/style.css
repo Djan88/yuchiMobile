@@ -295,6 +295,10 @@ img
   {
     display: block!important;
   }
+  .d-lg-none.btn
+  {
+    display: inline-block!important;
+  }
   .d-lg-block.d-none
   {
     display: none!important;
