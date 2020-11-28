@@ -278,10 +278,6 @@ img
   min-height: 15px;
   width: 1em;
   height: 1em;
-  display: inline-block;
-  border-radius: 100%;
-  background: #000;
-  opacity: .2;
 }
 .swiper-container 
 {
