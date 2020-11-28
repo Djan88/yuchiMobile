@@ -8,6 +8,7 @@
   <meta name="viewport" content="initial-scale=1, width=device-width, height=device-height, viewport-fit=cover">
   <title><?php wp_title(''); ?></title>
   <link href="<?php bloginfo('template_url'); ?>/css/bootstrap.min.css" rel="stylesheet">
+  <link href="<?php bloginfo('template_url'); ?>/css/swipe-bundle.min.css" rel="stylesheet">
   <link href="<?php bloginfo('template_url'); ?>/style.css" rel="stylesheet">
   <?php wp_head(); ?>
 </head>
@@ -39,6 +40,27 @@
 
         <main id="panel">
           <header>
+            <div class="container">
+              <div class="col-12">
+                <!-- Swiper -->
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">Slide 5</div>
+                    <div class="swiper-slide">Slide 6</div>
+                    <div class="swiper-slide">Slide 7</div>
+                    <div class="swiper-slide">Slide 8</div>
+                    <div class="swiper-slide">Slide 9</div>
+                    <div class="swiper-slide">Slide 10</div>
+                  </div>
+                  <!-- Add Pagination -->
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
             <div class="container">
                 <div class="col-12">
@@ -66,6 +88,7 @@
   <script src="<?php bloginfo('template_url'); ?>/js/jquery.ui.touch-punch.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/pull_ref.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/mobile-nav.js"></script>
+  <script src="<?php bloginfo('template_url'); ?>/js/swiper-bundle.min.js"></script>
   <!-- <script src="<?php //bloginfo('template_url'); ?>/js/slideout.min.js"></script> -->
   <script src="<?php bloginfo('template_url'); ?>/js/script.js"></script>
 </body>
