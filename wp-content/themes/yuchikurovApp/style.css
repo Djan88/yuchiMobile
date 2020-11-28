@@ -260,7 +260,7 @@ img
 .d-lg-none.mobile-nav-toggle_open, .mobile-nav-active .search-on-page {
     display: none!important;
 }
-.mobile-nav-active .d-lg-none {
+.mobile-nav-active .d-lg-none.mobile-nav-toggle_open, .mobile-nav-active .d-lg-none {
     display: block!important;
 }
 .swiper-container 
