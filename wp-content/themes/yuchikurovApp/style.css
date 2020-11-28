@@ -266,9 +266,22 @@ img
 .slider-box
 {
   box-sizing: border-box;
-  height: 40vh;
+  height: 50vh;
   width: 1px;
   min-width: 100%;
+  background: #f3f3f3;
+  padding: 0;
+}
+.swiper-pagination-bullet 
+{
+  min-width: 15px;
+  min-height: 15px;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  border-radius: 100%;
+  background: #000;
+  opacity: .2;
 }
 .swiper-container 
 {
