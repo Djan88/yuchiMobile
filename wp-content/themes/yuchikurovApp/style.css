@@ -266,7 +266,7 @@ img
 .slider-box
 {
   box-sizing: border-box;
-  height: 100vh;
+  height: 40vh;
   width: 1px;
   min-width: 100%;
 }
