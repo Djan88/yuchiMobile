@@ -16,7 +16,7 @@ function onDeviceReady() {
       }, 1000);
     }
     jQuery('body').on('click', 'button', function(event) {
-      v1();
+      // v1();
     });
 }
 
