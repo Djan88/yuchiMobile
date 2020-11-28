@@ -291,6 +291,12 @@ img
   align-items: center;
 }
 @media (min-width: 992px){
-.d-lg-none {
-  display: block!important;
+  .d-lg-none 
+  {
+    display: block!important;
+  }
+  .d-lg-none.d-none
+  {
+    display: none!important;
+  }
 }
