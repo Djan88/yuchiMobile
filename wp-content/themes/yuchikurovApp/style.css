@@ -128,7 +128,10 @@ img
   padding-top: 20px;
   width: 100%;
 }
-
+button svg 
+{
+  stroke-width: 5;
+}
 #panel
 {
   padding: 10px 20px 0;
