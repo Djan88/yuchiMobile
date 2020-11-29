@@ -15,7 +15,7 @@
 </head>
 
 <body class="wrapper">
-  <button type="button" class="mobile-nav-toggle mobile-nav-toggle_open float-right d-lg-none"><i class="fa fa-times" aria-hidden="true"></i></button>
+  <button type="button" class="mobile-nav-toggle mobile-nav-toggle_open float-right d-lg-none"><span class="oi oi-circle-x"></span></button>
   <div id="all" class="container">
     <div class="row">
       <div class="col header">

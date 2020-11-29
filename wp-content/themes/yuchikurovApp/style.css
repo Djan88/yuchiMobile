@@ -115,6 +115,7 @@ img
   left: 0;
   position: fixed;
   z-index: 999;
+  padding-top: 10px;
   background: #fff;
 }
 #menu
@@ -143,7 +144,7 @@ button svg
   color: #404040;
   border-color: transparent;
   background: transparent;
-  font-size: 34px;
+  font-size: 25px;
 }
 /* Mobile Navigation */
 
@@ -214,7 +215,7 @@ button svg
 .mobile-nav-toggle {
   z-index: 9998;
   background: none;
-  font-size: 34px;
+  font-size: 25px;
   outline: none !important;
   border: none;
 }
