@@ -8,7 +8,7 @@
     });
     $('body').append($mobile_nav);
     $('body').prepend('<button type="button" class="mobile-nav-toggle d-lg-none"><i class="fa fa-bars"></i></button>');
-    $('.header').prepend('<button type="button" class="mobile-nav-toggle d-lg-none btn btn-outline-primary btn-app float-left"><i class="fa fa-bars"></i></button>');
+    $('.header').prepend('<button type="button" class="mobile-nav-toggle d-lg-none btn btn-outline-primary btn-app float-left"><span class="oi oi-menu"></span></button>');
     $('body').append('<div class="mobile-nav-overly"></div>');
 
     $(document).on('click', '.mobile-nav-toggle', function(e) {

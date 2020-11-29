@@ -21,7 +21,7 @@
       <div class="col header">
         <button type="button" class="btn btn-outline-primary btn-app search-on-page float-right">
           <!-- <i class="fas fa-search"></i> -->
-          <span class="oi oi-menu"></span>
+          <span class="oi oi-magnifying-glass"></span>
         </button>
       </div>
     </div>
