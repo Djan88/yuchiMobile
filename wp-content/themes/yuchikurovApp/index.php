@@ -15,7 +15,7 @@
 </head>
 
 <body class="wrapper">
-  <button type="button" class="mobile-nav-toggle mobile-nav-toggle_open float-right d-lg-none"><span class="oi oi-circle-x"></span></button>
+  <button type="button" class="mobile-nav-toggle mobile-nav-toggle_open float-right d-lg-none"><span class="oi oi-x"></span></button>
   <div id="all" class="container">
     <div class="row">
       <div class="col header">

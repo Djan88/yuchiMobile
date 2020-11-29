@@ -263,10 +263,13 @@ button svg
   color: #ffc107;
 }
 .d-lg-none.mobile-nav-toggle_open, .mobile-nav-active .search-on-page {
-    display: none!important;
+  display: none!important;
 }
 .mobile-nav-active .d-lg-none.mobile-nav-toggle_open {
-    display: block!important;
+  display: block!important;
+  position: fixed;
+  right: -5px;
+  top: 10px;
 }
 .slider-box
 {
