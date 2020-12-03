@@ -34,7 +34,7 @@ jQuery(document).ready(function () {
 
       e.preventDefault();
 
-      let that = $(this),
+      let that = jQuery(this),
           li = that.parent(),
           ul = li.parent();
 
