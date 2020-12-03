@@ -546,10 +546,10 @@ button svg
    box-sizing: border-box;
    -webkit-font-smoothing: antialiased;
 }
- .frame * {
+ * {
    box-sizing: inherit;
 }
- .frame *:before, .frame *:after {
+ *:before, *:after {
    box-sizing: inherit;
 }
  body {
