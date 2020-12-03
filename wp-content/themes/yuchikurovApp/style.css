@@ -189,8 +189,6 @@ button svg
   -webkit-align-items: center;
   align-items: center;
 }
-
-
 .tabbar {
    --primary: #275efe;
    --background: #fff;
