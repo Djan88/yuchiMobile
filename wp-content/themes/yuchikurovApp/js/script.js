@@ -21,15 +21,6 @@ function onDeviceReady() {
 }
 
 jQuery(document).ready(function () {
-  // Pull to refresh
-  PullToRefresh.init({
-    mainElement: '#panel', // above which element?
-    triggerElement: '.header',
-    onRefresh: function (done) {
-      window.location.reload();
-    }
-  });
-
   jQuery('.tabbar li a').on('click', function(e) {
 
       e.preventDefault();
@@ -53,6 +44,13 @@ jQuery(document).ready(function () {
       }
 
   });
-
-
+  
+  // Pull to refresh
+  PullToRefresh.init({
+    mainElement: '#panel', // above which element?
+    triggerElement: '.header',
+    onRefresh: function (done) {
+      window.location.reload();
+    }
+  });
 });
