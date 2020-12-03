@@ -4,31 +4,31 @@ function onDeviceReady() {
     // const platform = device.platform;
     screen.orientation.lock('portrait');
     
-    var swiper = new Swiper('.swiper-container', {
-      direction: 'vertical',
-      slidesPerView: 1,
-      spaceBetween: 30,
-      mousewheel: true,
-      pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-      },
-    });
+    // var swiper = new Swiper('.swiper-container', {
+    //   direction: 'vertical',
+    //   slidesPerView: 1,
+    //   spaceBetween: 30,
+    //   mousewheel: true,
+    //   pagination: {
+    //       el: '.swiper-pagination',
+    //       clickable: true,
+    //   },
+    // });
 
-    swiper.on('slideChange', function () {
-      navigator.vibrate(1000);
-    });
+    // swiper.on('slideChange', function () {
+    //   navigator.vibrate(1000);
+    // });
 }
 
 jQuery(document).ready(function () {
   // Pull to refresh
-  PullToRefresh.init({
-    mainElement: '#panel', // above which element?
-    triggerElement: '.header',
-    onRefresh: function (done) {
-      window.location.reload();
-    }
-  });
+  // PullToRefresh.init({
+  //   mainElement: '#panel', // above which element?
+  //   triggerElement: '.header',
+  //   onRefresh: function (done) {
+  //     window.location.reload();
+  //   }
+  // });
 
   jQuery('.tabbar li a').on('click', function(e) {
 

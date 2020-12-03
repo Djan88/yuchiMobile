@@ -686,16 +686,6 @@ button svg
    align-items: center;
    background: #242836;
 }
- body .dribbble {
-   position: fixed;
-   display: block;
-   right: 20px;
-   bottom: 20px;
-}
- body .dribbble img {
-   display: block;
-   height: 28px;
-}
  
 
 
