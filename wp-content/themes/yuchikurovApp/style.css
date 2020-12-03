@@ -546,17 +546,13 @@ button svg
    box-sizing: border-box;
    -webkit-font-smoothing: antialiased;
 }
- * {
+ .frame * {
    box-sizing: inherit;
 }
- *:before, *:after {
+ .frame *:before, .frame *:after {
    box-sizing: inherit;
 }
  body {
-   min-height: 100vh;
-   display: flex;
-   justify-content: center;
-   align-items: center;
    background: #242836;
 }
  
