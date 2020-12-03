@@ -44,7 +44,8 @@ jQuery(document).ready(function () {
       }
 
   });
-  
+  jQuery('.tabbar li a.home').click();
+
   // Pull to refresh
   PullToRefresh.init({
     mainElement: '#panel', // above which element?
