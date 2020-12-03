@@ -128,6 +128,7 @@ img
   padding: 0;
   padding-top: 20px;
   width: 100%;
+  padding-bottom: 90px;
 }
 button svg 
 {
@@ -397,7 +398,10 @@ button svg
    animation: move-after 1.2s linear forwards;
 }
  .frame {
-   width: 320px;
+   width: 100%;
+   position: fixed;
+   left: 0;
+   bottom: 0;
    height: 240px;
    border-radius: 0 0 28px 28px;
    overflow: hidden;
