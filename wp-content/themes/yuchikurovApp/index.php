@@ -14,8 +14,60 @@
   <?php wp_head(); ?>
 </head>
 
-<body class="">
-  
+<body class="wrapper">
+  <button type="button" class="mobile-nav-toggle mobile-nav-toggle_open float-right d-lg-none"><span class="oi oi-x"></span></button>
+  <div id="all" class="container">
+    <div class="row">
+      <div class="col header">
+        <button type="button" class="btn btn-outline-primary btn-app search-on-page float-right">
+          <!-- <i class="fas fa-search"></i> -->
+          <span class="oi oi-magnifying-glass"></span>
+        </button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col page">
+        <main id="panel">
+          <div class="container">
+            <div class="col-12 slider-box">
+              <!-- Swiper -->
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">Отворение</div>
+                  <div class="swiper-slide">Травма</div>
+                  <div class="swiper-slide">Копье</div>
+                  <div class="swiper-slide">Фильтр</div>
+                  <div class="swiper-slide">Solis</div>
+                  <div class="swiper-slide">Живая Вода</div>
+                  <div class="swiper-slide">Мертвая Вода</div>
+                  <div class="swiper-slide">Ловушка</div>
+                  <div class="swiper-slide">Супер Дисфункция</div>
+                  <div class="swiper-slide">Супер Ловушка</div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+          <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+          <div class="container">
+              <div class="col-12">
+                <h2><?php the_title(); ?></h2>
+              </div>
+              <div class="col-12 seminar_content">
+                <?php
+                the_content(__('(more...)'));
+                edit_post_link(__('Edit This'));
+                ?>
+              </div>
+          </div>
+          <?php endwhile; else: ?>
+            <?php _e('Sorry, no posts matched your criteria.'); ?>
+          <?php endif; ?>
+        </main>
+      </div>
+    </div>
+  </div>
   <div class="frame">
     <ul class="tabbar">
       <li class="active">

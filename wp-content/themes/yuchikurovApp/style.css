@@ -9,6 +9,187 @@ Version: 1.0
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+body {
+  /*background: radial-gradient(circle at center, #794e7a 0%, #4c2b52 70%);*/
+  background: #fff;
+  color: #444;
+  font-family: "Open Sans", sans-serif;
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
+}
+img 
+{
+  width: 100%;
+  height: auto;
+}
+#main
+{
+  background: #eee;
+}
+.ptr--ptr 
+{ 
+  box-shadow: inset 0 -3px 5px rgba(0, 0, 0, 0.12); 
+  pointer-events: none; font-size: 0.85em; 
+  font-weight: bold; 
+  top: 0; height: 0; 
+  transition: height 0.3s, min-height 0.3s; 
+  text-align: center; 
+  width: 100%; 
+  overflow: hidden; 
+  display: flex; 
+  align-items: flex-end; 
+  align-content: stretch; 
+} 
+.ptr--box 
+{ 
+  padding: 10px; 
+  flex-basis: 100%; 
+} 
+.ptr--pull 
+{ 
+  transition: none; 
+} 
+.ptr--text 
+{ 
+  margin-top: .33em; 
+  color: rgba(0, 0, 0, 0.3); 
+} 
+.ptr--icon 
+{ 
+  color: rgba(0, 0, 0, 0.3); 
+  transition: transform .3s; 
+} 
+/* When at the top of the page, disable vertical overscroll so passive touch listeners can take over. */ 
+.ptr--top 
+{ 
+  touch-action: pan-x pan-down pinch-zoom; 
+} 
+.ptr--release .ptr--icon 
+{ 
+  transform: rotate(180deg); 
+} 
+.slideout-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  width: 256px;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  display: none;
+}
+
+.slideout-panel {
+  position: relative;
+  z-index: 1;
+  will-change: transform;
+}
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+  overflow: hidden;
+}
+
+.slideout-open .slideout-menu {
+  display: block;
+}
+.container 
+{
+  color: #434343;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+}
+.header
+{
+  width: 100%;
+  height: 60px;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 999;
+  padding-top: 10px;
+  background: #fff;
+}
+#menu
+{
+  background: #f3f3f3;
+}
+.page
+{
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+  width: 100%;
+}
+button svg 
+{
+  stroke-width: 5;
+  stroke: deepskyblue;
+}
+#panel
+{
+  padding: 10px 20px 0;
+  width: 100%;
+}
+.btn-app, .btn-app:hover, .btn-app:active, .btn-app:focus
+{
+  color: #404040;
+  border-color: transparent;
+  background: transparent;
+  font-size: 25px;
+}
+.slider-box
+{
+  box-sizing: border-box;
+  height: 50vh;
+  width: 1px;
+  min-width: 100%;
+  background: #f3f3f3;
+  padding: 0;
+}
+.swiper-pagination-bullet 
+{
+  min-width: 15px;
+  min-height: 15px;
+  width: 1em;
+  height: 1em;
+}
+.swiper-container 
+{
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.swiper-slide 
+{
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
 
 .tabbar {
    --primary: #275efe;
@@ -380,4 +561,21 @@ Version: 1.0
    align-items: center;
    background: #242836;
 }
+ 
 
+
+
+@media (min-width: 992px){
+  .d-lg-none 
+  {
+    display: block!important;
+  }
+  .d-lg-none.btn
+  {
+    display: inline-block!important;
+  }
+  .d-lg-block.d-none
+  {
+    display: none!important;
+  }
+}
