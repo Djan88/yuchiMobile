@@ -11,7 +11,6 @@
   <link href="<?php bloginfo('template_url'); ?>/css/open-iconic-bootstrap.css" rel="stylesheet">
   <link href="<?php bloginfo('template_url'); ?>/css/swipe-bundle.min.css" rel="stylesheet">
   <link href="<?php bloginfo('template_url'); ?>/style.css" rel="stylesheet">
-  <?php wp_head(); ?>
 </head>
 
 <body class="wrapper">
@@ -113,13 +112,10 @@
       </symbol>
   </svg>
   <?php wp_footer(); ?>
-  <script src="<?php bloginfo('template_url'); ?>/js/al.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/bootstrap.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/jquery.ui.touch-punch.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/pull_ref.min.js"></script>
-  <script src="<?php bloginfo('template_url'); ?>/js/mobile-nav.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/swiper-bundle.min.js"></script>
-  <!-- <script src="<?php //bloginfo('template_url'); ?>/js/slideout.min.js"></script> -->
   <script src="<?php bloginfo('template_url'); ?>/js/script.js"></script>
 </body>
 </html>
