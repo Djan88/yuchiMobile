@@ -40,7 +40,7 @@ jQuery(document).ready(function () {
 
   jQuery('.box').on('click', function(event) {
     jQuery('.app-main').addClass('hidden');
-    jQuery('.app-slide').fadeIn(500).removeClass('hidden');
+    jQuery('.app-slide').fadeIn(500).removeClass('hidden').css('display', 'flex');;
     var swiper = new Swiper('.swiper-container', {
       direction: 'vertical',
       slidesPerView: 1,
@@ -54,7 +54,7 @@ jQuery(document).ready(function () {
   });
   jQuery('.home').on('click', function(event) {
     jQuery('.app-slide').addClass('hidden');
-    jQuery('.app-main').fadeIn(500).removeClass('hidden');
+    jQuery('.app-main').fadeIn(500).removeClass('hidden').css('display', 'flex');;
   });
 
 
