@@ -48,6 +48,7 @@
                 <div class="swiper-pagination"></div>
               </div>
             </div>
+            <div style="background: red;height: 500px;"></div>
           </div>
           <div class="container app-main main">
             <div class="row">
