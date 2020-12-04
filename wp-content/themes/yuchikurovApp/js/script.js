@@ -44,7 +44,7 @@ jQuery(document).ready(function () {
       }
 
   });
-  // jQuery('.tabbar li a.home').click();
+  jQuery('.tabbar li a.home').click();
 
   jQuery('.box').on('click', function(event) {
     jQuery('.app-main').addClass('hidden').removeClass('fadeInUp');
