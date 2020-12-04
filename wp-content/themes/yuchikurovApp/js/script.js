@@ -50,6 +50,10 @@ jQuery(document).ready(function () {
     jQuery('.app-main').addClass('hidden').removeClass('fadeInUp');
     jQuery('.app-slide').removeClass('hidden').addClass('fadeInUp');
   });
+  jQuery('.home').on('click', function(event) {
+    jQuery('.app-slide').addClass('hidden').removeClass('fadeInUp');
+    jQuery('.app-main').removeClass('hidden').addClass('fadeInUp');
+  });
 
 
 
