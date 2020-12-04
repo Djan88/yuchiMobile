@@ -39,7 +39,7 @@ jQuery(document).ready(function () {
   jQuery('.tabbar li a.home').click();
 
   jQuery('.box').on('click', function(event) {
-    jQuery('.app-main').addClass('hidden');
+    jQuery('.app-main').addClass('hidden').removeAttr('style');
     jQuery('.app-slide').fadeIn(500).removeClass('hidden').css('display', 'flex');;
     var swiper = new Swiper('.swiper-container', {
       direction: 'vertical',
@@ -53,7 +53,7 @@ jQuery(document).ready(function () {
     });
   });
   jQuery('.home').on('click', function(event) {
-    jQuery('.app-slide').addClass('hidden');
+    jQuery('.app-slide').addClass('hidden').removeAttr('style');
     jQuery('.app-main').fadeIn(500).removeClass('hidden').css('display', 'flex');;
   });
 
