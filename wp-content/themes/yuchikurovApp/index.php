@@ -75,7 +75,7 @@
     </div>
     <div class="frame">
       <ul class="tabbar">
-        <li>
+        <li class="active">
           <a href="" class="box">
             <div>
               <svg>
@@ -85,7 +85,7 @@
             </div>
           </a>
         </li>
-        <li class="active">
+        <li>
           <a href="" class="home">
             <div>
               <svg>
