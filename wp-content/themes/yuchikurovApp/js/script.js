@@ -36,8 +36,8 @@ jQuery(document).ready(function () {
   jQuery('.tabbar li a.home').click();
 
   jQuery('.box').on('click', function(event) {
-    jQuery('.app-main').addClass('hidden').removeClass('fadeIn');
-    jQuery('.app-slide').removeClass('hidden').addClass('fadeIn');
+    jQuery('.app-main').addClass('hidden');
+    jQuery('.app-slide').fadeIn(500).removeClass('hidden');
     var swiper = new Swiper('.swiper-container', {
       direction: 'vertical',
       slidesPerView: 1,
@@ -50,8 +50,8 @@ jQuery(document).ready(function () {
     });
   });
   jQuery('.home').on('click', function(event) {
-    jQuery('.app-slide').addClass('hidden').removeClass('fadeIn');
-    jQuery('.app-main').removeClass('hidden').addClass('fadeIn');
+    jQuery('.app-slide').addClass('hidden');
+    jQuery('.app-main').fadeIn(500).removeClass('hidden');
   });
 
 
