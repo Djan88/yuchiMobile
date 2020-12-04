@@ -28,7 +28,7 @@
     <div class="row">
       <div class="col page">
         <main id="panel">
-          <div class="container app-slide formuls hidden">
+          <div class="container app-slide formuls">
             <div class="col-12 slider-box">
               <!-- Swiper -->
               <div class="swiper-container">
