@@ -120,7 +120,9 @@ img
   position: fixed;
   z-index: 999;
   padding-top: 10px;
-  background: #fff;
+  background: #275efe;
+  text-align: center;
+  color: #fff;
 }
 #menu
 {
@@ -207,6 +209,7 @@ button svg
    padding: 0 16px;
    border-radius: 0 0 28px 28px;
    list-style: none;
+   border-top: 1px dashed #275efe;
    position: relative;
    display: grid;
    grid-template-columns: repeat(3, minmax(0, 1fr));

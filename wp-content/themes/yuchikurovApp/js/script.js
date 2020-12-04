@@ -47,12 +47,12 @@ jQuery(document).ready(function () {
   jQuery('.tabbar li a.home').click();
 
   jQuery('.box').on('click', function(event) {
-    jQuery('.app-main').addClass('hidden').removeClass('fadeInUp');
-    jQuery('.app-slide').removeClass('hidden').addClass('fadeInUp');
+    jQuery('.app-main').addClass('hidden').removeClass('fadeIn');
+    jQuery('.app-slide').removeClass('hidden').addClass('fadeIn');
   });
   jQuery('.home').on('click', function(event) {
-    jQuery('.app-slide').addClass('hidden').removeClass('fadeInUp');
-    jQuery('.app-main').removeClass('hidden').addClass('fadeInUp');
+    jQuery('.app-slide').addClass('hidden').removeClass('fadeIn');
+    jQuery('.app-main').removeClass('hidden').addClass('fadeIn');
   });
 
 
