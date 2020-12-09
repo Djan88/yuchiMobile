@@ -62,7 +62,7 @@ jQuery(document).ready(function () {
     jQuery('.header-text').text('ШКОЛА ДОКТОРА ЧИКУРОВА');
   });
 
-  jQuery('.second').on('click', function(event) {
+  jQuery('.calendar').on('click', function(event) {
     jQuery('.app-slide, .app-main').addClass('hidden').removeAttr('style');
     jQuery('.app-second').fadeIn(500).removeClass('hidden').css('display', 'flex');
     jQuery('.header-text').text('ПУСТОЙ РАЗДЕЛ');
