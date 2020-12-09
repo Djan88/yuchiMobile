@@ -98,7 +98,7 @@
           </a>
         </li>
         <li>
-          <a href="" class="calendar">
+          <a href="" class="second">
             <div>
               <svg>
                 <use xlink:href="#calendar">
