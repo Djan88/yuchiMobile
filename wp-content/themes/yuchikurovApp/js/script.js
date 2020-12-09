@@ -10,9 +10,22 @@ function onDeviceReady() {
     jQuery('.tabbar li a').on('click', function(event) {
       navigator.vibrate(1000);
     });
+
 }
 
 jQuery(document).ready(function () {
+
+  var swiper = new Swiper('.swiper-container', {
+    direction: 'vertical',
+    slidesPerView: 1,
+    spaceBetween: 30,
+    mousewheel: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+  });
+
   jQuery('.tabbar li a').on('click', function(e) {
 
       e.preventDefault();
@@ -36,26 +49,18 @@ jQuery(document).ready(function () {
       }
 
   });
-  jQuery('.tabbar li a.home').click();
 
   jQuery('.box').on('click', function(event) {
     jQuery('.app-main').addClass('hidden').removeAttr('style');
     jQuery('.app-slide').fadeIn(500).removeClass('hidden').css('display', 'flex');;
-    var swiper = new Swiper('.swiper-container', {
-      direction: 'vertical',
-      slidesPerView: 1,
-      spaceBetween: 30,
-      mousewheel: true,
-      pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-      },
-    });
   });
+
   jQuery('.home').on('click', function(event) {
     jQuery('.app-slide').addClass('hidden').removeAttr('style');
     jQuery('.app-main').fadeIn(500).removeClass('hidden').css('display', 'flex');;
   });
+
+  jQuery('.tabbar li a.home').click();
 
 
 
