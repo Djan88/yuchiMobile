@@ -572,6 +572,10 @@ button svg
  *:before, *:after {
    box-sizing: inherit;
 }
+.swiper-container-vertical>.swiper-wrapper
+{
+  width: 90%;
+}
  
 
 
