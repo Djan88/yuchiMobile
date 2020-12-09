@@ -162,6 +162,7 @@ button svg
 {
   box-sizing: border-box;
   height: 50vh;
+  margin: 15vh 0 0;
   width: 1px;
   min-width: 100%;
   background: #f3f3f3;

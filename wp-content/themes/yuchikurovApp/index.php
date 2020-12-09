@@ -33,9 +33,9 @@
               <!-- Swiper -->
               <div class="swiper-container">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide">Отворение</div>
-                  <div class="swiper-slide">Травма</div>
-                  <div class="swiper-slide">Копье</div>
+                  <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/img/otvorenie.png" alt="Отворение"></div>
+                  <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/img/trauma.png" alt="Травма"></div>
+                  <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/img/kopje.png" alt="Копье"></div>
                   <div class="swiper-slide">Фильтр</div>
                   <div class="swiper-slide">Solis</div>
                   <div class="swiper-slide">Живая Вода</div>
