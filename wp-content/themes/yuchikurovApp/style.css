@@ -572,9 +572,13 @@ button svg
  *:before, *:after {
    box-sizing: inherit;
 }
-.swiper-container-vertical>.swiper-wrapper
+.swiper-slide
 {
   width: 90%;
+}
+.swiper-container-vertical>.swiper-wrapper
+{
+  background: #fff;
 }
  
 
