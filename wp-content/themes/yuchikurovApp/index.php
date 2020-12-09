@@ -22,7 +22,7 @@
         <!-- <button type="button" class="btn btn-outline-primary btn-app search-on-page float-right">
           <span class="oi oi-magnifying-glass"></span>
         </button> -->
-        ЗАГОЛОВОК СТРАНИЦЫ
+        <span class="header-text">ШКОЛА ДОКТОРА ЧИКУРОВА</span>
       </div>
     </div>
     <div class="row">
