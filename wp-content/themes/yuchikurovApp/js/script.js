@@ -51,15 +51,18 @@ jQuery(document).ready(function () {
   });
 
   jQuery('.box').on('click', function(event) {
-    jQuery('.app-main').addClass('hidden').removeAttr('style');
-    screen.orientation.lock('landscape');
+    jQuery('.app-main, .app-second').addClass('hidden').removeAttr('style');
     jQuery('.app-slide').fadeIn(500).removeClass('hidden').css('display', 'flex');;
   });
 
   jQuery('.home').on('click', function(event) {
-    jQuery('.app-slide').addClass('hidden').removeAttr('style');
-    screen.orientation.lock('portrait');
+    jQuery('.app-slide, .app-second').addClass('hidden').removeAttr('style');
     jQuery('.app-main').fadeIn(500).removeClass('hidden').css('display', 'flex');;
+  });
+
+  jQuery('.second').on('click', function(event) {
+    jQuery('.app-slide, .app-main').addClass('hidden').removeAttr('style');
+    jQuery('.app-second').fadeIn(500).removeClass('hidden').css('display', 'flex');;
   });
 
   jQuery('.tabbar li a.home').click();

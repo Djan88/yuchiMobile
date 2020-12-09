@@ -70,6 +70,9 @@
               <?php endif; ?>
             </div>
           </div>
+          <div class="container app-second second hidden">
+            Пока пусто...
+          </div>
         </main>
       </div>
     </div>
