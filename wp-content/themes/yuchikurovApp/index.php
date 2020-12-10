@@ -38,9 +38,14 @@
                   <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/img/kopje.png" alt="Копье"></div>
                   <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/img/filtr.png" alt="Фильтр"></div>
                   <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/img/solis.png" alt="Solis"></div>
-                  <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/img/life_voda.png" alt="Живая Вода"></div>
+                  <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/img/live_voda.png" alt="Живая Вода"></div>
                   <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/img/mertv_voda.png" alt="Мертвая Вода"></div>
                   <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/img/lovushka.png" alt="Ловушка"></div>
+                  <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/img/csv_util.png" alt="ЧСВ Утилизатор"></div>
+                  <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/img/fire.png" alt="Огонь"></div>
+                  <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/img/water.png" alt="Вода"></div>
+                  <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/img/air.png" alt="Воздух"></div>
+                  <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/img/ground.png" alt="Земля"></div>
                 </div>
                 <!-- Add Pagination -->
                 <div class="swiper-pagination"></div>
