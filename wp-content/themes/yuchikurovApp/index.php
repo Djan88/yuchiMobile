@@ -36,13 +36,11 @@
                   <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/img/otvorenie.png" alt="Отворение"></div>
                   <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/img/trauma.png" alt="Травма"></div>
                   <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/img/kopje.png" alt="Копье"></div>
-                  <div class="swiper-slide">Фильтр</div>
-                  <div class="swiper-slide">Solis</div>
-                  <div class="swiper-slide">Живая Вода</div>
-                  <div class="swiper-slide">Мертвая Вода</div>
-                  <div class="swiper-slide">Ловушка</div>
-                  <div class="swiper-slide">Супер Дисфункция</div>
-                  <div class="swiper-slide">Супер Ловушка</div>
+                  <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/img/filtr.png" alt="Фильтр"></div>
+                  <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/img/solis.png" alt="Solis"></div>
+                  <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/img/life_voda.png" alt="Живая Вода"></div>
+                  <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/img/mertv_voda.png" alt="Мертвая Вода"></div>
+                  <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/img/lovushka.png" alt="Ловушка"></div>
                 </div>
                 <!-- Add Pagination -->
                 <div class="swiper-pagination"></div>
