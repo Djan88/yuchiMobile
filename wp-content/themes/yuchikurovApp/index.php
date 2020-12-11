@@ -15,7 +15,7 @@
   <?php //wp_head(); ?>
 </head>
 
-<body class="wrapper">
+<body class="wrapper no-select">
   <div id="all" class="container">
     <div class="row">
       <div class="col header">

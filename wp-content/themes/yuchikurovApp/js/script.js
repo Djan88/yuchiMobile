@@ -15,9 +15,6 @@ function onDeviceReady() {
 
 jQuery(document).ready(function () {
 
-  jQuery('body').onselectstart = function() {
-      return false;
-  };
 
   var swiper = new Swiper('.swiper-container', {
     direction: 'vertical',
