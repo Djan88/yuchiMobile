@@ -66,12 +66,30 @@
                       </div>
                     </div>
                   </a>
-                  <a href="https://school-bc.ru/pl/user/user/index" class="col main-item">
+                  <a href="https://school-bc.ru/" class="col main-item">
                     <div class="row">
                       <div class="col-3 main-item-img"><img src="<?php bloginfo('template_url'); ?>/img/os-fav.png" alt="Онлайн Школа"></div>
                       <div class="col main-item-content">
                         <div class="main-item-title">Онлайн Школа</div>
                         <div class="main-item-sub-title">Расписание онлайн курсов. Записаться на онлайн курс</div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="https://shop-bc.com/" class="col main-item">
+                    <div class="row">
+                      <div class="col-3 main-item-img"><img src="<?php bloginfo('template_url'); ?>/img/sh-fav.png" alt="Магазин БЦ"></div>
+                      <div class="col main-item-content">
+                        <div class="main-item-title">Магазин БЦ</div>
+                        <div class="main-item-sub-title">Книги, флешки, карты и другие товары БЦ с доставкой</div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="https://tarot-bc.ru/" class="col main-item">
+                    <div class="row">
+                      <div class="col-3 main-item-img"><img src="<?php bloginfo('template_url'); ?>/img/lt-fav.png" alt="Лечебное Tarot"></div>
+                      <div class="col main-item-content">
+                        <div class="main-item-title">Лечебное Tarot</div>
+                        <div class="main-item-sub-title">Онлайн книга о методике "Лебебное Tarot"</div>
                       </div>
                     </div>
                   </a>

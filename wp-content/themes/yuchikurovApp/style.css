@@ -214,6 +214,7 @@ button svg
 {
   font-size: 1.7rem;
   font-weight: 600;
+  padding-left: 10px;
 }
 a.main-item, a.main-item:hover, a.main-item:focus
 {
