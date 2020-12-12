@@ -62,7 +62,16 @@
                       <div class="col-3 main-item-img"><img src="<?php bloginfo('template_url'); ?>/img/ch-fav.png" alt="Школа Доктора Чикурова"></div>
                       <div class="col">
                         <div class="main-item-title">Школа Доктора Чикурова</div>
-                        <div class="main-item-sub-title">Официальный сайт. Расписание семинаров</div>
+                        <div class="main-item-sub-title">Официальный сайт. Расписание семинаров. Записаться на семинар</div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="https://school-bc.ru/pl/user/user/index" class="col main-item">
+                    <div class="row">
+                      <div class="col-3 main-item-img"><img src="<?php bloginfo('template_url'); ?>/img/os-fav.png" alt="Онлайн Школа"></div>
+                      <div class="col">
+                        <div class="main-item-title">Онлайн Школа</div>
+                        <div class="main-item-sub-title">Расписание онлайн курсов. Записаться на онлайн курс</div>
                       </div>
                     </div>
                   </a>
