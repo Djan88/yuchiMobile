@@ -143,7 +143,7 @@
                   </a>
                   <a href="http://braincleaner.ru/" class="col main-item">
                     <div class="row">
-                      <div class="col-3 main-item-img"><img src="<?php bloginfo('template_url'); ?>/img/br-fav.png" alt="BrainCleaner"></div>
+                      <div class="col-3 main-item-img"><img src="<?php bloginfo('template_url'); ?>/img/b-fav.png" alt="BrainCleaner"></div>
                       <div class="col main-item-content">
                         <div class="main-item-title">BrainCleaner</div>
                         <div class="main-item-sub-title">Метод Терапевтической Дефрагментации Ума</div>
