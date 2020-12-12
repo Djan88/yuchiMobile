@@ -62,7 +62,7 @@
                       <div class="col-3 main-item-img"><img src="<?php bloginfo('template_url'); ?>/img/ch-fav.png" alt="Школа Доктора Чикурова"></div>
                       <div class="col main-item-content">
                         <div class="main-item-title">Школа Доктора Чикурова</div>
-                        <div class="main-item-sub-title">Официальный сайт. Расписание семинаров. Записаться на семинар</div>
+                        <div class="main-item-sub-title">Официальный сайт. Запись на очные семинары</div>
                       </div>
                     </div>
                   </a>
@@ -71,7 +71,7 @@
                       <div class="col-3 main-item-img"><img src="<?php bloginfo('template_url'); ?>/img/os-fav.png" alt="Онлайн Школа"></div>
                       <div class="col main-item-content">
                         <div class="main-item-title">Онлайн Школа</div>
-                        <div class="main-item-sub-title">Расписание онлайн курсов. Записаться на онлайн курс</div>
+                        <div class="main-item-sub-title">Расписание и запись на онлайн обучение.</div>
                       </div>
                     </div>
                   </a>
@@ -90,6 +90,72 @@
                       <div class="col main-item-content">
                         <div class="main-item-title">Лечебное Tarot</div>
                         <div class="main-item-sub-title">Онлайн книга о методике "Лебебное Tarot"</div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <h2>Проекты Школы</h2>
+                <div class="row">
+                  <a href="https://wizardmachine.ru/" class="col main-item">
+                    <div class="row">
+                      <div class="col-3 main-item-img"><img src="<?php bloginfo('template_url'); ?>/img/wm-fav.png" alt="WizardMachine"></div>
+                      <div class="col main-item-content">
+                        <div class="main-item-title">WizardMachine</div>
+                        <div class="main-item-sub-title">Корректирует нарушения в тонких планах через фото</div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="https://wizardduos.ru/" class="col main-item">
+                    <div class="row">
+                      <div class="col-3 main-item-img"><img src="<?php bloginfo('template_url'); ?>/img/wd-fav.png" alt="WizardDuos"></div>
+                      <div class="col main-item-content">
+                        <div class="main-item-title">WizardDuos</div>
+                        <div class="main-item-sub-title">Коррекция взаимотношений через фото</div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="https://tarotmachine.ru/" class="col main-item">
+                    <div class="row">
+                      <div class="col-3 main-item-img"><img src="<?php bloginfo('template_url'); ?>/img/tm-fav.png" alt="TarotMachine"></div>
+                      <div class="col main-item-content">
+                        <div class="main-item-title">TarotMachine</div>
+                        <div class="main-item-sub-title">Коррекция реальности через карты "Tarot"</div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="https://wizard-lovushka.ru/" class="col main-item">
+                    <div class="row">
+                      <div class="col-3 main-item-img"><img src="<?php bloginfo('template_url'); ?>/img/wl-fav.png" alt="WizardLovushka"></div>
+                      <div class="col main-item-content">
+                        <div class="main-item-title">WizardLovushka</div>
+                        <div class="main-item-sub-title">Программа - Антистресс для снятия напряжения</div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="https://marakata.ru/" class="col main-item">
+                    <div class="row">
+                      <div class="col-3 main-item-img"><img src="<?php bloginfo('template_url'); ?>/img/m-fav.png" alt="Marakata"></div>
+                      <div class="col main-item-content">
+                        <div class="main-item-title">Marakata</div>
+                        <div class="main-item-sub-title">Цифровая составляющая проекта "MARAKATA". Электронный оцифратор</div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="http://braincleaner.ru/" class="col main-item">
+                    <div class="row">
+                      <div class="col-3 main-item-img"><img src="<?php bloginfo('template_url'); ?>/img/br-fav.png" alt="BrainCleaner"></div>
+                      <div class="col main-item-content">
+                        <div class="main-item-title">BrainCleaner</div>
+                        <div class="main-item-sub-title">Метод Терапевтической Дефрагментации Ума</div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="https://deviatochka.ru/" class="col main-item">
+                    <div class="row">
+                      <div class="col-3 main-item-img"><img src="<?php bloginfo('template_url'); ?>/img/9-fav.png" alt="Девяточка"></div>
+                      <div class="col main-item-content">
+                        <div class="main-item-title">Девяточка</div>
+                        <div class="main-item-sub-title">Психодинамическая трансформационная игра</div>
                       </div>
                     </div>
                   </a>
