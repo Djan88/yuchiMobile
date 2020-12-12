@@ -54,6 +54,25 @@
           </div>
           <div class="container app-main main">
             <div class="row">
+              <div class="col">
+                <h2>Сайты Школы</h2>
+                <div class="row">
+                  <a href="https://chikurov.com/" class="col main-item">
+                    <div class="row">
+                      <div class="col-1 main-item-img"><img src="<?php bloginfo('template_url'); ?>/img/ch-fav.png" alt="Школа Доктора Чикурова"></div>
+                      <div class="col">
+                        <div class="main-item-title">Школа Доктора Чикурова</div>
+                        <div class="main-item-sub-title">Официальный сайт. Расписание семинаров</div>
+                      </div>
+                      <div class="col-2 main-secondary"></div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container app-second second hidden">
+            <div class="row">
               <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
               <div class="col-12">
                 <div class="row">
@@ -72,9 +91,6 @@
                 <?php _e('Sorry, no posts matched your criteria.'); ?>
               <?php endif; ?>
             </div>
-          </div>
-          <div class="container app-second second hidden">
-            Пока пусто...
           </div>
         </main>
       </div>
