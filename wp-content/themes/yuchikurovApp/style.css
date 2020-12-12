@@ -233,7 +233,7 @@ a.main-item
 }
 .main-item-sub-title
 {
-  color: #888;
+  color: #999;
   padding-bottom: 5px;
 }
 .main-item-content
@@ -248,7 +248,7 @@ a.main-item
   position: absolute;
   bottom: 0;
   height: 1px;
-  border-top: 1px solid #888; 
+  border-top: 1px solid #9999992e; 
 }
 
 
