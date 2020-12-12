@@ -59,12 +59,11 @@
                 <div class="row">
                   <a href="https://chikurov.com/" class="col main-item">
                     <div class="row">
-                      <div class="col-1 main-item-img"><img src="<?php bloginfo('template_url'); ?>/img/ch-fav.png" alt="Школа Доктора Чикурова"></div>
+                      <div class="col-3 main-item-img"><img src="<?php bloginfo('template_url'); ?>/img/ch-fav.png" alt="Школа Доктора Чикурова"></div>
                       <div class="col">
                         <div class="main-item-title">Школа Доктора Чикурова</div>
                         <div class="main-item-sub-title">Официальный сайт. Расписание семинаров</div>
                       </div>
-                      <div class="col-2 main-secondary"></div>
                     </div>
                   </a>
                 </div>

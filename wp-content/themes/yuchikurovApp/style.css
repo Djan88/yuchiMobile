@@ -210,6 +210,41 @@ button svg
   -webkit-align-items: center;
   align-items: center;
 }
+.app-main h2
+{
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+a.main-item
+{
+  color: #000;
+  font-size: 1rem;
+  padding: 21px;
+  position: relative;
+  display: block;
+}
+a.main-item:after
+{
+  content: '';
+  width: 50%;
+  position: absolute;
+  left: 25%;
+  bottom: 0;
+  height: 1px;
+  border-top: 1px solid #555; 
+}
+.main-item-img img
+{
+  border-radius: 6px;
+}
+.main-item-title
+{
+  font-weight: 600;
+}
+.main-item-title
+{
+  color: #777;
+}
 
 
 
