@@ -223,16 +223,6 @@ a.main-item
   position: relative;
   min-width: 100%;
 }
-a.main-item:after
-{
-  content: '';
-  width: 50%;
-  position: absolute;
-  left: 25%;
-  bottom: 0;
-  height: 1px;
-  border-top: 1px solid #555; 
-}
 .main-item-img img
 {
   border-radius: 6px;
@@ -241,11 +231,25 @@ a.main-item:after
 {
   font-weight: 600;
 }
-.main-item-title
+.main-item-sub-title
 {
-  color: #777;
+  color: #888;
+  padding-bottom: 5px;
 }
-
+.main-item-content
+{
+  position: relative;
+  padding-bottom: 5px;
+}
+.main-item-content:after
+{
+  content: '';
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 1px;
+  border-top: 1px solid #888; 
+}
 
 
 .tabbar {

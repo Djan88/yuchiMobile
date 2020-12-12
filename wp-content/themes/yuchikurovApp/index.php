@@ -69,7 +69,7 @@
                   <a href="https://school-bc.ru/pl/user/user/index" class="col main-item">
                     <div class="row">
                       <div class="col-3 main-item-img"><img src="<?php bloginfo('template_url'); ?>/img/os-fav.png" alt="Онлайн Школа"></div>
-                      <div class="col">
+                      <div class="col main-item-content">
                         <div class="main-item-title">Онлайн Школа</div>
                         <div class="main-item-sub-title">Расписание онлайн курсов. Записаться на онлайн курс</div>
                       </div>
