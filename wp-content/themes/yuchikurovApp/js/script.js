@@ -77,7 +77,7 @@ jQuery(document).ready(function () {
   });
   jQuery('.back-button').on('click', function(event) {
     jQuery('.slider-box').addClass('hidden').removeAttr('style');
-    jQuery('app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
+    jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
     jQuery('.header-text').text('ПОЛЕЗНЫЕ РЕСУРСЫ');
     jQuery('.back-button').addClass('hidden');
   });
