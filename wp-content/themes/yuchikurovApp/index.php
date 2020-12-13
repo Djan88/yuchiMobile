@@ -57,7 +57,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 slider-box slider-formuls overscreen">
+            <div class="col-12 slider-box overscreen">
               <!-- Swiper -->
               <div class="swiper-container">
                 <div class="swiper-wrapper">
@@ -75,9 +75,9 @@
                 <div class="swiper-pagination"></div>
               </div>
             </div>
-            <div class="col-12 slider-box slider-elems overscreen">
+            <div class="col-12 slider-box2 overscreen">
               <!-- Swiper -->
-              <div class="swiper-container">
+              <div class="swiper-container2">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/img/fire.png" alt="Огонь"></div>
                   <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/img/water.png" alt="Вода"></div>
