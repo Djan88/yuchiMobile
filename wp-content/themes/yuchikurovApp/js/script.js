@@ -109,7 +109,7 @@ jQuery(document).ready(function () {
 
   jQuery(".slider-formuls, .slider-elems").swipe( {
     swipeRight:function(event, direction, distance, duration, fingerCount) {
-      jQuery('.slider-formuls').addClass('hidden').removeAttr('style');
+      jQuery('.slider-formuls, .slider-elems').addClass('hidden').removeAttr('style');
       jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
       jQuery('.header-text').text('ПОЛЕЗНЫЕ РЕСУРСЫ');
       jQuery('.back-button').addClass('hidden');
