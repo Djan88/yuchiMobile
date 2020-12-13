@@ -71,7 +71,7 @@ jQuery(document).ready(function () {
 
   jQuery('.main-item-formuls').on('click', function(event) {
     jQuery('.app-slide-menu').addClass('hidden').removeAttr('style');
-    jQuery('.slider-box').removeClass('hidden').addClass('animate__fadeInLeft');
+    jQuery('.slider-box').fadeIn(500).removeClass('hidden').css('display', 'flex');
     jQuery('.header-text').text('ФОРМУЛЫ БЦ');
     jQuery('.back-button').removeClass('hidden');
   });
