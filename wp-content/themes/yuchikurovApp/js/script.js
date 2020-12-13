@@ -83,17 +83,17 @@ jQuery(document).ready(function () {
     jQuery('.back-button').addClass('hidden');
   });
   
-  // jQuery(".slider-box").swipe( {
-  //   //Single swipe handler for left swipes
-  //   swipeRight:function(event, direction, distance, duration, fingerCount) {
-  //     jQuery('.slider-box').addClass('hidden').removeAttr('style');
-  //     jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
-  //     jQuery('.header-text').text('ПОЛЕЗНЫЕ РЕСУРСЫ');
-  //     jQuery('.back-button').addClass('hidden'); 
-  //   },
-  //   //Default is 75px, set to 0 for demo so any distance triggers swipe
-  //   threshold:0
-  // });
+  jQuery(".slider-box").swipe( {
+    //Single swipe handler for left swipes
+    swipeRight:function(event, direction, distance, duration, fingerCount) {
+      jQuery('.slider-box').addClass('hidden').removeAttr('style');
+      jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
+      jQuery('.header-text').text('ПОЛЕЗНЫЕ РЕСУРСЫ');
+      jQuery('.back-button').addClass('hidden'); 
+    },
+    //Default is 75px, set to 0 for demo so any distance triggers swipe
+    threshold:0
+  });
   // jQuery(".app-slide, .app-second").swipe( {
   //   //Single swipe handler for left swipes
   //   swipeRight:function(event, direction, distance, duration, fingerCount) {
