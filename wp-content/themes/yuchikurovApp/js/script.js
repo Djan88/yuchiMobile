@@ -75,12 +75,14 @@ jQuery(document).ready(function () {
     jQuery('.header-text').text('ФОРМУЛЫ БЦ');
     jQuery('.back-button').removeClass('hidden');
   });
+
   jQuery('.back-button').on('click', function(event) {
     jQuery('.slider-box').addClass('hidden').removeAttr('style');
     jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
     jQuery('.header-text').text('ПОЛЕЗНЫЕ РЕСУРСЫ');
     jQuery('.back-button').addClass('hidden');
   });
+  
   jQuery(".slider-box").swipe( {
     //Single swipe handler for left swipes
     swipeRight:function(event, direction, distance, duration, fingerCount) {
@@ -96,7 +98,6 @@ jQuery(document).ready(function () {
     //Single swipe handler for left swipes
     swipeRight:function(event, direction, distance, duration, fingerCount) {
       jQuery('.tabbar li a.home').click();
-      navigator.vibrate(1000);
     },
     //Default is 75px, set to 0 for demo so any distance triggers swipe
     threshold:0
