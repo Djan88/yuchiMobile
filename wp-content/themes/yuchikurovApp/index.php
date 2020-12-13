@@ -75,7 +75,7 @@
                 <div class="swiper-pagination"></div>
               </div>
             </div>
-            <div class="col-12 slider-box2 slider-elems overscreen">
+            <div class="col-12 slider-box slider-elems overscreen">
               <!-- Swiper -->
               <div class="swiper-container2">
                 <div class="swiper-wrapper">
