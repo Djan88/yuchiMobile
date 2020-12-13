@@ -26,6 +26,7 @@ jQuery(document).ready(function () {
         clickable: true,
     },
   });
+
   var swiper2 = new Swiper('.swiper-container2', {
     direction: 'vertical',
     slidesPerView: 1,
@@ -95,7 +96,7 @@ jQuery(document).ready(function () {
   jQuery('.main-item-elems').on('click', function(event) {
     jQuery('.app-slide-menu').addClass('hidden').removeAttr('style');
     jQuery('.slider-elems').fadeIn(500).removeClass('hidden').css('display', 'flex');
-    jQuery('.header-text').text('ФОРМУЛЫ БЦ');
+    jQuery('.header-text').text('Первоэлементы БЦ');
     jQuery('.back-button').removeClass('hidden');
   });
 
@@ -106,19 +107,9 @@ jQuery(document).ready(function () {
     jQuery('.back-button').addClass('hidden');
   });
 
-  jQuery(".slider-formuls").swipe( {
+  jQuery(".slider-formuls, .slider-elems").swipe( {
     swipeRight:function(event, direction, distance, duration, fingerCount) {
       jQuery('.slider-formuls').addClass('hidden').removeAttr('style');
-      jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
-      jQuery('.header-text').text('ПОЛЕЗНЫЕ РЕСУРСЫ');
-      jQuery('.back-button').addClass('hidden');
-    },
-    threshold:0
-  });
-
-  jQuery(".slider-elems").swipe( {
-    swipeRight:function(event, direction, distance, duration, fingerCount) {
-      jQuery('.slider-elems').addClass('hidden').removeAttr('style');
       jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
       jQuery('.header-text').text('ПОЛЕЗНЫЕ РЕСУРСЫ');
       jQuery('.back-button').addClass('hidden');
