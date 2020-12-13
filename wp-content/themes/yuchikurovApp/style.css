@@ -31,6 +31,10 @@ img
    -khtml-user-select: none;
    -webkit-user-select: none;
 }
+.header-text
+{
+  white-space: nowrap;
+}
 .all
 {
   position: relative;

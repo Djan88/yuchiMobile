@@ -33,14 +33,13 @@
           <div class="container app-slide formuls">
             <div class="row">
               <div class="col">
-                <h2>Полезные ресурсы</h2>
                 <div class="row">
                   <div class="col main-item">
                     <div class="row">
                       <div class="col-3 main-item-img"><img src="<?php bloginfo('template_url'); ?>/img/formuls-fav.png" alt="Формулы"></div>
                       <div class="col main-item-content">
                         <div class="main-item-title">Формулы</div>
-                        <div class="main-item-sub-title">Слайдер с формулами БЦ</div>
+                        <div class="main-item-sub-title">Биологичксое Центрирование. Слайдер с формулами</div>
                       </div>
                     </div>
                   </div>
