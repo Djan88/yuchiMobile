@@ -48,7 +48,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 slider-box hidden">
+            <div class="col-12 slider-box">
               <!-- Swiper -->
               <div class="swiper-container">
                 <div class="swiper-wrapper">
