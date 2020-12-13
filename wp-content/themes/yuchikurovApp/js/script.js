@@ -81,7 +81,7 @@ jQuery(document).ready(function () {
     jQuery('.header-text').text('ПОЛЕЗНЫЕ РЕСУРСЫ');
     jQuery('.back-button').addClass('hidden');
   });
-  jQuery('.slider-box').addClass('hidden');
+  jQuery('.slider-box').addClass('hidden').removeClass('overscreen');
   jQuery('.tabbar li a.home').click();
 
 
