@@ -77,7 +77,7 @@
             </div>
             <div class="col-12 slider-box slider-elems overscreen">
               <!-- Swiper -->
-              <div class="swiper-container2">
+              <div class="swiper-container_elems">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/img/fire.png" alt="Огонь"></div>
                   <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/img/water.png" alt="Вода"></div>
