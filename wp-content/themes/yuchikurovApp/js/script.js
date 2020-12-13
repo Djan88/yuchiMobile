@@ -76,7 +76,7 @@ jQuery(document).ready(function () {
     jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
   });
 
-  jQuery('.main-item-formuls').on('click', function(event) {
+  jQuery('body').on('click', '.main-item-formuls', function(event) {
     jQuery('.app-slide-menu').addClass('hidden').removeAttr('style');
     jQuery('.slider-box').fadeIn(500).removeClass('hidden').css('display', 'flex');
     jQuery('.header-text').text('ФОРМУЛЫ БЦ');
@@ -99,10 +99,10 @@ jQuery(document).ready(function () {
     },
     threshold:0
   });
-  
+
   jQuery(".app-slide, .app-second").swipe( {
     swipeRight:function(event, direction, distance, duration, fingerCount) {
-      // jQuery('.tabbar li a.home').click();
+      jQuery('.tabbar li a.home').click();
     },
     threshold:0
   });
