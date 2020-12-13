@@ -57,7 +57,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 slider-box slider-elems overscreen">
+            <div class="col-12 slider-box slider-formuls overscreen">
               <!-- Swiper -->
               <div class="swiper-container">
                 <div class="swiper-wrapper">
