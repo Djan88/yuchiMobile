@@ -92,6 +92,16 @@ jQuery(document).ready(function () {
     //Default is 75px, set to 0 for demo so any distance triggers swipe
     threshold:0
   });
+  jQuery(".app-slide, .app-second").swipe( {
+    //Single swipe handler for left swipes
+    swipeRight:function(event, direction, distance, duration, fingerCount) {
+      jQuery('.app-slide, .app-second').addClass('hidden').removeAttr('style');
+      jQuery('.app-main').fadeIn(500).removeClass('hidden').css('display', 'flex');
+      jQuery('.header-text').text('ШКОЛА ДОКТОРА ЧИКУРОВА');
+    },
+    //Default is 75px, set to 0 for demo so any distance triggers swipe
+    threshold:0
+  });
 
   jQuery('.slider-box').addClass('hidden').removeClass('overscreen');
   jQuery('.tabbar li a.home').click();
