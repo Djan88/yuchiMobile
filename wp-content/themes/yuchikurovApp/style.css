@@ -210,14 +210,14 @@ button svg
   -webkit-align-items: center;
   align-items: center;
 }
-.app-main h2
+.app-main h2, .app-slide h2
 {
   font-size: 1.4rem;
   font-weight: 600;
   padding-left: 10px;
   padding-top: 15px;
 }
-a.main-item, a.main-item:hover, a.main-item:focus
+.main-item, .main-item:hover, .main-item:focus
 {
   color: #000;
   font-size: 1rem;
