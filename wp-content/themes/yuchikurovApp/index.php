@@ -18,18 +18,36 @@
 <body class="wrapper no-select">
   <div id="all" class="container">
     <div class="row">
-      <div class="col header">
-        <!-- <button type="button" class="btn btn-outline-primary btn-app search-on-page float-right">
-          <span class="oi oi-magnifying-glass"></span>
-        </button> -->
-        <span class="header-text">ШКОЛА ДОКТОРА ЧИКУРОВА</span>
+      <div class="col-2 header">
+        <button type="button" class="btn btn-outline-primary btn-app back-button hidden float-left">
+          <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-left-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+          </svg>
+        </button>
+        <span class="col header-text">ШКОЛА ДОКТОРА ЧИКУРОВА</span>
       </div>
     </div>
     <div class="row">
       <div class="col page">
         <main id="panel">
           <div class="container app-slide formuls">
-            <div class="col-12 slider-box">
+            <div class="row">
+              <div class="col">
+                <h2>Сайты Школы</h2>
+                <div class="row">
+                  <div class="col main-item">
+                    <div class="row">
+                      <div class="col-3 main-item-img"><img src="<?php bloginfo('template_url'); ?>/img/formuls-fav.png" alt="Формулы"></div>
+                      <div class="col main-item-content">
+                        <div class="main-item-title">Формулы</div>
+                        <div class="main-item-sub-title">Слайдер с формулами БЦ</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 slider-box hidden">
               <!-- Swiper -->
               <div class="swiper-container">
                 <div class="swiper-wrapper">
@@ -94,7 +112,7 @@
                     </div>
                   </a>
                 </div>
-                <h2>Проекты Школы</h2>
+                <h2>Интерактивные проекты</h2>
                 <div class="row">
                   <a href="https://wizardmachine.ru/" class="col main-item">
                     <div class="row">
@@ -137,7 +155,7 @@
                       <div class="col-3 main-item-img"><img src="<?php bloginfo('template_url'); ?>/img/m-fav.png" alt="Marakata"></div>
                       <div class="col main-item-content">
                         <div class="main-item-title">Marakata</div>
-                        <div class="main-item-sub-title">Цифровая составляющая проекта "MARAKATA". Электронный оцифратор</div>
+                        <div class="main-item-sub-title">Электронный оцифратор проекта "Marakata"</div>
                       </div>
                     </div>
                   </a>
