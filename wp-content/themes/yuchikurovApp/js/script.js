@@ -99,12 +99,13 @@ jQuery(document).ready(function () {
     },
     threshold:0
   });
-  // jQuery(".app-slide, .app-second").swipe( {
-  //   swipeRight:function(event, direction, distance, duration, fingerCount) {
-  //     jQuery('.tabbar li a.home').click();
-  //   },
-  //   threshold:0
-  // });
+  
+  jQuery(".app-slide, .app-second").swipe( {
+    swipeRight:function(event, direction, distance, duration, fingerCount) {
+      jQuery('.tabbar li a.home').click();
+    },
+    threshold:0
+  });
 
   jQuery('.slider-box').addClass('hidden').removeClass('overscreen');
   jQuery('.tabbar li a.home').click();
