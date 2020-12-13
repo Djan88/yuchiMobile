@@ -57,6 +57,7 @@ jQuery(document).ready(function () {
     jQuery('.header-text').text('ПОЛЕЗНЫЕ РЕСУРСЫ');
     jQuery('.back-button').addClass('hidden');
     jQuery('.slider-box').addClass('hidden').removeAttr('style');
+    jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
   });
 
   jQuery('.home').on('click', function(event) {
@@ -72,6 +73,7 @@ jQuery(document).ready(function () {
     jQuery('.header-text').text('ПУСТОЙ РАЗДЕЛ');
     jQuery('.back-button').addClass('hidden');
     jQuery('.slider-box').addClass('hidden').removeAttr('style');
+    jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
   });
 
   jQuery('.main-item-formuls').on('click', function(event) {
