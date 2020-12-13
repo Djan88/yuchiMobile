@@ -76,11 +76,21 @@ jQuery(document).ready(function () {
     jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
   });
 
-  jQuery('.main-item-formuls').on('click', function(event) {
-    jQuery('.app-slide-menu').addClass('hidden').removeAttr('style');
-    jQuery('.slider-box').fadeIn(500).removeClass('hidden').css('display', 'flex');
-    jQuery('.header-text').text('ФОРМУЛЫ БЦ');
-    jQuery('.back-button').removeClass('hidden');
+  // jQuery('.main-item-formuls').on('click', function(event) {
+  //   jQuery('.app-slide-menu').addClass('hidden').removeAttr('style');
+  //   jQuery('.slider-box').fadeIn(500).removeClass('hidden').css('display', 'flex');
+  //   jQuery('.header-text').text('ФОРМУЛЫ БЦ');
+  //   jQuery('.back-button').removeClass('hidden');
+  // });
+
+  jQuery(".main-item-formuls").swipe( {
+    click:function(event, direction, distance, duration, fingerCount) {
+      jQuery('.app-slide-menu').addClass('hidden').removeAttr('style');
+      jQuery('.slider-box').fadeIn(500).removeClass('hidden').css('display', 'flex');
+      jQuery('.header-text').text('ФОРМУЛЫ БЦ');
+      jQuery('.back-button').removeClass('hidden');
+    },
+    threshold:0
   });
 
   jQuery('.back-button').on('click', function(event) {
@@ -99,7 +109,7 @@ jQuery(document).ready(function () {
     },
     threshold:0
   });
-  
+
   jQuery(".app-slide, .app-second").swipe( {
     swipeRight:function(event, direction, distance, duration, fingerCount) {
       jQuery('.tabbar li a.home').click();
