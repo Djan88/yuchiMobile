@@ -59,7 +59,7 @@
             </div>
             <div class="col-12 slider-box slider-formuls overscreen">
               <!-- Swiper -->
-              <div class="swiper-container">
+              <div class="swiper-container swiper-container-formuls">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/img/otvorenie.png" alt="Отворение"></div>
                   <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/img/trauma.png" alt="Травма"></div>
@@ -72,12 +72,12 @@
                   <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/img/csv_util.png" alt="ЧСВ Утилизатор"></div>
                 </div>
                 <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
+                <div class="swiper-pagination swiper-pagination-formuls"></div>
               </div>
             </div>
             <div class="col-12 slider-box slider-elems overscreen">
               <!-- Swiper -->
-              <div class="swiper-container_elems">
+              <div class="swiper-container swiper-container-elems">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/img/fire.png" alt="Огонь"></div>
                   <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/img/water.png" alt="Вода"></div>
@@ -85,7 +85,7 @@
                   <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/img/ground.png" alt="Земля"></div>
                 </div>
                 <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
+                <div class="swiper-pagination swiper-pagination-elems"></div>
               </div>
             </div>
           </div>

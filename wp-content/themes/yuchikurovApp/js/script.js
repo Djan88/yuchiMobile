@@ -16,24 +16,24 @@ function onDeviceReady() {
 jQuery(document).ready(function () {
 
 
-  var swiper = new Swiper('.swiper-container', {
+  var swiper = new Swiper('.swiper-container-formuls', {
     direction: 'vertical',
     slidesPerView: 1,
     spaceBetween: 30,
     mousewheel: true,
     pagination: {
-        el: '.swiper-pagination',
+        el: '.swiper-pagination-formuls',
         clickable: true,
     },
   });
 
-  var swiper_elems = new Swiper('.swiper-container_elems', {
+  var swiper_elems = new Swiper('.swiper-container-elems', {
     direction: 'vertical',
     slidesPerView: 1,
     spaceBetween: 30,
     mousewheel: true,
     pagination: {
-        el: '.swiper-pagination',
+        el: '.swiper-pagination-elems',
         clickable: true,
     },
   });
