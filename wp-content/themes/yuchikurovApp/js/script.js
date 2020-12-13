@@ -51,6 +51,23 @@ jQuery(document).ready(function () {
 
   });
 
+  jQuery(".slider-box").swipe( {
+    swipeRight:function(event, direction, distance, duration, fingerCount) {
+      jQuery('.slider-box').addClass('hidden').removeAttr('style');
+      jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
+      jQuery('.header-text').text('ПОЛЕЗНЫЕ РЕСУРСЫ');
+      jQuery('.back-button').addClass('hidden');
+    },
+    threshold:0
+  });
+
+  jQuery(".app-slide, .app-second").swipe( {
+    swipeRight:function(event, direction, distance, duration, fingerCount) {
+      jQuery('.tabbar li a.home').click();
+    },
+    threshold:0
+  });
+
   jQuery('.box').on('click', function(event) {
     jQuery('.app-main, .app-second').addClass('hidden').removeAttr('style');
     jQuery('.app-slide').fadeIn(500).removeClass('hidden').css('display', 'flex');
@@ -88,23 +105,6 @@ jQuery(document).ready(function () {
     jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
     jQuery('.header-text').text('ПОЛЕЗНЫЕ РЕСУРСЫ');
     jQuery('.back-button').addClass('hidden');
-  });
-
-  jQuery(".slider-box").swipe( {
-    swipeRight:function(event, direction, distance, duration, fingerCount) {
-      jQuery('.slider-box').addClass('hidden').removeAttr('style');
-      jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
-      jQuery('.header-text').text('ПОЛЕЗНЫЕ РЕСУРСЫ');
-      jQuery('.back-button').addClass('hidden');
-    },
-    threshold:0
-  });
-
-  jQuery(".app-slide, .app-second").swipe( {
-    swipeRight:function(event, direction, distance, duration, fingerCount) {
-      jQuery('.tabbar li a.home').click();
-    },
-    threshold:0
   });
 
   jQuery('.slider-box').addClass('hidden').removeClass('overscreen');
