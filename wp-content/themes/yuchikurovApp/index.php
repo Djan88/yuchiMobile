@@ -45,10 +45,19 @@
                       </div>
                     </div>
                   </div>
+                  <div class="col main-item main-item-elems">
+                    <div class="row">
+                      <div class="col-3 main-item-img"><img src="<?php bloginfo('template_url'); ?>/img/elems-fav.png" alt="Формулы"></div>
+                      <div class="col main-item-content">
+                        <div class="main-item-title">Первоэлементы</div>
+                        <div class="main-item-sub-title">Биологическое Центрирование. Слайдер с первоэлементами</div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-12 slider-box overscreen">
+            <div class="col-12 slider-box slider-formuls overscreen">
               <!-- Swiper -->
               <div class="swiper-container">
                 <div class="swiper-wrapper">
@@ -61,6 +70,15 @@
                   <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/img/mertv_voda.png" alt="Мертвая Вода"></div>
                   <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/img/lovushka.png" alt="Ловушка"></div>
                   <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/img/csv_util.png" alt="ЧСВ Утилизатор"></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="col-12 slider-box slider-elems overscreen">
+              <!-- Swiper -->
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
                   <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/img/fire.png" alt="Огонь"></div>
                   <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/img/water.png" alt="Вода"></div>
                   <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/img/air.png" alt="Воздух"></div>
