@@ -256,6 +256,7 @@
   <script src="<?php bloginfo('template_url'); ?>/js/jquery.ui.touch-punch.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/pull_ref.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/swiper-bundle.min.js"></script>
+  <script src="<?php bloginfo('template_url'); ?>/js/jquery.touchSwipe.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/script.js"></script>
 </body>
 </html>
