@@ -54,7 +54,7 @@ jQuery(document).ready(function () {
   jQuery('.box').on('click', function(event) {
     jQuery('.app-main, .app-second').addClass('hidden').removeAttr('style');
     jQuery('.app-slide').fadeIn(500).removeClass('hidden').css('display', 'flex');
-    jQuery('.header-text').text('ФОРМУЛЫ БЦ');
+    jQuery('.header-text').text('ПОЛЕЗНЫЕ РЕСУРСЫ');
   });
 
   jQuery('.home').on('click', function(event) {
@@ -67,6 +67,13 @@ jQuery(document).ready(function () {
     jQuery('.app-slide, .app-main').addClass('hidden').removeAttr('style');
     jQuery('.app-second').fadeIn(500).removeClass('hidden').css('display', 'flex');
     jQuery('.header-text').text('ПУСТОЙ РАЗДЕЛ');
+  });
+
+  jQuery('.main-item-formuls').on('click', function(event) {
+    jQuery('.app-slide').addClass('hidden').removeAttr('style');
+    jQuery('.slider-box').fadeInRight(500).removeClass('hidden').css('display', 'flex');
+    jQuery('.header-text').text('ФОРМУЛЫ БЦ');
+    jQuery('.back-button').removeClass('hidden');
   });
 
   jQuery('.tabbar li a.home').click();
