@@ -33,7 +33,7 @@
           <div class="container app-slide formuls">
             <div class="row">
               <div class="col">
-                <h2>Сайты Школы</h2>
+                <h2>Полезные ресурсы</h2>
                 <div class="row">
                   <div class="col main-item">
                     <div class="row">
