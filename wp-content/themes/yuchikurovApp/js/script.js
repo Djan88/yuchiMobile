@@ -26,7 +26,7 @@ jQuery(document).ready(function () {
         clickable: true,
     },
   });
-  var swiper = new Swiper('.swiper-container2', {
+  var swiper2 = new Swiper('.swiper-container2', {
     direction: 'vertical',
     slidesPerView: 1,
     spaceBetween: 30,
