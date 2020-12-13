@@ -96,14 +96,14 @@ jQuery(document).ready(function () {
   jQuery('.main-item-elems').on('click', function(event) {
     jQuery('.app-slide-menu').addClass('hidden').removeAttr('style');
     jQuery('.slider-elems').fadeIn(500).removeClass('hidden').css('display', 'flex');
-    jQuery('.header-text').text('Первоэлементы БЦ');
+    jQuery('.header-text').text('ПЕРВОЭЛЕМЕНТЫ БЦ');
     jQuery('.back-button').removeClass('hidden');
   });
 
   jQuery('.back-button').on('click', function(event) {
     jQuery('.slider-formuls, .slider-elems').addClass('hidden').removeAttr('style');
     jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
-    jQuery('.header-text').text('ПОЛЕЗНЫЕ РЕСУРСЫ');
+    jQuery('.header-text').text('СПРАВОЧНИКИ');
     jQuery('.back-button').addClass('hidden');
   });
 
@@ -111,7 +111,7 @@ jQuery(document).ready(function () {
     swipeRight:function(event, direction, distance, duration, fingerCount) {
       jQuery('.slider-formuls, .slider-elems').addClass('hidden').removeAttr('style');
       jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
-      jQuery('.header-text').text('ПОЛЕЗНЫЕ РЕСУРСЫ');
+      jQuery('.header-text').text('СПРАВОЧНИКИ');
       jQuery('.back-button').addClass('hidden');
     },
     threshold:0
