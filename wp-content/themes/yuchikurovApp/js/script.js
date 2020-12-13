@@ -55,18 +55,23 @@ jQuery(document).ready(function () {
     jQuery('.app-main, .app-second').addClass('hidden').removeAttr('style');
     jQuery('.app-slide').fadeIn(500).removeClass('hidden').css('display', 'flex');
     jQuery('.header-text').text('ПОЛЕЗНЫЕ РЕСУРСЫ');
+    jQuery('.back-button').addClass('hidden');
+    jQuery('.slider-box').addClass('hidden').removeAttr('style');
   });
 
   jQuery('.home').on('click', function(event) {
     jQuery('.app-slide, .app-second').addClass('hidden').removeAttr('style');
     jQuery('.app-main').fadeIn(500).removeClass('hidden').css('display', 'flex');
     jQuery('.header-text').text('ШКОЛА ДОКТОРА ЧИКУРОВА');
+    jQuery('.back-button').addClass('hidden');
   });
 
   jQuery('.calendar').on('click', function(event) {
     jQuery('.app-slide, .app-main').addClass('hidden').removeAttr('style');
     jQuery('.app-second').fadeIn(500).removeClass('hidden').css('display', 'flex');
     jQuery('.header-text').text('ПУСТОЙ РАЗДЕЛ');
+    jQuery('.back-button').addClass('hidden');
+    jQuery('.slider-box').addClass('hidden').removeAttr('style');
   });
 
   jQuery('.main-item-formuls').on('click', function(event) {
@@ -82,24 +87,20 @@ jQuery(document).ready(function () {
     jQuery('.header-text').text('ПОЛЕЗНЫЕ РЕСУРСЫ');
     jQuery('.back-button').addClass('hidden');
   });
-  
+
   jQuery(".slider-box").swipe( {
-    //Single swipe handler for left swipes
     swipeRight:function(event, direction, distance, duration, fingerCount) {
       jQuery('.slider-box').addClass('hidden').removeAttr('style');
       jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
       jQuery('.header-text').text('ПОЛЕЗНЫЕ РЕСУРСЫ');
-      jQuery('.back-button').addClass('hidden'); 
+      jQuery('.back-button').addClass('hidden');
     },
-    //Default is 75px, set to 0 for demo so any distance triggers swipe
     threshold:0
   });
   // jQuery(".app-slide, .app-second").swipe( {
-  //   //Single swipe handler for left swipes
   //   swipeRight:function(event, direction, distance, duration, fingerCount) {
   //     jQuery('.tabbar li a.home').click();
   //   },
-  //   //Default is 75px, set to 0 for demo so any distance triggers swipe
   //   threshold:0
   // });
 
