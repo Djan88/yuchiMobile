@@ -8,7 +8,7 @@
   <meta name="viewport" content="initial-scale=1, width=device-width, height=device-height, viewport-fit=cover">
   <title><?php wp_title(''); ?></title>
   <link href="<?php bloginfo('template_url'); ?>/css/bootstrap.min.css" rel="stylesheet">
-  <!-- <link href="<?php //bloginfo('template_url'); ?>/css/animate.css" rel="stylesheet"> -->
+  <link href="<?php bloginfo('template_url'); ?>/css/animate.css" rel="stylesheet">
   <link href="<?php bloginfo('template_url'); ?>/css/open-iconic-bootstrap.css" rel="stylesheet">
   <link href="<?php bloginfo('template_url'); ?>/css/swipe-bundle.min.css" rel="stylesheet">
   <link href="<?php bloginfo('template_url'); ?>/style.css" rel="stylesheet">
