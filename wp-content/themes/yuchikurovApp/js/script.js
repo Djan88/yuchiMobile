@@ -107,15 +107,15 @@ jQuery(document).ready(function () {
     jQuery('.back-button').addClass('hidden');
   });
 
-  // jQuery(".slider-formuls, .slider-elems").swipe( {
-  //   swipeRight:function(event, direction, distance, duration, fingerCount) {
-  //     jQuery('.slider-formuls, .slider-elems').addClass('hidden').removeAttr('style');
-  //     jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
-  //     jQuery('.header-text').text('СПРАВОЧНИКИ');
-  //     jQuery('.back-button').addClass('hidden');
-  //   },
-  //   threshold:0
-  // });
+  jQuery(".slider-formuls").swipe( {
+    swipeRight:function(event, direction, distance, duration, fingerCount) {
+      jQuery('.slider-formuls, .slider-elems').addClass('hidden').removeAttr('style');
+      jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
+      jQuery('.header-text').text('СПРАВОЧНИКИ');
+      jQuery('.back-button').addClass('hidden');
+    },
+    threshold:0
+  });
 
   jQuery('.slider-box').addClass('hidden').removeClass('overscreen');
   jQuery('.tabbar li a.home').click();
