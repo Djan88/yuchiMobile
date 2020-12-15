@@ -123,7 +123,7 @@ jQuery(document).ready(function () {
     jQuery('.frame').removeClass('hidden');
   });
 
-  jQuery(".swiper-slide, .slider-regress").swipe( {
+  jQuery(".swiper-slide").swipe( {
     swipeRight:function(event, direction, distance, duration, fingerCount) {
       jQuery('.slider-box').addClass('hidden').removeAttr('style');
       jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
