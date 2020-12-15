@@ -67,7 +67,7 @@ jQuery(document).ready(function () {
     jQuery('.app-slide').fadeIn(500).removeClass('hidden').css('display', 'flex');
     jQuery('.header-text').text('ПОЛЕЗНЫЕ РЕСУРСЫ');
     jQuery('.back-button').addClass('hidden');
-    jQuery('.slider-formuls, .slider-elems').addClass('hidden').removeAttr('style');
+    jQuery('.slider-box').addClass('hidden').removeAttr('style');
     jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
   });
 
@@ -83,7 +83,7 @@ jQuery(document).ready(function () {
     jQuery('.app-second').fadeIn(500).removeClass('hidden').css('display', 'flex');
     jQuery('.header-text').text('ПУСТОЙ РАЗДЕЛ');
     jQuery('.back-button').addClass('hidden');
-    jQuery('.slider-formuls, .slider-elems').addClass('hidden').removeAttr('style');
+    jQuery('.slider-box').addClass('hidden').removeAttr('style');
     jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
   });
 
@@ -99,17 +99,24 @@ jQuery(document).ready(function () {
     jQuery('.header-text').text('ПЕРВОЭЛЕМЕНТЫ БЦ');
     jQuery('.back-button').removeClass('hidden');
   });
+  jQuery('.main-item-regress').on('click', function(event) {
+    jQuery('.app-slide-menu').addClass('hidden').removeAttr('style');
+    jQuery('.slider-regress').fadeIn(500).removeClass('hidden').css('display', 'flex');
+    jQuery('.header-text').text('РЕГРЕССИВНАЯ ШКАЛА');
+    jQuery('.back-button').removeClass('hidden');
+    screen.orientation.lock('landscape');
+  });
 
   jQuery('.back-button').on('click', function(event) {
-    jQuery('.slider-formuls, .slider-elems').addClass('hidden').removeAttr('style');
+    jQuery('.slider-box').addClass('hidden').removeAttr('style');
     jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
     jQuery('.header-text').text('СПРАВОЧНИКИ');
     jQuery('.back-button').addClass('hidden');
   });
 
-  jQuery(".swiper-slide").swipe( {
+  jQuery(".swiper-slide, .slider-regress").swipe( {
     swipeRight:function(event, direction, distance, duration, fingerCount) {
-      jQuery('.slider-formuls, .slider-elems').addClass('hidden').removeAttr('style');
+      jQuery('.slider-box').addClass('hidden').removeAttr('style');
       jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
       jQuery('.header-text').text('СПРАВОЧНИКИ');
       jQuery('.back-button').addClass('hidden');
