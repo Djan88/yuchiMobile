@@ -69,6 +69,8 @@ jQuery(document).ready(function () {
     jQuery('.back-button').addClass('hidden');
     jQuery('.slider-box').addClass('hidden').removeAttr('style');
     jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
+    screen.orientation.lock('portrait');
+    jQuery('.frame').removeClass('hidden');
   });
 
   jQuery('.home').on('click', function(event) {
@@ -76,6 +78,8 @@ jQuery(document).ready(function () {
     jQuery('.app-main').fadeIn(500).removeClass('hidden').css('display', 'flex');
     jQuery('.header-text').text('ШКОЛА ДОКТОРА ЧИКУРОВА');
     jQuery('.back-button').addClass('hidden');
+    screen.orientation.lock('portrait');
+    jQuery('.frame').removeClass('hidden');
   });
 
   jQuery('.calendar').on('click', function(event) {
@@ -85,6 +89,8 @@ jQuery(document).ready(function () {
     jQuery('.back-button').addClass('hidden');
     jQuery('.slider-box').addClass('hidden').removeAttr('style');
     jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
+    screen.orientation.lock('portrait');
+    jQuery('.frame').removeClass('hidden');
   });
 
   jQuery('.main-item-formuls').on('click', function(event) {
@@ -105,6 +111,7 @@ jQuery(document).ready(function () {
     jQuery('.header-text').text('РЕГРЕССИВНАЯ ШКАЛА');
     jQuery('.back-button').removeClass('hidden');
     screen.orientation.lock('landscape');
+    jQuery('.frame').addClass('hidden');
   });
 
   jQuery('.back-button').on('click', function(event) {
@@ -112,6 +119,8 @@ jQuery(document).ready(function () {
     jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
     jQuery('.header-text').text('СПРАВОЧНИКИ');
     jQuery('.back-button').addClass('hidden');
+    screen.orientation.lock('portrait');
+    jQuery('.frame').removeClass('hidden');
   });
 
   jQuery(".swiper-slide, .slider-regress").swipe( {
@@ -120,6 +129,8 @@ jQuery(document).ready(function () {
       jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
       jQuery('.header-text').text('СПРАВОЧНИКИ');
       jQuery('.back-button').addClass('hidden');
+      screen.orientation.lock('portrait');
+      jQuery('.frame').removeClass('hidden');
     },
     threshold:0
   });
