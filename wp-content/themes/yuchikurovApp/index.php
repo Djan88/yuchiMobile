@@ -54,6 +54,15 @@
                       </div>
                     </div>
                   </div>
+                  <div class="col main-item main-item-regress">
+                    <div class="row">
+                      <div class="col-3 main-item-img"><img src="<?php bloginfo('template_url'); ?>/img/elems-fav.png" alt="Формулы"></div>
+                      <div class="col main-item-content">
+                        <div class="main-item-title">Регрессивная шкала</div>
+                        <div class="main-item-sub-title">Регрессивное центрирование. Работа в альбомной ориентации</div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -87,6 +96,9 @@
                 <!-- Add Pagination -->
                 <div class="swiper-pagination swiper-pagination-elems"></div>
               </div>
+            </div>
+            <div class="col-12 slider-box slider-regress overscreen">
+              <div class="test">test</div>
             </div>
           </div>
           <div class="container app-main main">
