@@ -107,7 +107,7 @@ jQuery(document).ready(function () {
     jQuery('.back-button').addClass('hidden');
   });
 
-  jQuery(".slider-formuls").swipe( {
+  jQuery(".swiper-slide").swipe( {
     swipeRight:function(event, direction, distance, duration, fingerCount) {
       jQuery('.slider-formuls, .slider-elems').addClass('hidden').removeAttr('style');
       jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
