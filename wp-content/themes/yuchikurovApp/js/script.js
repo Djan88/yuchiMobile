@@ -27,16 +27,16 @@ jQuery(document).ready(function () {
     },
   });
 
-  // var swiper_elems = new Swiper('.swiper-container-elems', {
-  //   direction: 'vertical',
-  //   slidesPerView: 1,
-  //   spaceBetween: 30,
-  //   mousewheel: true,
-  //   pagination: {
-  //       el: '.swiper-pagination-elems',
-  //       clickable: true,
-  //   },
-  // });
+  var swiper_elems = new Swiper('.swiper-container-elems', {
+    direction: 'vertical',
+    slidesPerView: 1,
+    spaceBetween: 30,
+    mousewheel: true,
+    pagination: {
+        el: '.swiper-pagination-elems',
+        clickable: true,
+    },
+  });
 
   jQuery('.tabbar li a').on('click', function(e) {
 
@@ -107,15 +107,15 @@ jQuery(document).ready(function () {
     jQuery('.back-button').addClass('hidden');
   });
 
-  jQuery(".slider-formuls, .slider-elems").swipe( {
-    swipeRight:function(event, direction, distance, duration, fingerCount) {
-      jQuery('.slider-formuls, .slider-elems').addClass('hidden').removeAttr('style');
-      jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
-      jQuery('.header-text').text('СПРАВОЧНИКИ');
-      jQuery('.back-button').addClass('hidden');
-    },
-    threshold:0
-  });
+  // jQuery(".slider-formuls, .slider-elems").swipe( {
+  //   swipeRight:function(event, direction, distance, duration, fingerCount) {
+  //     jQuery('.slider-formuls, .slider-elems').addClass('hidden').removeAttr('style');
+  //     jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
+  //     jQuery('.header-text').text('СПРАВОЧНИКИ');
+  //     jQuery('.back-button').addClass('hidden');
+  //   },
+  //   threshold:0
+  // });
 
   jQuery('.slider-box').addClass('hidden').removeClass('overscreen');
   jQuery('.tabbar li a.home').click();
