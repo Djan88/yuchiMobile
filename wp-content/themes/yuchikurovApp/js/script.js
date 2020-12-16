@@ -14,7 +14,6 @@ function onDeviceReady() {
 }
 
 jQuery(document).ready(function () {
-  jQuery('.tabbar li a.home').click();
 
   // var swiper = new Swiper('.swiper-container-formuls', {
   //   direction: 'vertical',
@@ -62,6 +61,7 @@ jQuery(document).ready(function () {
       }
 
   });
+  jQuery('.home').click();
 
   jQuery('.box').on('click', function(event) {
     jQuery('.app-main, .app-second').addClass('hidden').removeAttr('style');
