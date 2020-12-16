@@ -16,27 +16,27 @@ function onDeviceReady() {
 jQuery(document).ready(function () {
 
 
-  // var swiper = new Swiper('.swiper-container-formuls', {
-  //   direction: 'vertical',
-  //   slidesPerView: 1,
-  //   spaceBetween: 30,
-  //   mousewheel: true,
-  //   pagination: {
-  //       el: '.swiper-pagination-formuls',
-  //       clickable: true,
-  //   },
-  // });
+  var swiper = new Swiper('.swiper-container-formuls', {
+    direction: 'vertical',
+    slidesPerView: 1,
+    spaceBetween: 30,
+    mousewheel: true,
+    pagination: {
+        el: '.swiper-pagination-formuls',
+        clickable: true,
+    },
+  });
 
-  // var swiper_elems = new Swiper('.swiper-container-elems', {
-  //   direction: 'vertical',
-  //   slidesPerView: 1,
-  //   spaceBetween: 30,
-  //   mousewheel: true,
-  //   pagination: {
-  //       el: '.swiper-pagination-elems',
-  //       clickable: true,
-  //   },
-  // });
+  var swiper_elems = new Swiper('.swiper-container-elems', {
+    direction: 'vertical',
+    slidesPerView: 1,
+    spaceBetween: 30,
+    mousewheel: true,
+    pagination: {
+        el: '.swiper-pagination-elems',
+        clickable: true,
+    },
+  });
 
   jQuery('.tabbar li a').on('click', function(e) {
 
@@ -123,17 +123,17 @@ jQuery(document).ready(function () {
     jQuery('.frame').removeClass('hidden');
   });
 
-  jQuery(".swiper-slide").swipe( {
-    swipeRight:function(event, direction, distance, duration, fingerCount) {
-      jQuery('.slider-box').addClass('hidden').removeAttr('style');
-      jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
-      jQuery('.header-text').text('СПРАВОЧНИКИ');
-      jQuery('.back-button').addClass('hidden');
-      screen.orientation.lock('portrait');
-      jQuery('.frame').removeClass('hidden');
-    },
-    threshold:0
-  });
+  // jQuery(".swiper-slide").swipe( {
+  //   swipeRight:function(event, direction, distance, duration, fingerCount) {
+  //     jQuery('.slider-box').addClass('hidden').removeAttr('style');
+  //     jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
+  //     jQuery('.header-text').text('СПРАВОЧНИКИ');
+  //     jQuery('.back-button').addClass('hidden');
+  //     screen.orientation.lock('portrait');
+  //     jQuery('.frame').removeClass('hidden');
+  //   },
+  //   threshold:0
+  // });
 
   jQuery('.slider-box, .formuls').addClass('hidden').removeClass('overscreen');
   jQuery('.tabbar li a.home').click();
