@@ -14,7 +14,7 @@ function onDeviceReady() {
 }
 
 jQuery(document).ready(function () {
-
+  jQuery('.tabbar li a.home').click();
 
   // var swiper = new Swiper('.swiper-container-formuls', {
   //   direction: 'vertical',
@@ -137,7 +137,6 @@ jQuery(document).ready(function () {
   });
 
   jQuery('.slider-box').addClass('hidden').removeClass('overscreen');
-  jQuery('.tabbar li a.home').click();
 
 
 
