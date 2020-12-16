@@ -15,6 +15,15 @@ function onDeviceReady() {
 
 jQuery(document).ready(function () {
 
+  // Pull to refresh
+  PullToRefresh.init({
+    mainElement: '#panel', // above which element?
+    triggerElement: '.header',
+    onRefresh: function (done) {
+      window.location.reload();
+    }
+  });
+
 
   var swiper = new Swiper('.swiper-container-formuls', {
     direction: 'vertical',
@@ -123,29 +132,19 @@ jQuery(document).ready(function () {
     jQuery('.frame').removeClass('hidden');
   });
 
-  // jQuery(".swiper-slide").swipe( {
-  //   swipeRight:function(event, direction, distance, duration, fingerCount) {
-  //     jQuery('.slider-box').addClass('hidden').removeAttr('style');
-  //     jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
-  //     jQuery('.header-text').text('СПРАВОЧНИКИ');
-  //     jQuery('.back-button').addClass('hidden');
-  //     screen.orientation.lock('portrait');
-  //     jQuery('.frame').removeClass('hidden');
-  //   },
-  //   threshold:0
-  // });
+  jQuery(".swiper-slide").swipe( {
+    swipeRight:function(event, direction, distance, duration, fingerCount) {
+      jQuery('.slider-box').addClass('hidden').removeAttr('style');
+      jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
+      jQuery('.header-text').text('СПРАВОЧНИКИ');
+      jQuery('.back-button').addClass('hidden');
+      screen.orientation.lock('portrait');
+      jQuery('.frame').removeClass('hidden');
+    },
+    threshold:0
+  });
 
   jQuery('.slider-box, .formuls').addClass('hidden').removeClass('overscreen');
   jQuery('.tabbar li a.home').click();
 
-
-
-  // Pull to refresh
-  PullToRefresh.init({
-    mainElement: '#panel', // above which element?
-    triggerElement: '.header',
-    onRefresh: function (done) {
-      window.location.reload();
-    }
-  });
 });
