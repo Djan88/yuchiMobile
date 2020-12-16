@@ -7,6 +7,7 @@ function onDeviceReady() {
     // swiper.on('slideChange', function () {
     //   navigator.vibrate(1000);
     // });
+    
     jQuery('.tabbar li a').on('click', function(event) {
       
     });
@@ -69,7 +70,7 @@ jQuery(document).ready(function () {
     jQuery('.back-button').addClass('hidden');
     jQuery('.slider-box').addClass('hidden').removeAttr('style');
     jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
-    screen.orientation.lock('portrait');
+    // screen.orientation.lock('portrait');
     jQuery('.frame').removeClass('hidden');
   });
 
@@ -78,7 +79,7 @@ jQuery(document).ready(function () {
     jQuery('.app-main').fadeIn(500).removeClass('hidden').css('display', 'flex');
     jQuery('.header-text').text('ШКОЛА ДОКТОРА ЧИКУРОВА');
     jQuery('.back-button').addClass('hidden');
-    screen.orientation.lock('portrait');
+    // screen.orientation.lock('portrait');
     jQuery('.frame').removeClass('hidden');
   });
 
@@ -89,7 +90,7 @@ jQuery(document).ready(function () {
     jQuery('.back-button').addClass('hidden');
     jQuery('.slider-box').addClass('hidden').removeAttr('style');
     jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
-    screen.orientation.lock('portrait');
+    // screen.orientation.lock('portrait');
     jQuery('.frame').removeClass('hidden');
   });
 
@@ -110,7 +111,7 @@ jQuery(document).ready(function () {
     jQuery('.slider-regress').fadeIn(500).removeClass('hidden').css('display', 'flex');
     jQuery('.header-text').text('РЕГРЕССИВНАЯ ШКАЛА');
     jQuery('.back-button').removeClass('hidden');
-    screen.orientation.lock('landscape');
+    // screen.orientation.lock('landscape');
     jQuery('.frame').addClass('hidden');
   });
 
@@ -119,7 +120,7 @@ jQuery(document).ready(function () {
     jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
     jQuery('.header-text').text('СПРАВОЧНИКИ');
     jQuery('.back-button').addClass('hidden');
-    screen.orientation.lock('portrait');
+    // screen.orientation.lock('portrait');
     jQuery('.frame').removeClass('hidden');
   });
 
