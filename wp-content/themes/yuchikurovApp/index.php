@@ -56,7 +56,7 @@
                   </div>
                   <div class="col main-item main-item-regress">
                     <div class="row">
-                      <div class="col-3 main-item-img"><img src="<?php bloginfo('template_url'); ?>/img/elems-fav.png" alt="Формулы"></div>
+                      <div class="col-3 main-item-img"><img src="<?php bloginfo('template_url'); ?>/img/regress-fav.png" alt="Формулы"></div>
                       <div class="col main-item-content">
                         <div class="main-item-title">Регрессивная шкала</div>
                         <div class="main-item-sub-title">Регрессивное центрирование. Работа в альбомной ориентации</div>
