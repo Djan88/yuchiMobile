@@ -8,7 +8,7 @@ function onDeviceReady() {
     //   navigator.vibrate(1000);
     // });
     jQuery('.tabbar li a').on('click', function(event) {
-      navigator.vibrate(1000);
+      
     });
 
 }
@@ -45,6 +45,7 @@ jQuery(document).ready(function () {
       let that = jQuery(this),
           li = that.parent(),
           ul = li.parent();
+          navigator.vibrate(1000);
 
       if(!ul.hasClass('move') && !li.hasClass('active')) {
           ul.children('li').removeClass('active');
