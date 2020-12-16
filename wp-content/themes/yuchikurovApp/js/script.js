@@ -9,6 +9,9 @@ function onDeviceReady() {
     // });
 
     jQuery('.tabbar li a').on('click', function(e) {
+        if (!jQuery(this).parent().hasClass('active')) {
+          navigator.vibrate(1000);
+        }
 
         e.preventDefault();
 
@@ -17,7 +20,6 @@ function onDeviceReady() {
             ul = li.parent();
 
         if(!ul.hasClass('move') && !li.hasClass('active')) {
-          navigator.vibrate(1000);
           ul.children('li').removeClass('active');
 
           ul.css('--x-n', li.position().left + li.outerWidth() / 2 + 'px');
