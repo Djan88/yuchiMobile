@@ -16,8 +16,10 @@ function onDeviceReady() {
             li = that.parent(),
             ul = li.parent();
         
-        if(!li.hasClass('active')) {
-          navigator.vibrate(1000);  
+        if(li.hasClass('active')) {
+           
+        } else {
+          navigator.vibrate(1000); 
         }
 
         if(!ul.hasClass('move') && !li.hasClass('active')) {
