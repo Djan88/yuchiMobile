@@ -137,7 +137,7 @@ jQuery(document).ready(function () {
   // });
 
   jQuery('.slider-box').addClass('hidden').removeClass('overscreen');
-  jQuery('.home').click();
+  jQuery('.tabbar li a.home').click();
 
 
 
