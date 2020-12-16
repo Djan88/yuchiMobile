@@ -135,7 +135,7 @@ jQuery(document).ready(function () {
     threshold:0
   });
 
-  jQuery('.slider-box').addClass('hidden').removeClass('overscreen');
+  jQuery('.slider-box, .formuls').addClass('hidden').removeClass('overscreen');
   jQuery('.tabbar li a.home').click();
 
 

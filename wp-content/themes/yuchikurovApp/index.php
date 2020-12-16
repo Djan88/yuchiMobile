@@ -32,7 +32,7 @@
     <div class="row">
       <div class="col page">
         <main id="panel">
-          <div class="container app-slide formuls hidden">
+          <div class="container app-slide formuls">
             <div class="row app-slide-menu">
               <div class="col">
                 <div class="row">
