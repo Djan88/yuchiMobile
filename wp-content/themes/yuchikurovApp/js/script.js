@@ -61,7 +61,6 @@ jQuery(document).ready(function () {
       }
 
   });
-  jQuery('.home').click();
 
   jQuery('.box').on('click', function(event) {
     jQuery('.app-main, .app-second').addClass('hidden').removeAttr('style');
@@ -82,6 +81,7 @@ jQuery(document).ready(function () {
     screen.orientation.lock('portrait');
     jQuery('.frame').removeClass('hidden');
   });
+  jQuery('.home').click();
 
   jQuery('.calendar').on('click', function(event) {
     jQuery('.app-slide, .app-main').addClass('hidden').removeAttr('style');
