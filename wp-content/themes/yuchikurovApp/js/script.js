@@ -7,8 +7,30 @@ function onDeviceReady() {
     // swiper.on('slideChange', function () {
     //   navigator.vibrate(1000);
     // });
-    jQuery('.tabbar li a').on('click', function(event) {
-      navigator.vibrate(1000);
+
+    jQuery('.tabbar li a').on('click', function(e) {
+
+        e.preventDefault();
+
+        let that = jQuery(this),
+            li = that.parent(),
+            ul = li.parent();
+
+        if(!ul.hasClass('move') && !li.hasClass('active')) {
+          navigator.vibrate(1000);
+          ul.children('li').removeClass('active');
+
+          ul.css('--x-n', li.position().left + li.outerWidth() / 2 + 'px');
+          li.addClass('move');
+          ul.addClass('move');
+
+          setTimeout(() => {
+              ul.removeClass('move');
+              li.removeClass('move').addClass('active');
+              ul.css('--x', li.position().left + li.outerWidth() / 2 + 'px');
+          }, 1200);
+        }
+
     });
 
 }
@@ -36,30 +58,6 @@ jQuery(document).ready(function () {
         el: '.swiper-pagination-elems',
         clickable: true,
     },
-  });
-
-  jQuery('.tabbar li a').on('click', function(e) {
-
-      e.preventDefault();
-
-      let that = jQuery(this),
-          li = that.parent(),
-          ul = li.parent();
-
-      if(!ul.hasClass('move') && !li.hasClass('active')) {
-          ul.children('li').removeClass('active');
-
-          ul.css('--x-n', li.position().left + li.outerWidth() / 2 + 'px');
-          li.addClass('move');
-          ul.addClass('move');
-
-          setTimeout(() => {
-              ul.removeClass('move');
-              li.removeClass('move').addClass('active');
-              ul.css('--x', li.position().left + li.outerWidth() / 2 + 'px');
-          }, 1200);
-      }
-
   });
 
   jQuery('.box').on('click', function(event) {
@@ -123,17 +121,17 @@ jQuery(document).ready(function () {
     jQuery('.frame').removeClass('hidden');
   });
 
-  // jQuery(".swiper-slide").swipe( {
-  //   swipeRight:function(event, direction, distance, duration, fingerCount) {
-  //     jQuery('.slider-box').addClass('hidden').removeAttr('style');
-  //     jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
-  //     jQuery('.header-text').text('СПРАВОЧНИКИ');
-  //     jQuery('.back-button').addClass('hidden');
-  //     screen.orientation.lock('portrait');
-  //     jQuery('.frame').removeClass('hidden');
-  //   },
-  //   threshold:0
-  // });
+  jQuery(".swiper-slide").swipe( {
+    swipeRight:function(event, direction, distance, duration, fingerCount) {
+      jQuery('.slider-box').addClass('hidden').removeAttr('style');
+      jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
+      jQuery('.header-text').text('СПРАВОЧНИКИ');
+      jQuery('.back-button').addClass('hidden');
+      screen.orientation.lock('portrait');
+      jQuery('.frame').removeClass('hidden');
+    },
+    threshold:0
+  });
 
   jQuery('.slider-box').addClass('hidden').removeClass('overscreen');
   jQuery('.tabbar li a.home').click();
@@ -142,7 +140,7 @@ jQuery(document).ready(function () {
 
   // Pull to refresh
   PullToRefresh.init({
-    mainElement: '#panel', // above which element?
+    mainElement: '#panel',
     triggerElement: '.header',
     onRefresh: function (done) {
       window.location.reload();
