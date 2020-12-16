@@ -81,7 +81,6 @@ jQuery(document).ready(function () {
     screen.orientation.lock('portrait');
     jQuery('.frame').removeClass('hidden');
   });
-  jQuery('.home').click();
 
   jQuery('.calendar').on('click', function(event) {
     jQuery('.app-slide, .app-main').addClass('hidden').removeAttr('style');
@@ -124,19 +123,20 @@ jQuery(document).ready(function () {
     jQuery('.frame').removeClass('hidden');
   });
 
-  jQuery(".swiper-slide").swipe( {
-    swipeRight:function(event, direction, distance, duration, fingerCount) {
-      jQuery('.slider-box').addClass('hidden').removeAttr('style');
-      jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
-      jQuery('.header-text').text('СПРАВОЧНИКИ');
-      jQuery('.back-button').addClass('hidden');
-      screen.orientation.lock('portrait');
-      jQuery('.frame').removeClass('hidden');
-    },
-    threshold:0
-  });
+  // jQuery(".swiper-slide").swipe( {
+  //   swipeRight:function(event, direction, distance, duration, fingerCount) {
+  //     jQuery('.slider-box').addClass('hidden').removeAttr('style');
+  //     jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
+  //     jQuery('.header-text').text('СПРАВОЧНИКИ');
+  //     jQuery('.back-button').addClass('hidden');
+  //     screen.orientation.lock('portrait');
+  //     jQuery('.frame').removeClass('hidden');
+  //   },
+  //   threshold:0
+  // });
 
   jQuery('.slider-box').addClass('hidden').removeClass('overscreen');
+  jQuery('.home').click();
 
 
 
