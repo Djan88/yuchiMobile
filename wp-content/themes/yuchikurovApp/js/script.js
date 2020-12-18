@@ -190,7 +190,7 @@ jQuery(document).ready(function () {
       stop: function( event, ui ) {
         console.log(handle_val);
         jQuery('.reverce_acept').removeAttr('style');
-        jQuery('.reverce_clean_graph').removeClass('hidden')
+        jQuery('.reverce-clean').removeClass('hidden')
         if (handle_val <= 60) {
           mode_speed = 2;
         } else if (handle_val > 60 && handle_val <= 111) {
