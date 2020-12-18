@@ -506,7 +506,8 @@ button svg
     width: 30px;
     height: 30px;
     color: transparent;
-    top: -.7em;
+    top: -.5rem;
+    left: 3%;
     background: #fda00c;
     border: 1px solid #fff;
     outline: none;
@@ -526,7 +527,7 @@ button svg
 }
 .reverce_graph 
 {
-    height: 250px;
+    height: 450px;
     margin-bottom: -10px;
 }
 .knife_rate 
