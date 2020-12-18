@@ -15,6 +15,13 @@ function onDeviceReady() {
 
 jQuery(document).ready(function () {
 
+  var knife,
+    knifeDate,
+    knifeDateOld,
+    knifeDateDiff,
+    knife_rate_class,
+    knife_rate_class_dotted;
+
   // Pull to refresh
   PullToRefresh.init({
     mainElement: '#panel', // above which element?
@@ -30,12 +37,6 @@ jQuery(document).ready(function () {
     slidesPerView: 1,
     spaceBetween: 30,
     mousewheel: true,
-    knife,
-    knifeDate,
-    knifeDateOld,
-    knifeDateDiff,
-    knife_rate_class,
-    knife_rate_class_dotted,
     pagination: {
         el: '.swiper-pagination-formuls',
         clickable: true,
