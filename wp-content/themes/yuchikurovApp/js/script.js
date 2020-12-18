@@ -147,4 +147,54 @@ jQuery(document).ready(function () {
   jQuery('.slider-box, .formuls').addClass('hidden').removeClass('overscreen');
   jQuery('.tabbar li a.home').click();
 
+  // Regressive centering
+  jQuery('.reverce_clean_graph').on('click', function(event) {
+    jQuery( "#slider" ).slider( "value", 0 );
+    jQuery('.knife_rate').detach();
+    jQuery(this).css('display', 'none');
+  });
+
+  jQuery( function() {
+    var handle = jQuery("#custom-handle");
+    var handle_val;
+    jQuery("#slider").slider({
+      min: 0,
+      max: 200,
+      create: function() {
+        handle.text(jQuery(this).slider("value"));
+      },
+      slide: function( event, ui ) {
+        // handle.text( ui.value );
+        handle_val = ui.value;
+        knife = jQuery('body').find('#custom-handle').css('left');
+        knife = parseFloat(knife.substr(0, knife.length - 2)).toFixed();
+        knifeDate = new Date();
+        knifeDateDiff = knifeDate - knifeDateOld;
+        // console.log('test '+knifeDateDiff);
+        knife_rate_class = 'knife_rate-'+knife;
+        knife_rate_class_dotted = '.knife_rate-'+knife;
+        jQuery('.reverce_graph').append('<div class='+knife_rate_class+'></div>');
+        jQuery(knife_rate_class_dotted).addClass('knife_rate').css({
+          left: +knife+10+'px',
+          height: knifeDateDiff+'px'
+        });
+        knifeDateOld = knifeDate;
+      },
+      stop: function( event, ui ) {
+        console.log(handle_val);
+        jQuery('.reverce_acept').removeAttr('style');
+        jQuery('.reverce_clean_graph').removeAttr('style')
+        if (handle_val <= 60) {
+          mode_speed = 2;
+        } else if (handle_val > 60 && handle_val <= 111) {
+          mode_speed = 4;
+        } else if (handle_val > 111 && handle_val <= 160) {
+          mode_speed = 6;
+        } else if (handle_val > 160) {
+          mode_speed = 8;
+        }
+      }
+    });
+  });
+
 });

@@ -111,6 +111,7 @@
               <div id="slider">
                 <div id="custom-handle" class="ui-slider-handle"></div>
               </div>
+              <button class="btn btn-warning reverce_clean_graph pull-left" style="display: none;"><i class="fa fa-trash"></i></button>
             </div>
           </div>
           <div class="container app-main main">
