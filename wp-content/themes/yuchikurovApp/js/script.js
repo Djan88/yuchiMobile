@@ -110,18 +110,22 @@ jQuery(document).ready(function () {
   });
 
   jQuery('.main-item-formuls').on('click', function(event) {
-    jQuery('.app-slide-menu').addClass('hidden').removeAttr('style');
+    jQuery('.app-slide-menu, .reverce-clean').addClass('hidden').removeAttr('style');
     jQuery('.slider-formuls').fadeIn(500).removeClass('hidden').css('display', 'flex');
     jQuery('.header-text').text('ФОРМУЛЫ БЦ');
     jQuery('.back-button, .reverce_clean_graph').removeClass('hidden');
   });
   jQuery('.main-item-elems').on('click', function(event) {
-    jQuery('.app-slide-menu').addClass('hidden').removeAttr('style');
+    jQuery('.app-slide-menu, .reverce-clean').addClass('hidden').removeAttr('style');
     jQuery('.slider-elems').fadeIn(500).removeClass('hidden').css('display', 'flex');
     jQuery('.header-text').text('ПЕРВОЭЛЕМЕНТЫ БЦ');
     jQuery('.back-button, .reverce_clean_graph').removeClass('hidden');
   });
   jQuery('.main-item-regress').on('click', function(event) {
+    var handle_status = jQuery('#custom-handle').css('left');
+    if (handle_status != '3.5%') {
+      jQuery('.reverce-clean').removeClass('hidden');
+    }
     jQuery('.app-slide-menu').addClass('hidden').removeAttr('style');
     jQuery('.slider-regress').fadeIn(500).removeClass('hidden').css('display', 'flex');
     jQuery('.header-text').text('РЕГРЕССИВНАЯ ШКАЛА');
