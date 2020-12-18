@@ -486,7 +486,14 @@ button svg
    display: flex;
    align-items: flex-end;
 }
-
+.slider-box.slider-regress
+{
+  margin-top: 0;
+}
+.regress-wrapper
+{
+  display: block;
+}
 .reverce_age 
 {
     padding-bottom: 20px;
