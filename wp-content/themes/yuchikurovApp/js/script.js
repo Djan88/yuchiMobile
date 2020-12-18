@@ -205,9 +205,9 @@ jQuery(document).ready(function () {
     });
   });
   jQuery('.reverce-clean').on('click', function(event) {
-    jQuery( "#slider" ).slider( "value", 0 );
+    jQuery( "#slider" ).slider( "value", 7 );
     jQuery('.knife_rate').detach();
-    jQuery(this).addClass('hidden')
+    jQuery('.reverce-clean').addClass('hidden');
   });
 
 });
