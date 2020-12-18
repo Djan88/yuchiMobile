@@ -40,6 +40,8 @@ img
 .header-text
 {
   white-space: nowrap;
+  font-size: 1.1rem;
+  padding-top: 0.3rem;
 }
 .all
 {
