@@ -165,7 +165,7 @@ jQuery(document).ready(function () {
     var handle = jQuery("#custom-handle");
     var handle_val;
     jQuery("#slider").slider({
-      value: 5,
+      value: 7,
       min: 0,
       max: 200,
       create: function() {
