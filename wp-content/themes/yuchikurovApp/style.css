@@ -515,6 +515,19 @@ button svg
     border: 1px solid #fff;
     outline: none;
     border-radius: 6px;
+    position: relative;
+}
+#slider div#custom-handle:before
+{
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid #fda00c;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 .reverce_age table
 {
