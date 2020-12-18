@@ -522,12 +522,12 @@ button svg
   content: '';
   width: 0;
   height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-bottom: 100px solid #fda00c;
+  border-left: 14px solid transparent;
+  border-right: 14px solid transparent;
+  border-bottom: 18px solid #fda00c;
   position: absolute;
   left: 0;
-  top: 0;
+  top: -16px;
 }
 .reverce_age table
 {
