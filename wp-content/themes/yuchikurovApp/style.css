@@ -493,6 +493,7 @@ button svg
 .regress-wrapper
 {
   display: block;
+  width: 100%;
 }
 .reverce_age 
 {
@@ -527,6 +528,20 @@ button svg
 {
     height: 250px;
     margin-bottom: -10px;
+}
+.knife_rate 
+{
+    height: 0;
+    width: 3px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    max-width: 200px;
+    background: #fda00c;
+    position: absolute;
+    bottom: 10px;
+    -webkit-transition: width 0.5s linear;
+    -moz-transition: width 0.5s linear;
+    transition: width 0.5s linear;
 }
  @keyframes move {
    10%, 15% {
