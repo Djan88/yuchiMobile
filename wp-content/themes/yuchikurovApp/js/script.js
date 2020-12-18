@@ -155,11 +155,6 @@ jQuery(document).ready(function () {
   jQuery('.tabbar li a.home').click();
 
   // Regressive centering
-  jQuery('.reverce_clean_graph').on('click', function(event) {
-    jQuery( "#slider" ).slider( "value", 0 );
-    jQuery('.knife_rate').detach();
-    jQuery(this).css('display', 'none');
-  });
 
   jQuery( function() {
     var handle = jQuery("#custom-handle");
