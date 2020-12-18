@@ -98,7 +98,19 @@
               </div>
             </div>
             <div class="col-12 slider-box slider-regress overscreen">
-              <div class="test">test</div>
+              <div class="reverce_graph">
+                <div class="reverce_graph_handle"><i class="fa fa-arrows-alt-h"></i></div>
+              </div>
+              <div class="reverce_age">
+                <table>
+                  <tr>
+                    <td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td>
+                  </tr>
+                </table>
+              </div>
+              <div id="slider">
+                <div id="custom-handle" class="ui-slider-handle"></div>
+              </div>
             </div>
           </div>
           <div class="container app-main main">
