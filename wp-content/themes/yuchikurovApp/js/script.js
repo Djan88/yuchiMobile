@@ -30,6 +30,12 @@ jQuery(document).ready(function () {
     slidesPerView: 1,
     spaceBetween: 30,
     mousewheel: true,
+    knife,
+    knifeDate,
+    knifeDateOld,
+    knifeDateDiff,
+    knife_rate_class,
+    knife_rate_class_dotted,
     pagination: {
         el: '.swiper-pagination-formuls',
         clickable: true,
