@@ -8,7 +8,7 @@ function onDeviceReady() {
     //   navigator.vibrate(1000);
     // });
     jQuery('.tabbar li a').on('click', function(event) {
-      navigator.vibrate(100);
+      navigator.vibrate(50);
     });
 
 }
