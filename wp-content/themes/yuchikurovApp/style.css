@@ -189,6 +189,10 @@ button svg
   background: #f3f3f3;
   padding: 0;
 }
+.slider-box.slider-elems
+{
+  height: auto;
+}
 .swiper-pagination-bullet 
 {
   min-width: 15px;
@@ -743,5 +747,9 @@ img.propeller_rotor
   .d-lg-block.d-none
   {
     display: none!important;
+  }
+  img.propeller_rotor 
+  {
+    width: 50%;
   }
 }
