@@ -731,6 +731,7 @@ button svg
 img.propeller_rotor 
 {
   width: 63%;
+  max-width: 400px;
   margin: auto;
 }
 
@@ -747,9 +748,5 @@ img.propeller_rotor
   .d-lg-block.d-none
   {
     display: none!important;
-  }
-  img.propeller_rotor 
-  {
-    width: 50%;
   }
 }
