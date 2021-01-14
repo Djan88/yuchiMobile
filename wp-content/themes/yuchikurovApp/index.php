@@ -93,7 +93,7 @@
                 <div class="swiper-pagination swiper-pagination-formuls"></div>
               </div>
             </div>
-            <div class="col-12 slider-box slider-elems overscreen">
+            <div class="col-12 slider-elems overscreen">
               <div class="propeller_field">
                 <img class="propeller_rotor" src="<?php bloginfo('template_url'); ?>/img/propeller.png" alt="rotor">
               </div>
