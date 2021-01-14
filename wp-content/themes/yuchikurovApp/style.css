@@ -723,14 +723,10 @@ button svg
 .propeller_field
 {
   display: flex;
+  background: url(img/elipse.png) center no-repeat;
+  background-size: contain;
   width: 100%;
   height: auto;
-}
-img.propeller_clock 
-{
-  width: 68%;
-  max-width: 400px;
-  margin: auto;
 }
 img.propeller_rotor 
 {
