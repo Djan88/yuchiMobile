@@ -159,7 +159,7 @@ jQuery(document).ready(function () {
   jQuery('.tabbar li a.home').click();
 
   // Elements rotation
-  
+  jQuery('.propeller_rotor').propeller({inertia: 0, speed: 0});
 
   // Regressive centering
 
