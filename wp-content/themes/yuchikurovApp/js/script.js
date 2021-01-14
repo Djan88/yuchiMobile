@@ -158,6 +158,9 @@ jQuery(document).ready(function () {
   jQuery('.slider-box, .formuls').addClass('hidden').removeClass('overscreen');
   jQuery('.tabbar li a.home').click();
 
+  // Elements rotation
+  
+
   // Regressive centering
 
   jQuery( function() {

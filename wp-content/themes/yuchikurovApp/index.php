@@ -94,17 +94,20 @@
               </div>
             </div>
             <div class="col-12 slider-box slider-elems overscreen">
-              <!-- Swiper -->
-              <div class="swiper-container swiper-container-elems">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/img/fire.png" alt="Огонь"></div>
-                  <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/img/water.png" alt="Вода"></div>
-                  <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/img/air.png" alt="Воздух"></div>
-                  <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/img/ground.png" alt="Земля"></div>
-                </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination swiper-pagination-elems"></div>
+              <div class="propeller_field">
+                <div class="propeller_rotor"></div>
               </div>
+              <!-- Swiper -->
+              <!-- <div class="swiper-container swiper-container-elems">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="<?php //bloginfo('template_url'); ?>/img/fire.png" alt="Огонь"></div>
+                  <div class="swiper-slide"><img src="<?php //bloginfo('template_url'); ?>/img/water.png" alt="Вода"></div>
+                  <div class="swiper-slide"><img src="<?php //bloginfo('template_url'); ?>/img/air.png" alt="Воздух"></div>
+                  <div class="swiper-slide"><img src="<?php //bloginfo('template_url'); ?>/img/ground.png" alt="Земля"></div>
+                </div> -->
+                <!-- Add Pagination -->
+                <!-- <div class="swiper-pagination swiper-pagination-elems"></div>
+              </div> -->
             </div>
             <div class="col-12 slider-box slider-regress overscreen">
               <div class="regress-wrapper">
@@ -309,6 +312,7 @@
   <script src="<?php bloginfo('template_url'); ?>/js/jquery-ui.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/jquery.ui.touch-punch.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/pull_ref.min.js"></script>
+  <script src="<?php bloginfo('template_url'); ?>/js/propeller.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/swiper-bundle.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/jquery.touchSwipe.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/script.js"></script>
