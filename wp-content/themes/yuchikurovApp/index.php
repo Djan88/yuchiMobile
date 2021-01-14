@@ -95,7 +95,7 @@
             </div>
             <div class="col-12 slider-box slider-elems overscreen">
               <div class="propeller_field">
-                <img class="propeller_rotor" src="<?php bloginfo('template_url'); ?>/img/csv_util.png" alt="rotor">
+                <img class="propeller_rotor" src="<?php bloginfo('template_url'); ?>/img/propeller.png" alt="rotor">
               </div>
               <!-- Swiper -->
               <!-- <div class="swiper-container swiper-container-elems">
