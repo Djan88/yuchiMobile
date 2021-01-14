@@ -718,12 +718,17 @@ button svg
 }
 .propeller_field
 {
+  display: flex;
   background: url(img/elipse.png) center no-repeat;
   background-size: contain;
   width: 100%;
   height: auto;
 }
-
+img.propeller_rotor 
+{
+  width: 63%;
+  margin: auto;
+}
 
 
 @media (min-width: 992px){
