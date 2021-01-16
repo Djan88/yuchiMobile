@@ -12,33 +12,32 @@ function onDeviceReady() {
     });
     // Elements rotation
     jQuery('.propeller_rotor').propeller({inertia: 0, speed: 0, onRotate: function(){ 
-      // console.log(this.angle)
-      if (this.angle >= 15 && this.angle < 18) {
-        navigator.vibrate(25);
-        alert('test');
-      } else if (this.angle >= 45 && this.angle < 48) {
-        navigator.vibrate(25);
-      } else if (this.angle >= 75 && this.angle < 78) {
-        navigator.vibrate(25);
-      } else if (this.angle >= 105 && this.angle < 108) {
-        navigator.vibrate(25);
-      } else if (this.angle >= 135 && this.angle < 138) {
-        navigator.vibrate(25);
-      } else if (this.angle >= 165 && this.angle < 168) {
-        navigator.vibrate(25);
-      } else if (this.angle >= 195 && this.angle < 198) {
-        navigator.vibrate(25);
-      } else if (this.angle >= 225 && this.angle < 228) {
-        navigator.vibrate(25);
-      } else if (this.angle >= 255 && this.angle < 258) {
-        navigator.vibrate(25);
-      } else if (this.angle >= 285 && this.angle < 288) {
-        navigator.vibrate(25);
-      } else if (this.angle >= 315 && this.angle < 318) {
-        navigator.vibrate(25);
-      } else if (this.angle >= 345 && this.angle < 348) {
-        navigator.vibrate(25);
-      }
+      navigator.vibrate(25);
+      // if (this.angle >= 15 && this.angle < 18) {
+      //   navigator.vibrate(25);
+      // } else if (this.angle >= 45 && this.angle < 48) {
+      //   navigator.vibrate(25);
+      // } else if (this.angle >= 75 && this.angle < 78) {
+      //   navigator.vibrate(25);
+      // } else if (this.angle >= 105 && this.angle < 108) {
+      //   navigator.vibrate(25);
+      // } else if (this.angle >= 135 && this.angle < 138) {
+      //   navigator.vibrate(25);
+      // } else if (this.angle >= 165 && this.angle < 168) {
+      //   navigator.vibrate(25);
+      // } else if (this.angle >= 195 && this.angle < 198) {
+      //   navigator.vibrate(25);
+      // } else if (this.angle >= 225 && this.angle < 228) {
+      //   navigator.vibrate(25);
+      // } else if (this.angle >= 255 && this.angle < 258) {
+      //   navigator.vibrate(25);
+      // } else if (this.angle >= 285 && this.angle < 288) {
+      //   navigator.vibrate(25);
+      // } else if (this.angle >= 315 && this.angle < 318) {
+      //   navigator.vibrate(25);
+      // } else if (this.angle >= 345 && this.angle < 348) {
+      //   navigator.vibrate(25);
+      // }
     }});
 
 }
