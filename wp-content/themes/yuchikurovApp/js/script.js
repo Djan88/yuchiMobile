@@ -108,10 +108,10 @@ jQuery(document).ready(function () {
 
   jQuery('.propeller_rotor').propeller({inertia: 0, speed: 0, onRotate: function(){ 
     // console.log(this.angle)
-    if (this.angle >= 10 && this.angle < 20) {
+    if (this.angle >= 15 && this.angle < 17) {
       // navigator.vibrate(25);
       console.log('ding');
-    } else if (this.angle >= 40 && this.angle < 50) {
+    } else if (this.angle >= 45 && this.angle < 47) {
       console.log('ding2');
     }
   }});
