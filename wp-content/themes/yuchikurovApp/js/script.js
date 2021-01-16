@@ -13,8 +13,7 @@ function onDeviceReady() {
     // Elements rotation
     jQuery('.propeller_rotor').propeller({inertia: 0, speed: 0, onRotate: function(){ 
       // console.log(this.angle)
-      this.angle  = jQuery('.propeller_rotor').angle;
-      jQuery('.prop_val').text(this.angle);
+      jQuery('.prop_val').text('this.angle');
       if (this.angle >= 15 && this.angle < 18) {
         navigator.vibrate(25);
       } else if (this.angle >= 45 && this.angle < 48) {
