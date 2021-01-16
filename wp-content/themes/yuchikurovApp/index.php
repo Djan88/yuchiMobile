@@ -97,7 +97,8 @@
               <div class="propeller_field">
                 <img class="propeller_rotor" src="<?php bloginfo('template_url'); ?>/img/propeller.png" alt="rotor">
               </div>
-              <div class="prop_val">0</div>
+              <div class="prop_val" style="position: absolute; left: 10px;
+              top: 50px;">0</div>
               <!-- Swiper -->
               <!-- <div class="swiper-container swiper-container-elems">
                 <div class="swiper-wrapper">
