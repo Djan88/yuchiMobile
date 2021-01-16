@@ -14,7 +14,7 @@ function onDeviceReady() {
     jQuery('.propeller_rotor').propeller({inertia: 0, speed: 0, onRotate: function(){ 
       console.log(this.angle)
       if (this.angle == 15 || this.angle == 45 || this.angle == 75 || this.angle == 105 || this.angle == 135 || this.angle == 165 || this.angle == 195 || this.angle == 225 || this.angle == 255 || this.angle == 285 || this.angle == 315 || this.angle == 345) {
-        navigator.vibrate(25);
+        // navigator.vibrate(25);
         console.log('ding');
       }
     }});
@@ -105,6 +105,14 @@ jQuery(document).ready(function () {
     // screen.orientation.lock('portrait');
     // jQuery('.frame').removeClass('hidden');
   });
+
+  jQuery('.propeller_rotor').propeller({inertia: 0, speed: 0, onRotate: function(){ 
+    console.log(this.angle)
+    if (this.angle == 15 || this.angle == 45 || this.angle == 75 || this.angle == 105 || this.angle == 135 || this.angle == 165 || this.angle == 195 || this.angle == 225 || this.angle == 255 || this.angle == 285 || this.angle == 315 || this.angle == 345) {
+      // navigator.vibrate(25);
+      console.log('ding');
+    }
+  }});
 
   jQuery('.calendar').on('click', function(event) {
     jQuery('.app-slide, .app-main').addClass('hidden').removeAttr('style');
