@@ -15,6 +15,7 @@ function onDeviceReady() {
       // console.log(this.angle)
       if (this.angle >= 15 && this.angle < 18) {
         navigator.vibrate(25);
+        alert('test');
       } else if (this.angle >= 45 && this.angle < 48) {
         navigator.vibrate(25);
       } else if (this.angle >= 75 && this.angle < 78) {
