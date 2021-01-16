@@ -15,6 +15,7 @@ function onDeviceReady() {
       console.log(this.angle)
       if (this.angle == 15 || this.angle == 45 || this.angle == 75 || this.angle == 105 || this.angle == 135 || this.angle == 165 || this.angle == 195 || this.angle == 225 || this.angle == 255 || this.angle == 285 || this.angle == 315 || this.angle == 345) {
         navigator.vibrate(25);
+        console.log('ding');
       }
     }});
 
