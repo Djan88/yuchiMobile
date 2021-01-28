@@ -254,7 +254,7 @@
                 echo '<h5 class="mb-0">';
                 echo '<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#';
                 echo $cur_news_title;
-                echo '" aria-expanded="true" aria-controls="';
+                echo '" aria-expanded="false" aria-controls="';
                 echo $cur_news_title;
                 echo '">';
                 echo the_title();          
@@ -263,7 +263,7 @@
                 echo '</div>';
                 echo '<div id="';
                 echo $cur_news_title;
-                echo '" class="collapse" aria-labelledby="';
+                echo '" class="" aria-labelledby="';
                 echo $cur_news_title;
                 echo '" data-parent="#accordionNews">';
                 echo '<div class="card-body">';
