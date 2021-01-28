@@ -239,16 +239,39 @@
             </div>
           </div>
           <div class="container app-second second hidden">
-            <div class="row accordion" id="accordionExample">
+            <div class="row accordion" id="accordionNews">
               <?php
               // The Query
-              $query_news = new WP_Query( array( 'category_name' => 'news', 'posts_per_page' => '1' ) );
+              $query_news = new WP_Query( array( 'category_name' => 'news', 'posts_per_page' => '-1' ) );
               $cur_news = 0;
               while ($query_news->have_posts()) : $query_news->the_post();
                 $cur_news = $cur_news+1;
                 // $cur_news_title = 'news-'.$cur_news;
                 $cur_news_title = 'news-'.$cur_news;
-                echo '<div class="card"><div class="card-header" id="headingTwo"><h5 class="mb-0"><button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Разворачиваемая панель #2</button></h5></div><div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample"><div class="card-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably havent heard of them accusamus labore sustainable VHS.</div></div></div>';
+                echo '<div class="card">';
+                echo '<div class="card-header" id="';
+                echo $cur_news_title;
+                echo '">';
+                echo '<h5 class="mb-0">';
+                echo '<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#';
+                echo $cur_news_title;
+                echo '" aria-expanded="false" aria-controls="';
+                echo $cur_news_title;
+                echo '">';
+                echo the_title();          
+                echo '</button>';
+                echo '</h5>';
+                echo '</div>';
+                echo '<div id="';
+                echo $cur_news_title;
+                echo '" class="collapse" aria-labelledby="';
+                echo $cur_news_title;
+                echo '" data-parent="#accordionNews">';
+                echo '<div class="card-body">';
+                echo the_content();       
+                echo '</div>';
+                echo '</div>';
+                echo '</div>';
               endwhile;
               wp_reset_postdata();
               ?>
