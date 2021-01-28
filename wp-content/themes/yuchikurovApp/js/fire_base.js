@@ -112,7 +112,7 @@ function onDevReady(){
         log("Received custom message: "+message);
     });
 
-    checkNotificationPermission(false); // Check permission then get token
+    checkNotificationPermission(true); // Check permission then get token
 
     checkAutoInit();
     isAnalyticsCollectionEnabled();
