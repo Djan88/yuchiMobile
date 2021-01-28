@@ -247,13 +247,13 @@
               while ($query_news->have_posts()) : $query_news->the_post();
                 $cur_news = $cur_news+1;
                 // $cur_news_title = 'news-'.$cur_news;
-                $cur_news_title = 'newsOne';
+                $cur_news_title = 'news-'.$cur_news;
                 echo '<div class="card">';
                 echo '<div class="card-header" id="';
                 echo $cur_news_title;
                 echo '">';
                 echo '<h5 class="mb-0">';
-                echo '<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#';
+                echo '<button class="btn btn-link" type="button" data-toggle="collapsed" data-target="#';
                 echo $cur_news_title;
                 echo '" aria-expanded="false" aria-controls="';
                 echo $cur_news_title;
@@ -264,7 +264,7 @@
                 echo '</div>';
                 echo '<div id="';
                 echo $cur_news_title;
-                echo '" class="" aria-labelledby="';
+                echo '" class="collapse" aria-labelledby="';
                 echo $cur_news_title;
                 echo '" data-parent="#accordionNews">';
                 echo '<div class="card-body">';
