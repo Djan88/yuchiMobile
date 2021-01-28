@@ -49,7 +49,8 @@ function promptUserForInput(title, msg, cb) {
 function onDevReady(){
     FirebasePlugin = window.FirebasePlugin;
     $output = $('#log-output');
-    alert("deviceready");
+    log("deviceready");
+    alert(FirebasePlugin);
 
 
     // Set global error handler to catch uncaught JS exceptions
