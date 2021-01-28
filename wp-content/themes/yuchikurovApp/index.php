@@ -243,19 +243,27 @@
               <?php
               // The Query
               $query_news = new WP_Query( array( 'category_name' => 'news', 'posts_per_page' => '-1' ) );
-              $cur_month = 0;
+              $cur_news = 0;
               while ($query_news->have_posts()) : $query_news->the_post();
+                $cur_news = $cur_news+1;
+                $cur_news_title = 'news-'.$cur_news;
                 echo '<div class="card">';
                 echo '<div class="card-header" id="headingOne">';
                 echo '<h5 class="mb-0">';
-                echo '<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">';
+                echo '<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#';
+                echo $cur_news_title;
+                echo '" aria-expanded="true" aria-controls="';
+                echo $cur_news_title;
+                echo '">';
                 echo the_title();          
                 echo '</button>';
                 echo '</h5>';
                 echo '</div>';
-                echo '<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">';
+                echo '<div id="';
+                echo $cur_news_title;
+                echo '" class="collapse" aria-labelledby="headingOne" data-parent="#accordionNews">';
                 echo '<div class="card-body">';
-                echo the_content(__('читать полностью'));       
+                echo the_content();       
                 echo '</div>';
                 echo '</div>';
                 echo '</div>';
