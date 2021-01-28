@@ -248,7 +248,9 @@
                 $cur_news = $cur_news+1;
                 $cur_news_title = 'news-'.$cur_news;
                 echo '<div class="card">';
-                echo '<div class="card-header" id="headingOne">';
+                echo '<div class="card-header" id="';
+                echo $cur_news_title;
+                echo '">';
                 echo '<h5 class="mb-0">';
                 echo '<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#';
                 echo $cur_news_title;
@@ -261,7 +263,9 @@
                 echo '</div>';
                 echo '<div id="';
                 echo $cur_news_title;
-                echo '" class="collapse" aria-labelledby="headingOne" data-parent="#accordionNews">';
+                echo '" class="collapse" aria-labelledby="';
+                echo $cur_news_title;
+                echo '" data-parent="#accordionNews">';
                 echo '<div class="card-body">';
                 echo the_content();       
                 echo '</div>';
