@@ -239,37 +239,21 @@
             </div>
           </div>
           <div class="container app-second second hidden">
-            <div class="row accordion" id="accordionNews">
+            <div class="row" id="News">
               <?php
               // The Query
               $query_news = new WP_Query( array( 'category_name' => 'news', 'posts_per_page' => '-1' ) );
               $cur_news = 0;
               while ($query_news->have_posts()) : $query_news->the_post();
-                $cur_news = $cur_news+1;
-                // $cur_news_title = 'news-'.$cur_news;
-                $cur_news_title = 'news-'.$cur_news;
-                echo '<div class="card">';
-                echo '<div class="card-header" id="';
+                echo '<div class="newsCard">';
+                echo '<h3 class="newsCard_heading">';
                 echo $cur_news_title;
-                echo '">';
-                echo '<h5 class="mb-0">';
-                echo '<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#';
-                echo $cur_news_title;
-                echo '" aria-expanded="false" aria-controls="';
-                echo $cur_news_title;
-                echo '">';
-                echo the_title();          
-                echo '</button>';
-                echo '</h5>';
+                echo '</h3>';
+                echo '<div class="newsCard_date">';
+                echo the_time('j F Y');
                 echo '</div>';
-                echo '<div id="';
-                echo $cur_news_title;
-                echo '" class="collapse" aria-labelledby="';
-                echo $cur_news_title;
-                echo '" data-parent="#accordionNews">';
-                echo '<div class="card-body">';
-                echo the_content();       
-                echo '</div>';
+                echo '<div class="newsCard_content">';
+                echo the_content(); 
                 echo '</div>';
                 echo '</div>';
               endwhile;

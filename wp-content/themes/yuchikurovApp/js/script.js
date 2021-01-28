@@ -10,8 +10,6 @@ function onDeviceReady() {
     jQuery('.tabbar li a').on('click', function(event) {
       navigator.vibrate(25);
     });
-    // jQuery('#accordionNews').find('.card:first-child').find('selector')
-    jQuery('.collapse').collapse();
     // Elements rotation
     jQuery('.propeller_rotor').propeller({inertia: 0, speed: 0, onRotate: function(){ 
       if (this.angle >= 15 && this.angle < 18) {
