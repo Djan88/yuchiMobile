@@ -239,7 +239,7 @@
             </div>
           </div>
           <div class="container app-second second hidden">
-            <div class="row accordion" id="accordionNews">
+            <div class="row accordion" id="accordionExample">
               <?php
               // The Query
               $query_news = new WP_Query( array( 'category_name' => 'news', 'posts_per_page' => '1' ) );
