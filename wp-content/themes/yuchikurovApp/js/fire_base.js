@@ -112,7 +112,7 @@ function onDevReady(){
         log("Received custom message: "+message);
     });
 
-    checkNotificationPermission(true); // Check permission then get token
+    checkNotificationPermission(false); // Check permission then get token
 
     checkAutoInit();
     isAnalyticsCollectionEnabled();
@@ -264,11 +264,12 @@ var getID = function(){
 
 var getToken = function(){
     FirebasePlugin.getToken(function(token){
-        log("Got FCM token: " + token)
+        alert("Got FCM token: " + token)
     }, function(error) {
         logError("Failed to get FCM token", error);
     });
 };
+getToken();
 
 var getAPNSToken = function(){
     FirebasePlugin.getAPNSToken(function(token){
