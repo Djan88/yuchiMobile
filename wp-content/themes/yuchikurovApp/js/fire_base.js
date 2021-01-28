@@ -206,9 +206,9 @@ var initAndroid = function(){
         }
     );
 };
-alert('test');
 // Notifications
 var checkNotificationPermission = function(requested){
+    alert('test2');
     FirebasePlugin.hasPermission(function(hasPermission){
         if(hasPermission){
             log("Remote notifications permission granted");
