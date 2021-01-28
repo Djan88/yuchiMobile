@@ -129,7 +129,7 @@ jQuery(document).ready(function () {
   jQuery('.calendar').on('click', function(event) {
     jQuery('.app-slide, .app-main').addClass('hidden').removeAttr('style');
     jQuery('.app-second').fadeIn(500).removeClass('hidden').css('display', 'flex');
-    jQuery('.header-text').text('ПУСТОЙ РАЗДЕЛ');
+    jQuery('.header-text').text('НОВОСТИ ШКОЛЫ');
     jQuery('.back-button, .reverce_clean_graph').addClass('hidden');
     jQuery('.slider-box').addClass('hidden').removeAttr('style');
     jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');

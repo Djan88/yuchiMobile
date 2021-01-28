@@ -239,24 +239,29 @@
             </div>
           </div>
           <div class="container app-second second hidden">
-            <div class="row">
-              <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-              <div class="col-12">
-                <div class="row">
-                  <div class="col-12">
-                    <h2><?php the_title(); ?></h2>
-                  </div>
-                  <div class="col-12 seminar_content">
-                    <?php
-                    the_content(__('(more...)'));
-                    edit_post_link(__('Edit This'));
-                    ?>
-                  </div>
-                </div>
-              </div>
-              <?php endwhile; else: ?>
-                <?php _e('Sorry, no posts matched your criteria.'); ?>
-              <?php endif; ?>
+            <div class="row accordion" id="accordionNews">
+              <?php
+              // The Query
+              $query_news = new WP_Query( array( 'category_name' => 'otzyvy', 'posts_per_page' => '-1' ) );
+              $cur_month = 0;
+              while ($query_news->have_posts()) : $query_news->the_post();
+                echo '<div class="card">';
+                echo '<div class="card-header" id="headingOne">';
+                echo '<h5 class="mb-0">';
+                echo '<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">';
+                echo the_title();          
+                echo '</button>';
+                echo '</h5>';
+                echo '</div>';
+                echo '<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">';
+                echo '<div class="card-body">';
+                echo the_content(__('читать полностью'));       
+                echo '</div>';
+                echo '</div>';
+                echo '</div>';
+              endwhile;
+              wp_reset_postdata();
+              ?>
             </div>
           </div>
         </main>
