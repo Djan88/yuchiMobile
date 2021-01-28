@@ -263,7 +263,7 @@
                 echo '</div>';
                 echo '<div id="';
                 echo $cur_news_title;
-                echo '" class="" aria-labelledby="';
+                echo '" class="collapse" aria-labelledby="';
                 echo $cur_news_title;
                 echo '" data-parent="#accordionNews">';
                 echo '<div class="card-body">';
