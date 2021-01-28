@@ -242,7 +242,7 @@
             <div class="row accordion" id="accordionNews">
               <?php
               // The Query
-              $query_news = new WP_Query( array( 'category_name' => 'news', 'posts_per_page' => '-1' ) );
+              $query_news = new WP_Query( array( 'category_name' => 'news', 'posts_per_page' => '1' ) );
               $cur_news = 0;
               while ($query_news->have_posts()) : $query_news->the_post();
                 $cur_news = $cur_news+1;
