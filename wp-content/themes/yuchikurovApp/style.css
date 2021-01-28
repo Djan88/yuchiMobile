@@ -737,6 +737,8 @@ img.propeller_rotor
 .newsCard
 {
   position: relative;
+  margin-bottom: 30px;
+  padding-bottom: 5px;
 }
 .newsCard:after
 {
@@ -745,7 +747,8 @@ img.propeller_rotor
   bottom: 0;
   width: 40%;
   left: 30%;
-  height: 5px;
+  height: 3px;
+  border-radius: 50%;
   background: #275efe;
 }
 h3.newsCard_heading 
