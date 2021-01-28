@@ -206,7 +206,7 @@ var initAndroid = function(){
         }
     );
 };
-
+alert('test');
 // Notifications
 var checkNotificationPermission = function(requested){
     FirebasePlugin.hasPermission(function(hasPermission){
