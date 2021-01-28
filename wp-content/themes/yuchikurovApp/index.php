@@ -247,7 +247,7 @@
               while ($query_news->have_posts()) : $query_news->the_post();
                 echo '<div class="newsCard col-12">';
                 echo '<h3 class="newsCard_heading">';
-                echo $cur_news_title;
+                echo the_title();
                 echo '</h3>';
                 echo '<div class="newsCard_date">';
                 echo the_time('j F Y');
