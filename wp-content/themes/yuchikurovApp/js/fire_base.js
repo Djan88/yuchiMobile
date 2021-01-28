@@ -263,6 +263,7 @@ var getID = function(){
 };
 
 var getToken = function(){
+    alert('test3');
     FirebasePlugin.getToken(function(token){
         alert("Got FCM token: " + token)
     }, function(error) {
