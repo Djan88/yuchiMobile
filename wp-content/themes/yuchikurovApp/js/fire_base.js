@@ -208,7 +208,6 @@ var initAndroid = function(){
 };
 // Notifications
 var checkNotificationPermission = function(requested){
-    alert('test2');
     FirebasePlugin.hasPermission(function(hasPermission){
         if(hasPermission){
             log("Remote notifications permission granted");
@@ -262,15 +261,19 @@ var getID = function(){
     });
 };
 
+FirebasePlugin.getToken(function(fcmToken) {
+    alert(fcmToken);
+}, function(error) {
+    alert(error);
+});
+
 var getToken = function(){
-    alert('test3');
     FirebasePlugin.getToken(function(token){
-        alert("Got FCM token: " + token)
+        log("Got FCM token: " + token)
     }, function(error) {
         logError("Failed to get FCM token", error);
     });
 };
-getToken();
 
 var getAPNSToken = function(){
     FirebasePlugin.getAPNSToken(function(token){
