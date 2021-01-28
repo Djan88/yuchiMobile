@@ -46,7 +46,7 @@ function promptUserForInput(title, msg, cb) {
 }
 
 // Init
-function onDeviceReady(){
+function onDevReady(){
     FirebasePlugin = window.FirebasePlugin;
     $output = $('#log-output');
     log("deviceready");
@@ -128,7 +128,7 @@ function onDeviceReady(){
         initIos();
     }
 }
-$(document).on('deviceready', onDeviceReady);
+$(document).on('deviceready', onDevReady);
 
 var initIos = function(){
     FirebasePlugin.onApnsTokenReceived(function(token){
