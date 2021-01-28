@@ -49,7 +49,7 @@ function promptUserForInput(title, msg, cb) {
 function onDevReady(){
     FirebasePlugin = window.FirebasePlugin;
     $output = $('#log-output');
-    log("deviceready");
+    alert("deviceready");
 
 
     // Set global error handler to catch uncaught JS exceptions
@@ -260,12 +260,6 @@ var getID = function(){
         logError("Failed to get FCM ID", error);
     });
 };
-
-FirebasePlugin.getToken(function(fcmToken) {
-    alert(fcmToken);
-}, function(error) {
-    alert(error);
-});
 
 var getToken = function(){
     FirebasePlugin.getToken(function(token){
