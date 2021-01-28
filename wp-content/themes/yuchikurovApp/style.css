@@ -734,7 +734,32 @@ img.propeller_rotor
   max-width: 400px;
   margin: auto;
 }
-
+.newsCard
+{
+  position: relative;
+}
+.newsCard:after
+{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 40%;
+  left: 30%;
+  height: 5px;
+  background: #275efe;
+}
+h3.newsCard_heading 
+{
+  font-weight: 700;
+  font-size: 1.6em;
+  margin-bottom: 0;
+}
+.newsCard_date 
+{
+  font-size: 1em;
+  padding-bottom: 10px;
+  color: #777;
+}
 
 @media (min-width: 992px){
   .d-lg-none 
