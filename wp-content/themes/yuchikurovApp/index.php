@@ -238,7 +238,7 @@
               </div>
             </div>
           </div>
-          <div class="container app-second second">
+          <div class="container app-second second hidden">
             <div class="row accordion" id="accordionNews">
               <?php
               // The Query
