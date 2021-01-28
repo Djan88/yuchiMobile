@@ -246,7 +246,8 @@
               $cur_news = 0;
               while ($query_news->have_posts()) : $query_news->the_post();
                 $cur_news = $cur_news+1;
-                $cur_news_title = 'news-'.$cur_news;
+                // $cur_news_title = 'news-'.$cur_news;
+                $cur_news_title = 'newsOne';
                 echo '<div class="card">';
                 echo '<div class="card-header" id="';
                 echo $cur_news_title;
@@ -263,7 +264,7 @@
                 echo '</div>';
                 echo '<div id="';
                 echo $cur_news_title;
-                echo '" class="collapse" aria-labelledby="';
+                echo '" class="" aria-labelledby="';
                 echo $cur_news_title;
                 echo '" data-parent="#accordionNews">';
                 echo '<div class="card-body">';
