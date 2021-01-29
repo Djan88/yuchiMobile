@@ -174,7 +174,8 @@ jQuery(document).ready(function () {
 
   // Elements rotation
   jQuery('.propeller_rotor').propeller({inertia: 0, speed: 0, onRotate: function(){ 
-    if (this.angle >= 15 && this.angle < 18) {
+    if (this.angle >= 0 && this.angle < 30) {
+      jQuery('.propeller_rotor').animate({transform: "rotate(15deg) translateZ(0px)"}, 100);
       navigator.vibrate(100);
     } else if (this.angle >= 45 && this.angle < 48) {
       navigator.vibrate(100);
