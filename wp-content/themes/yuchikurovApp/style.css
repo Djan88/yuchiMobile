@@ -734,6 +734,10 @@ img.propeller_rotor
   max-width: 400px;
   margin: auto;
 }
+div#news 
+{
+  padding: 0 15px;
+}
 .newsCard
 {
   position: relative;
@@ -744,6 +748,7 @@ img.propeller_rotor
 .newsCard:nth-child(2n)
 {
   background: rgba(0, 43, 255, .08);
+  padding: 15px;
 }
 h3.newsCard_heading 
 {
