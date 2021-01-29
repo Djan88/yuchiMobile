@@ -10,6 +10,41 @@ function onDeviceReady() {
   jQuery('.tabbar li a').on('click', function(event) {
     navigator.vibrate(25);
   });
+  // Elements rotation
+  // jQuery('.propeller_rotor').propeller({inertia: 0, speed: 0, onRotate: function(){ 
+  //   if (this.angle >= 15 && this.angle < 18) {
+  //     navigator.vibrate(100);
+  //   } else if (this.angle >= 45 && this.angle < 48) {
+  //     navigator.vibrate(100);
+  //   } else if (this.angle >= 75 && this.angle < 78) {
+  //     navigator.vibrate(100);
+  //   } else if (this.angle >= 105 && this.angle < 108) {
+  //     navigator.vibrate(100);
+  //   } else if (this.angle >= 135 && this.angle < 138) {
+  //     navigator.vibrate(100);
+  //   } else if (this.angle >= 165 && this.angle < 168) {
+  //     navigator.vibrate(100);
+  //   } else if (this.angle >= 195 && this.angle < 198) {
+  //     navigator.vibrate(100);
+  //   } else if (this.angle >= 225 && this.angle < 228) {
+  //     navigator.vibrate(100);
+  //   } else if (this.angle >= 255 && this.angle < 258) {
+  //     navigator.vibrate(100);
+  //   } else if (this.angle >= 285 && this.angle < 288) {
+  //     navigator.vibrate(100);
+  //   } else if (this.angle >= 315 && this.angle < 318) {
+  //     navigator.vibrate(100);
+  //   } else if (this.angle >= 345 && this.angle < 348) {
+  //     navigator.vibrate(100);
+  //   }
+  // }});
+  jQuery('.propeller_rotor').propeller({inertia: 0, speed: 0, onDragStop: function(){ 
+    if (this.angle >= 0 && this.angle < 30) {
+      jQuery('.propeller_rotor').animate({transform: "rotate(11.9048deg) translateZ(0px)"}, 100);
+      navigator.vibrate(100);
+    }
+  }});
+
 }
 
 jQuery(document).ready(function () {
@@ -170,37 +205,6 @@ jQuery(document).ready(function () {
 
   jQuery('.slider-box, .formuls').addClass('hidden').removeClass('overscreen');
   jQuery('.tabbar li a.home').click();
-
-
-  // Elements rotation
-  jQuery('.propeller_rotor').propeller({inertia: 0, speed: 0, onRotate: function(){ 
-    if (this.angle >= 0 && this.angle < 30) {
-      jQuery('.propeller_rotor').animate({transform: "rotate(15deg) translateZ(0px)"}, 100);
-      navigator.vibrate(100);
-    } else if (this.angle >= 45 && this.angle < 48) {
-      navigator.vibrate(100);
-    } else if (this.angle >= 75 && this.angle < 78) {
-      navigator.vibrate(100);
-    } else if (this.angle >= 105 && this.angle < 108) {
-      navigator.vibrate(100);
-    } else if (this.angle >= 135 && this.angle < 138) {
-      navigator.vibrate(100);
-    } else if (this.angle >= 165 && this.angle < 168) {
-      navigator.vibrate(100);
-    } else if (this.angle >= 195 && this.angle < 198) {
-      navigator.vibrate(100);
-    } else if (this.angle >= 225 && this.angle < 228) {
-      navigator.vibrate(100);
-    } else if (this.angle >= 255 && this.angle < 258) {
-      navigator.vibrate(100);
-    } else if (this.angle >= 285 && this.angle < 288) {
-      navigator.vibrate(100);
-    } else if (this.angle >= 315 && this.angle < 318) {
-      navigator.vibrate(100);
-    } else if (this.angle >= 345 && this.angle < 348) {
-      navigator.vibrate(100);
-    }
-  }});
 
   // Regressive centering
 
