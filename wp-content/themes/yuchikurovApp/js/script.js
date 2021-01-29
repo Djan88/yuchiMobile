@@ -183,6 +183,9 @@ jQuery(document).ready(function () {
       // screen.orientation.lock('portrait');
       // jQuery('.frame').removeClass('hidden');
     },
+    swipeLeft:function(event, direction, distance, duration, fingerCount) {
+      navigator.vibrate(100);
+    },
     threshold:0
   });
   jQuery(".reverce_graph").swipe( {
