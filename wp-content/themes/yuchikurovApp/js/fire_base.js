@@ -50,7 +50,6 @@ function onDevReady(){
     FirebasePlugin = window.FirebasePlugin;
     $output = $('#log-output');
     log("deviceready");
-    log(FirebasePlugin);
 
 
     // Set global error handler to catch uncaught JS exceptions
