@@ -734,6 +734,10 @@ img.propeller_rotor
   max-width: 400px;
   margin: auto;
 }
+.propeller_rotor_animated
+{
+  transition: all 0.2s linear;
+}
 div#news 
 {
   padding: 0 15px;

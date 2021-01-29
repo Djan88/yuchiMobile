@@ -253,8 +253,12 @@ jQuery(document).ready(function () {
   jQuery('.propeller_rotor').propeller({inertia: 0, speed: 0, onDragStop: function(){ 
     if (this.angle >= 0 && this.angle < 30) {
       console.log(this.angle);
-      jQuery('.propeller_rotor').animate({transform: "rotate(15deg) translateZ(0px)"}, 500);
-      navigator.vibrate(100);
+      jQuery('.propeller_rotor').addClass('propeller_rotor_animated');
+      jQuery('.propeller_rotor').css('transform', 'rotate(15deg) translateZ(0px)');
+      setTimeout(function(){
+        jQuery('.propeller_rotor').removeClass('propeller_rotor_animated');
+        navigator.vibrate(100);
+      },200);
     }
   }});
 
