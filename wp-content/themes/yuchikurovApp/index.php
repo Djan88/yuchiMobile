@@ -13,7 +13,7 @@
   <link href="<?php bloginfo('template_url'); ?>/css/open-iconic-bootstrap.css" rel="stylesheet">
   <link href="<?php bloginfo('template_url'); ?>/css/swipe-bundle.min.css" rel="stylesheet">
   <link href="<?php bloginfo('template_url'); ?>/style.css" rel="stylesheet">
-  <?php wp_head(); ?>
+  <?php //wp_head(); ?>
 </head>
 
 <body class="wrapper no-select">
@@ -310,7 +310,7 @@
     </svg>
   </div>
   <?php wp_footer(); ?>
-  <!-- <script src="<?php //bloginfo('template_url'); ?>/js/jq.js"></script> -->
+  <script src="<?php bloginfo('template_url'); ?>/js/jq.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/jquery-ui.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/jquery.ui.touch-punch.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/pull_ref.min.js"></script>
