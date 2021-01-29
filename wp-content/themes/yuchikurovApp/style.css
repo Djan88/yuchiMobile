@@ -739,17 +739,11 @@ img.propeller_rotor
   position: relative;
   margin-bottom: 30px;
   padding-bottom: 5px;
+  border-bottom: 1px dashed #275efe;
 }
-.newsCard:after
+.newsCard:nth-child(2n)
 {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  width: 40%;
-  left: 30%;
-  height: 3px;
-  border-radius: 50%;
-  background: #275efe;
+  background: rgba(0, 43, 255, .08);
 }
 h3.newsCard_heading 
 {
