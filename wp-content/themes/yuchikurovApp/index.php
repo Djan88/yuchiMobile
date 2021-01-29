@@ -310,7 +310,7 @@
     </svg>
   </div>
   <?php wp_footer(); ?>
-  <script src="<?php bloginfo('template_url'); ?>/js/jq.js"></script>
+  <!-- <script src="<?php //bloginfo('template_url'); ?>/js/jq.js"></script> -->
   <script src="<?php bloginfo('template_url'); ?>/js/jquery-ui.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/jquery.ui.touch-punch.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/pull_ref.min.js"></script>
