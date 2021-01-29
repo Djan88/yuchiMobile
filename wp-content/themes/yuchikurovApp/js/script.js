@@ -252,6 +252,7 @@ jQuery(document).ready(function () {
 
   jQuery('.propeller_rotor').propeller({inertia: 0, speed: 0, onDragStop: function(){ 
     if (this.angle >= 0 && this.angle < 30) {
+      console.log(this.angle);
       jQuery('.propeller_rotor').animate({transform: "rotate(15deg) translateZ(0px)"}, 500);
       navigator.vibrate(100);
     }
