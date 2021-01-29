@@ -183,8 +183,8 @@ jQuery(document).ready(function () {
       // screen.orientation.lock('portrait');
       // jQuery('.frame').removeClass('hidden');
     },
-    swipeLeft:function(event, direction, distance, duration, fingerCount) {
-      navigator.vibrate(100);
+    swipe:function(event, direction, distance, duration, fingerCount) {
+      navigator.vibrate(1000);
     },
     threshold:0
   });
