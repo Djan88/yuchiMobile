@@ -281,7 +281,7 @@ button svg
    width: 100%;
    margin: 0;
    padding: 0 16px;
-   border-radius: 0 0 28px 28px;
+   /*border-radius: 0 0 28px 28px;*/
    list-style: none;
    border-top: 1px dashed #275efe;
    position: relative;
