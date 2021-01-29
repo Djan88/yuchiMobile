@@ -38,13 +38,6 @@ function onDeviceReady() {
   //     navigator.vibrate(100);
   //   }
   // }});
-  jQuery('.propeller_rotor').propeller({inertia: 0, speed: 0, onDragStop: function(){ 
-    if (this.angle >= 0 && this.angle < 30) {
-      jQuery('.propeller_rotor').animate({transform: "rotate(11.9048deg) translateZ(0px)"}, 100);
-      navigator.vibrate(100);
-    }
-  }});
-
 }
 
 jQuery(document).ready(function () {
@@ -256,5 +249,12 @@ jQuery(document).ready(function () {
     jQuery('.knife_rate').detach();
     jQuery('.reverce-clean').addClass('hidden');
   });
+
+  jQuery('.propeller_rotor').propeller({inertia: 0, speed: 0, onDragStop: function(){ 
+    if (this.angle >= 0 && this.angle < 30) {
+      jQuery('.propeller_rotor').animate({transform: "rotate(15deg) translateZ(0px)"}, 500);
+      navigator.vibrate(100);
+    }
+  }});
 
 });
