@@ -83,7 +83,7 @@ jQuery(document).ready(function () {
     jQuery('.app-main, .app-second').addClass('hidden').removeAttr('style');
     jQuery('.app-slide').fadeIn(500).removeClass('hidden').css('display', 'flex');
     jQuery('.header-text').text('ПОЛЕЗНЫЕ РЕСУРСЫ');
-    jQuery('.back-button, .reverce_clean_graph').addClass('hidden');
+    jQuery('.back-button, .reverce_clean_graph, .reverce_clean_graph_2').addClass('hidden');
     jQuery('.slider-box').addClass('hidden').removeAttr('style');
     jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
     // screen.orientation.lock('portrait');
@@ -94,7 +94,7 @@ jQuery(document).ready(function () {
     jQuery('.app-slide, .app-second').addClass('hidden').removeAttr('style');
     jQuery('.app-main').fadeIn(500).removeClass('hidden').css('display', 'flex');
     jQuery('.header-text').text('ШКОЛА ДОКТОРА ЧИКУРОВА');
-    jQuery('.back-button, .reverce_clean_graph').addClass('hidden');
+    jQuery('.back-button, .reverce_clean_graph, .reverce_clean_graph_2').addClass('hidden');
     // screen.orientation.lock('portrait');
     // jQuery('.frame').removeClass('hidden');
   });
@@ -103,7 +103,7 @@ jQuery(document).ready(function () {
     jQuery('.app-slide, .app-main').addClass('hidden').removeAttr('style');
     jQuery('.app-second').fadeIn(500).removeClass('hidden').css('display', 'flex');
     jQuery('.header-text').text('НОВОСТИ ШКОЛЫ');
-    jQuery('.back-button, .reverce_clean_graph').addClass('hidden');
+    jQuery('.back-button, .reverce_clean_graph, .reverce_clean_graph_2').addClass('hidden');
     jQuery('.slider-box').addClass('hidden').removeAttr('style');
     jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
     // screen.orientation.lock('portrait');
@@ -114,14 +114,14 @@ jQuery(document).ready(function () {
     jQuery('.app-slide-menu, .reverce-clean').addClass('hidden').removeAttr('style');
     jQuery('.slider-formuls').fadeIn(500).removeClass('hidden').css('display', 'flex');
     jQuery('.header-text').text('ФОРМУЛЫ БЦ');
-    jQuery('.back-button, .reverce_clean_graph').removeClass('hidden');
+    jQuery('.back-button, .reverce_clean_graph, .reverce_clean_graph_2').removeClass('hidden');
   });
 
   jQuery('.main-item-elems').on('click', function(event) {
     jQuery('.app-slide-menu, .reverce-clean').addClass('hidden').removeAttr('style');
     jQuery('.slider-elems').fadeIn(500).removeClass('hidden').css('display', 'flex');
     jQuery('.header-text').text('ПЕРВОЭЛЕМЕНТЫ БЦ');
-    jQuery('.back-button, .reverce_clean_graph').removeClass('hidden');
+    jQuery('.back-button, .reverce_clean_graph, .reverce_clean_graph_2').removeClass('hidden');
   });
 
   jQuery('.main-item-regress').on('click', function(event) {
@@ -158,7 +158,7 @@ jQuery(document).ready(function () {
       jQuery('.slider-box').addClass('hidden').removeAttr('style');
       jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
       jQuery('.header-text').text('ПОЛЕЗНЫЕ РЕСУРСЫ');
-      jQuery('.back-button, .reverce_clean_graph').addClass('hidden');
+      jQuery('.back-button, .reverce_clean_graph, .reverce_clean_graph_2').addClass('hidden');
       // screen.orientation.lock('portrait');
       // jQuery('.frame').removeClass('hidden');
     },
@@ -171,8 +171,19 @@ jQuery(document).ready(function () {
     swipeRight:function(event, direction, distance, duration, fingerCount) {
       jQuery('.slider-box').addClass('hidden').removeAttr('style');
       jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
-      jQuery('.header-text').text('СПРАВОЧНИКИ');
+      jQuery('.header-text').text('ПОЛЕЗНЫЕ РЕСУРСЫ');
       jQuery('.back-button, .reverce_clean_graph').addClass('hidden');
+      // screen.orientation.lock('portrait');
+      // jQuery('.frame').removeClass('hidden');
+    },
+    threshold:0
+  });
+  jQuery(".urav_graph").swipe( {
+    swipeRight:function(event, direction, distance, duration, fingerCount) {
+      jQuery('.slider-box').addClass('hidden').removeAttr('style');
+      jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
+      jQuery('.header-text').text('ПОЛЕЗНЫЕ РЕСУРСЫ');
+      jQuery('.back-button, .reverce_clean_graph_2').addClass('hidden');
       // screen.orientation.lock('portrait');
       // jQuery('.frame').removeClass('hidden');
     },
