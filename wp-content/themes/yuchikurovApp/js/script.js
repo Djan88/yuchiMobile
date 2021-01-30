@@ -277,14 +277,20 @@ jQuery(document).ready(function () {
         console.log(handle_val_2);
         navigator.vibrate(100);
         jQuery('.reverce-clean_2').removeClass('hidden')
-        if (handle_val_2 <= 60) {
-          mode_speed_2 = 2;
-        } else if (handle_val_2 > 60 && handle_val_2 <= 111) {
-          mode_speed_2 = 4;
-        } else if (handle_val_2 > 111 && handle_val_2 <= 160) {
-          mode_speed_2 = 6;
-        } else if (handle_val_2 > 160) {
-          mode_speed_2 = 8;
+        if (handle_val_2 > 1 && handle_val_2 <= 26) {
+          jQuery('.urav_value').text('2');
+        } else if (handle_val_2 > 26 && handle_val_2 <= 55) {
+          jQuery('.urav_value').text('3');
+        } else if (handle_val_2 > 55 && handle_val_2 <= 85) {
+          jQuery('.urav_value').text('4');
+        } else if (handle_val_2 > 85 && handle_val_2 <= 113) {
+          jQuery('.urav_value').text('5');
+        } else if (handle_val_2 > 113 && handle_val_2 <= 140) {
+          jQuery('.urav_value').text('6');
+        } else if (handle_val_2 > 140 && handle_val_2 <= 170) {
+          jQuery('.urav_value').text('7');
+        } else if (handle_val_2 > 170 && handle_val_2 <= 200) {
+          jQuery('.urav_value').text('8');
         }
       }
     });
