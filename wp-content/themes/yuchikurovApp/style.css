@@ -193,6 +193,7 @@ button svg
 {
   height: auto;
   position: relative;
+  background: none;
 }
 .propeller_title
 {
@@ -200,7 +201,7 @@ button svg
   position: absolute;
   width: 100%;
   text-align: center;
-  top: -4vh;
+  top: -3vh;
   left: 0;
 }
 .swiper-pagination-bullet 
