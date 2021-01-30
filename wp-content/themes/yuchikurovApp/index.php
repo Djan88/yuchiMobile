@@ -94,7 +94,9 @@
               </div>
             </div>
             <div class="col-12 slider-box slider-elems overscreen">
-              <div class="propeller-title">ЗЕМЛЯ</div>
+              <div class="row">
+                <div class="col-12 propeller-title">ЗЕМЛЯ</div>
+              </div>
               <div class="propeller_field">
                 <img class="propeller_rotor" src="<?php bloginfo('template_url'); ?>/img/propeller.png" alt="rotor">
               </div>
