@@ -192,13 +192,13 @@ button svg
 .slider-box.slider-elems
 {
   height: auto;
-  position: relative!important;
+  position: relative;
   background: none;
 }
 .propeller_title
 {
   font-size: 4vh;
-  position: absolute!important;
+  position: absolute;
   width: 100%;
   text-align: center;
   top: -3vh;
