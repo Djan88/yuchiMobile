@@ -80,7 +80,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col main-item main-item-urav">
+                  <div class="col main-item main-item-urav hidden">
                     <div class="row">
                       <div class="col-3 main-item-img"><img src="<?php bloginfo('template_url'); ?>/img/urav-fav.png" alt="Мыслеуравнитель"></div>
                       <div class="col main-item-content">
