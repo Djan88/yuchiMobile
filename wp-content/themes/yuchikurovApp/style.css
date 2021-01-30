@@ -790,4 +790,8 @@ h3.newsCard_heading
   {
     display: none!important;
   }
+  .propeller_title
+  {
+    top: -5vh;
+  }
 }
