@@ -192,12 +192,16 @@ button svg
 .slider-box.slider-elems
 {
   height: auto;
-  margin: 12vh 0 0;
+  position: relative;
 }
 .propeller-title
 {
   font-size: 2vh;
+  position: absolute;
+  width: 100%;
   text-align: center;
+  top: 0;
+  left: 0;
 }
 .swiper-pagination-bullet 
 {
