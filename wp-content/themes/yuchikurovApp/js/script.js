@@ -298,6 +298,7 @@ jQuery(document).ready(function () {
   jQuery('.reverce-clean_2').on('click', function(event) {
     jQuery( "#slider_2" ).slider( "value", 7 );
     jQuery('.knife_rate_2').detach();
+    jQuery('.urav_value').text('');
     jQuery('.reverce-clean').addClass('hidden');
   });
 
