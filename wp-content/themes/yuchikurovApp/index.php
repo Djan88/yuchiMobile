@@ -94,21 +94,10 @@
               </div>
             </div>
             <div class="col-12 slider-box slider-elems overscreen">
-              <div class="propeller-title overscreen">ЗЕМЛЯ</div>
+              <div class="col-6 col-offset-3 propeller-title overscreen">ЗЕМЛЯ</div>
               <div class="propeller_field">
                 <img class="propeller_rotor" src="<?php bloginfo('template_url'); ?>/img/propeller.png" alt="rotor">
               </div>
-              <!-- Swiper -->
-              <!-- <div class="swiper-container swiper-container-elems">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide"><img src="<?php //bloginfo('template_url'); ?>/img/fire.png" alt="Огонь"></div>
-                  <div class="swiper-slide"><img src="<?php //bloginfo('template_url'); ?>/img/water.png" alt="Вода"></div>
-                  <div class="swiper-slide"><img src="<?php //bloginfo('template_url'); ?>/img/air.png" alt="Воздух"></div>
-                  <div class="swiper-slide"><img src="<?php //bloginfo('template_url'); ?>/img/ground.png" alt="Земля"></div>
-                </div> -->
-                <!-- Add Pagination -->
-                <!-- <div class="swiper-pagination swiper-pagination-elems"></div>
-              </div> -->
             </div>
             <div class="col-12 slider-box slider-regress overscreen">
               <div class="regress-wrapper">
