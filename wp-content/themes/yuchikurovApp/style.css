@@ -558,6 +558,15 @@ button svg
     height: 450px;
     margin-bottom: -10px;
 }
+.urav_value
+{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 20px;
+  font-size: 40px;
+  text-align: center;
+}
 .knife_rate, .knife_rate_2
 {
     height: 0;

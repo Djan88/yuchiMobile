@@ -137,6 +137,7 @@
               <div class="urav-wrapper">
                 <div class="urav_graph">
                   <div class="urav_graph_handle"><i class="fa fa-arrows-alt-h"></i></div>
+                  <div class="urav_value">8</div>
                 </div>
                 <div class="urav_age">
                   <table>
