@@ -299,7 +299,7 @@ jQuery(document).ready(function () {
     jQuery( "#slider_2" ).slider( "value", 7 );
     jQuery('.knife_rate_2').detach();
     jQuery('.urav_value').text('');
-    jQuery('.reverce-clean').addClass('hidden');
+    jQuery('.reverce-clean_2').addClass('hidden');
   });
 
   jQuery('.propeller_rotor').propeller({inertia: 0, speed: 0, onDragStop: function(){ 
