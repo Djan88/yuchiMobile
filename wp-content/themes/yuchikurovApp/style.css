@@ -194,9 +194,9 @@ button svg
   height: auto;
   position: relative;
 }
-.propeller-title
+.propeller_title
 {
-  font-size: 2vh;
+  font-size: 4vh;
   position: absolute;
   width: 100%;
   text-align: center;

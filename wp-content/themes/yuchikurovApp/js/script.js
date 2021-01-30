@@ -253,29 +253,41 @@ jQuery(document).ready(function () {
   jQuery('.propeller_rotor').propeller({inertia: 0, speed: 0, onDragStop: function(){ 
       jQuery('.propeller_rotor').addClass('propeller_rotor_animated');
       if (this.angle >= 0 && this.angle < 30) {
-        jQuery('.propeller_rotor').css('transform', 'rotate(12deg) translateZ(0px)');
+        jQuery('.propeller_rotor').css('transform', 'rotate(14deg) translateZ(0px)');
+        jQuery('.propeller_title').text('ОГОНЬ');
       } else if (this.angle >= 30 && this.angle < 60) {
         jQuery('.propeller_rotor').css('transform', 'rotate(43deg) translateZ(0px)');
+        jQuery('.propeller_title').text('ВОДА');
       } else if (this.angle >= 60 && this.angle < 90) {
         jQuery('.propeller_rotor').css('transform', 'rotate(74deg) translateZ(0px)');
+        jQuery('.propeller_title').text('ВОЗДУХ');
       } else if (this.angle >= 90 && this.angle < 120) {
         jQuery('.propeller_rotor').css('transform', 'rotate(103deg) translateZ(0px)');
+        jQuery('.propeller_title').text('ЗЕМЛЯ');
       } else if (this.angle >= 120 && this.angle < 150) {
         jQuery('.propeller_rotor').css('transform', 'rotate(132deg) translateZ(0px)');
+        jQuery('.propeller_title').text('ОГОНЬ');
       } else if (this.angle >= 150 && this.angle < 180) {
         jQuery('.propeller_rotor').css('transform', 'rotate(163deg) translateZ(0px)');
+        jQuery('.propeller_title').text('ВОДА');
       } else if (this.angle >= 180 && this.angle < 210) {
         jQuery('.propeller_rotor').css('transform', 'rotate(194deg) translateZ(0px)');
+        jQuery('.propeller_title').text('ВОЗДУХ');
       } else if (this.angle >= 210 && this.angle < 240) {
         jQuery('.propeller_rotor').css('transform', 'rotate(224deg) translateZ(0px)');
+        jQuery('.propeller_title').text('ЗЕМЛЯ');
       } else if (this.angle >= 240 && this.angle < 270) {
         jQuery('.propeller_rotor').css('transform', 'rotate(254deg) translateZ(0px)');
+        jQuery('.propeller_title').text('ОГОНЬ');
       } else if (this.angle >= 270 && this.angle < 300) {
         jQuery('.propeller_rotor').css('transform', 'rotate(282deg) translateZ(0px)');
+        jQuery('.propeller_title').text('ВОДА');
       } else if (this.angle >= 300 && this.angle < 330) {
         jQuery('.propeller_rotor').css('transform', 'rotate(312deg) translateZ(0px)');
+        jQuery('.propeller_title').text('ВОЗДУХ');
       } else if (this.angle >= 330 && this.angle < 360) {
         jQuery('.propeller_rotor').css('transform', 'rotate(343deg) translateZ(0px)');
+        jQuery('.propeller_title').text('ЗЕМЛЯ');
       }
       setTimeout(function(){
         jQuery('.propeller_rotor').removeClass('propeller_rotor_animated');
