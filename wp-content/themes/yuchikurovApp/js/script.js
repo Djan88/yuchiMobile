@@ -266,14 +266,14 @@ jQuery(document).ready(function () {
         console.log(handle_val_2);
         navigator.vibrate(100);
         jQuery('.reverce-clean_2').removeClass('hidden')
-        if (handle_val <= 60) {
-          mode_speed = 2;
-        } else if (handle_val > 60 && handle_val <= 111) {
-          mode_speed = 4;
-        } else if (handle_val > 111 && handle_val <= 160) {
-          mode_speed = 6;
-        } else if (handle_val > 160) {
-          mode_speed = 8;
+        if (handle_val_2 <= 60) {
+          mode_speed_2 = 2;
+        } else if (handle_val_2 > 60 && handle_val_2 <= 111) {
+          mode_speed_2 = 4;
+        } else if (handle_val_2 > 111 && handle_val_2 <= 160) {
+          mode_speed_2 = 6;
+        } else if (handle_val_2 > 160) {
+          mode_speed_2 = 8;
         }
       }
     });
