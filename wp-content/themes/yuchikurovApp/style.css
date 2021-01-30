@@ -563,8 +563,9 @@ button svg
   position: absolute;
   width: 100%;
   left: 0;
-  top: 20px;
-  font-size: 40px;
+  top: 0.2em;
+  font-size: 5em;
+  z-index: 999;
   text-align: center;
 }
 .knife_rate, .knife_rate_2
