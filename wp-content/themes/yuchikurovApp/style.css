@@ -201,7 +201,7 @@ button svg
   position: absolute;
   width: 100%;
   text-align: center;
-  top: -3vh;
+  top: -4vh;
   left: 0;
 }
 .swiper-pagination-bullet 
@@ -789,9 +789,5 @@ h3.newsCard_heading
   .d-lg-block.d-none
   {
     display: none!important;
-  }
-  .propeller_title
-  {
-    top: -5vh;
   }
 }
