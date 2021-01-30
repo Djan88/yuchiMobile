@@ -97,8 +97,10 @@
               <div class="row">
                 <div class="col-12 propeller-title">ЗЕМЛЯ</div>
               </div>
-              <div class="propeller_field">
-                <img class="propeller_rotor" src="<?php bloginfo('template_url'); ?>/img/propeller.png" alt="rotor">
+              <div class="row">
+                <div class="col-12 propeller_field">
+                  <img class="propeller_rotor" src="<?php bloginfo('template_url'); ?>/img/propeller.png" alt="rotor">
+                </div>
               </div>
               <!-- Swiper -->
               <!-- <div class="swiper-container swiper-container-elems">
