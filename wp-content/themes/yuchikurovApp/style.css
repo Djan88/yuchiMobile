@@ -519,7 +519,7 @@ button svg
     padding-top: 10px;
     font-size: 20px;
 }
-#slider div#custom-handle, .#slider_2 div#custom-handle_2
+#slider div#custom-handle, #slider_2 div#custom-handle_2
 {
     width: 30px;
     height: 30px;
