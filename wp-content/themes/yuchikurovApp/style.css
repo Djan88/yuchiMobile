@@ -503,23 +503,23 @@ button svg
    display: flex;
    align-items: flex-end;
 }
-.slider-box.slider-regress
+.slider-box.slider-regress, .slider-box.slider-urav
 {
   margin-top: 0;
 }
-.regress-wrapper
+.regress-wrapper, .urav-wrapper
 {
   display: block;
   width: 100%;
   background: #fff;
 }
-.reverce_age 
+.reverce_age, .urav_age
 {
     padding-bottom: 20px;
     padding-top: 10px;
     font-size: 20px;
 }
-#slider div#custom-handle
+#slider div#custom-handle, .#slider_2 div#custom-handle_2
 {
     width: 30px;
     height: 30px;
@@ -532,7 +532,7 @@ button svg
     border-radius: 6px;
     position: relative;
 }
-#slider div#custom-handle:before
+#slider div#custom-handle:before, #slider_2 div#custom-handle_2:before
 {
   content: '';
   width: 0;
@@ -544,24 +544,21 @@ button svg
   left: 0;
   top: -15px;
 }
-.reverce_age table
+.reverce_age table, .urav_age table
 {
     width: 100%;
 }
-.reverce_age table td
+.reverce_age table td, .urav_age table td
 {
     text-align: center;
 }
-.reverce_graph
+.reverce_graph, .urav_graph
 {
     position: relative;
-}
-.reverce_graph 
-{
     height: 450px;
     margin-bottom: -10px;
 }
-.knife_rate 
+.knife_rate, .knife_rate_2
 {
     height: 0;
     width: 3px;

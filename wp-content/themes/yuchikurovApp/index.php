@@ -34,6 +34,12 @@
                 <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
               </svg>
             </div>
+            <div class="reverce-clean_2 hidden">
+              <svg width="1em" height="1em" viewBox="0 -5 16 20" class="bi bi-trash" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
+                <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+              </svg>
+            </div>
           </div>
         </div>
       </div>
@@ -56,19 +62,28 @@
                   </div>
                   <div class="col main-item main-item-elems">
                     <div class="row">
-                      <div class="col-3 main-item-img"><img src="<?php bloginfo('template_url'); ?>/img/elems-fav.png" alt="Формулы"></div>
+                      <div class="col-3 main-item-img"><img src="<?php bloginfo('template_url'); ?>/img/elems-fav.png" alt="Первоэлементы"></div>
                       <div class="col main-item-content">
                         <div class="main-item-title">Первоэлементы</div>
-                        <div class="main-item-sub-title">Биологическое Центрирование. Слайдер с первоэлементами</div>
+                        <div class="main-item-sub-title">Биологическое Центрирование. Коррекция первоэлементов</div>
                       </div>
                     </div>
                   </div>
                   <div class="col main-item main-item-regress">
                     <div class="row">
-                      <div class="col-3 main-item-img"><img src="<?php bloginfo('template_url'); ?>/img/regress-fav.png" alt="Формулы"></div>
+                      <div class="col-3 main-item-img"><img src="<?php bloginfo('template_url'); ?>/img/regress-fav.png" alt="Регресс"></div>
                       <div class="col main-item-content">
                         <div class="main-item-title">Регрессивная шкала</div>
-                        <div class="main-item-sub-title">Регрессивное центрирование. Работа в альбомной ориентации</div>
+                        <div class="main-item-sub-title">Регрессивное центрирование. Слайдер со шкалой</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col main-item main-item-urav">
+                    <div class="row">
+                      <div class="col-3 main-item-img"><img src="<?php bloginfo('template_url'); ?>/img/regress-fav.png" alt="Мыслеуравнитель"></div>
+                      <div class="col main-item-content">
+                        <div class="main-item-title">Мыслеуравнитель</div>
+                        <div class="main-item-sub-title">Регрессивное центрирование. Слайдер без шкалы</div>
                       </div>
                     </div>
                   </div>
@@ -113,6 +128,23 @@
                 </div>
                 <div id="slider">
                   <div id="custom-handle" class="ui-slider-handle"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 slider-box slider-urav overscreen">
+              <div class="urav-wrapper">
+                <div class="urav_graph">
+                  <div class="urav_graph_handle"><i class="fa fa-arrows-alt-h"></i></div>
+                </div>
+                <div class="urav_age">
+                  <table>
+                    <tr>
+                      <td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td>
+                    </tr>
+                  </table>
+                </div>
+                <div id="slider_2">
+                  <div id="custom-handle_2" class="ui-slider-handle"></div>
                 </div>
               </div>
             </div>

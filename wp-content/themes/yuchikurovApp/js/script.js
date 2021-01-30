@@ -1,43 +1,11 @@
 document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady() {
   // Cordova is now initialized. Have fun!
-  // const platform = device.platform;
   screen.orientation.lock('portrait');
 
-  // swiper.on('slideChange', function () {
-  //   navigator.vibrate(1000);
-  // });
   jQuery('.tabbar li a').on('click', function(event) {
     navigator.vibrate(25);
   });
-  // Elements rotation
-  // jQuery('.propeller_rotor').propeller({inertia: 0, speed: 0, onRotate: function(){ 
-  //   if (this.angle >= 15 && this.angle < 18) {
-  //     navigator.vibrate(100);
-  //   } else if (this.angle >= 45 && this.angle < 48) {
-  //     navigator.vibrate(100);
-  //   } else if (this.angle >= 75 && this.angle < 78) {
-  //     navigator.vibrate(100);
-  //   } else if (this.angle >= 105 && this.angle < 108) {
-  //     navigator.vibrate(100);
-  //   } else if (this.angle >= 135 && this.angle < 138) {
-  //     navigator.vibrate(100);
-  //   } else if (this.angle >= 165 && this.angle < 168) {
-  //     navigator.vibrate(100);
-  //   } else if (this.angle >= 195 && this.angle < 198) {
-  //     navigator.vibrate(100);
-  //   } else if (this.angle >= 225 && this.angle < 228) {
-  //     navigator.vibrate(100);
-  //   } else if (this.angle >= 255 && this.angle < 258) {
-  //     navigator.vibrate(100);
-  //   } else if (this.angle >= 285 && this.angle < 288) {
-  //     navigator.vibrate(100);
-  //   } else if (this.angle >= 315 && this.angle < 318) {
-  //     navigator.vibrate(100);
-  //   } else if (this.angle >= 345 && this.angle < 348) {
-  //     navigator.vibrate(100);
-  //   }
-  // }});
 }
 
 jQuery(document).ready(function () {
@@ -47,7 +15,13 @@ jQuery(document).ready(function () {
     knifeDateOld,
     knifeDateDiff,
     knife_rate_class,
-    knife_rate_class_dotted;
+    knife_rate_class_dotted,
+    knife_2,
+    knifeDate_2,
+    knifeDateOld_2,
+    knifeDateDiff_2,
+    knife_rate_class_2,
+    knife_rate_class_dotted_2;
 
   // Pull to refresh
   PullToRefresh.init({
@@ -142,12 +116,14 @@ jQuery(document).ready(function () {
     jQuery('.header-text').text('ФОРМУЛЫ БЦ');
     jQuery('.back-button, .reverce_clean_graph').removeClass('hidden');
   });
+
   jQuery('.main-item-elems').on('click', function(event) {
     jQuery('.app-slide-menu, .reverce-clean').addClass('hidden').removeAttr('style');
     jQuery('.slider-elems').fadeIn(500).removeClass('hidden').css('display', 'flex');
     jQuery('.header-text').text('ПЕРВОЭЛЕМЕНТЫ БЦ');
     jQuery('.back-button, .reverce_clean_graph').removeClass('hidden');
   });
+
   jQuery('.main-item-regress').on('click', function(event) {
     var handle_status = jQuery('#custom-handle').css('left');
     if (handle_status != '3.5%') {
@@ -157,24 +133,31 @@ jQuery(document).ready(function () {
     jQuery('.slider-regress').fadeIn(500).removeClass('hidden').css('display', 'flex');
     jQuery('.header-text').text('РЕГРЕССИВНАЯ ШКАЛА');
     jQuery('.back-button, .reverce_clean_graph').removeClass('hidden');
-    // screen.orientation.lock('landscape');
-    // jQuery('.frame').addClass('hidden');
+  });
+
+  jQuery('.main-item-urav').on('click', function(event) {
+    var handle_status = jQuery('#custom-handle_2').css('left');
+    if (handle_status != '3.5%') {
+      jQuery('.reverce-clean_2').removeClass('hidden');
+    }
+    jQuery('.app-slide-menu').addClass('hidden').removeAttr('style');
+    jQuery('.slider-urav').fadeIn(500).removeClass('hidden').css('display', 'flex');
+    jQuery('.header-text').text('МЫСЛЕУРАВНИТЕЛЬ');
+    jQuery('.back-button, .reverce_clean_graph_2').removeClass('hidden');
   });
 
   jQuery('.back-button').on('click', function(event) {
     jQuery('.slider-box').addClass('hidden').removeAttr('style');
     jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
-    jQuery('.header-text').text('СПРАВОЧНИКИ');
-    jQuery('.back-button, .reverce_clean_graph').addClass('hidden');
-    // screen.orientation.lock('portrait');
-    // jQuery('.frame').removeClass('hidden');
+    jQuery('.header-text').text('ПОЛЕЗНЫЕ РЕСУРСЫ');
+    jQuery('.back-button, .reverce_clean_graph, .reverce_clean_graph_2').addClass('hidden');
   });
 
   jQuery(".swiper-slide").swipe( {
     swipeRight:function(event, direction, distance, duration, fingerCount) {
       jQuery('.slider-box').addClass('hidden').removeAttr('style');
       jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
-      jQuery('.header-text').text('СПРАВОЧНИКИ');
+      jQuery('.header-text').text('ПОЛЕЗНЫЕ РЕСУРСЫ');
       jQuery('.back-button, .reverce_clean_graph').addClass('hidden');
       // screen.orientation.lock('portrait');
       // jQuery('.frame').removeClass('hidden');
@@ -247,6 +230,57 @@ jQuery(document).ready(function () {
   jQuery('.reverce-clean').on('click', function(event) {
     jQuery( "#slider" ).slider( "value", 7 );
     jQuery('.knife_rate').detach();
+    jQuery('.reverce-clean').addClass('hidden');
+  });
+
+  // Мыслеуравнитель
+
+  jQuery( function() {
+    var handle_2 = jQuery("#custom-handle_2");
+    var handle_val_2;
+    jQuery("#slider_2").slider({
+      value: 7,
+      min: 0,
+      max: 200,
+      create: function() {
+        handle_2.text(jQuery(this).slider("value"));
+      },
+      slide: function( event, ui ) {
+        // handle.text( ui.value );
+        handle_val_2 = ui.value;
+        knife_2 = jQuery('body').find('#custom-handle_2').css('left');
+        knife_2 = parseFloat(knife.substr(0, knife.length - 2)).toFixed();
+        knifeDate_2 = new Date();
+        knifeDateDiff_2 = knifeDate_2 - knifeDateOld_2;
+        // console.log('test '+knifeDateDiff);
+        knife_rate_class_2 = 'knife_rate_2-'+knife_2;
+        knife_rate_class_dotted_2 = '.knife_rate_2-'+knife_2;
+        jQuery('.urav_graph').append('<div class='+knife_rate_class_2+'></div>');
+        jQuery(knife_rate_class_dotted_2).addClass('knife_rate_2').css({
+          left: +knife_2+2+'px',
+          height: knifeDateDiff_2+'px'
+        });
+        knifeDateOld_2 = knifeDate_2;
+      },
+      stop: function( event, ui ) {
+        console.log(handle_val_2);
+        navigator.vibrate(100);
+        jQuery('.reverce-clean_2').removeClass('hidden')
+        if (handle_val <= 60) {
+          mode_speed = 2;
+        } else if (handle_val > 60 && handle_val <= 111) {
+          mode_speed = 4;
+        } else if (handle_val > 111 && handle_val <= 160) {
+          mode_speed = 6;
+        } else if (handle_val > 160) {
+          mode_speed = 8;
+        }
+      }
+    });
+  });
+  jQuery('.reverce-clean_2').on('click', function(event) {
+    jQuery( "#slider_2" ).slider( "value", 7 );
+    jQuery('.knife_rate_2').detach();
     jQuery('.reverce-clean').addClass('hidden');
   });
 
