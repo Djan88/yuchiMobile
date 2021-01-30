@@ -249,7 +249,7 @@ jQuery(document).ready(function () {
         // handle.text( ui.value );
         handle_val_2 = ui.value;
         knife_2 = jQuery('body').find('#custom-handle_2').css('left');
-        knife_2 = parseFloat(knife.substr(0, knife.length - 2)).toFixed();
+        knife_2 = parseFloat(knife_2.substr(0, knife_2.length - 2)).toFixed();
         knifeDate_2 = new Date();
         knifeDateDiff_2 = knifeDate_2 - knifeDateOld_2;
         // console.log('test '+knifeDateDiff);
