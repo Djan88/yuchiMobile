@@ -76,16 +76,16 @@
                       <div class="col-3 main-item-img"><img src="<?php bloginfo('template_url'); ?>/img/regress-fav.png" alt="Регресс"></div>
                       <div class="col main-item-content">
                         <div class="main-item-title">Регрессивная шкала</div>
-                        <div class="main-item-sub-title">Регрессивное центрирование. Слайдер со шкалой</div>
+                        <div class="main-item-sub-title">Регрессивное центрирование. Ведите пальцем по шкале</div>
                       </div>
                     </div>
                   </div>
-                  <div class="col main-item main-item-urav hidden">
+                  <div class="col main-item main-item-urav">
                     <div class="row">
                       <div class="col-3 main-item-img"><img src="<?php bloginfo('template_url'); ?>/img/urav-fav.png" alt="Мыслеуравнитель"></div>
                       <div class="col main-item-content">
                         <div class="main-item-title">Мыслеуравнитель</div>
-                        <div class="main-item-sub-title">Регрессивное центрирование. Слайдер без шкалы</div>
+                        <div class="main-item-sub-title">Регрессивное центрирование. Ведите пальцем по шкале</div>
                       </div>
                     </div>
                   </div>
