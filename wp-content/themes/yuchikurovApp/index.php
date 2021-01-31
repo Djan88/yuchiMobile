@@ -71,7 +71,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col main-item main-item-regress">
+                  <div class="col main-item main-item-regress hidden">
                     <div class="row">
                       <div class="col-3 main-item-img"><img src="<?php bloginfo('template_url'); ?>/img/regress-fav.png" alt="Регресс"></div>
                       <div class="col main-item-content">
