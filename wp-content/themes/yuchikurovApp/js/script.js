@@ -252,13 +252,13 @@ jQuery(document).ready(function () {
     count_animation = 1;
     vibroOne = setInterval(function(){
       if (count_animation <= count){
-      navigator.vibrate(50);
+      navigator.vibrate(100);
       count_animation += 1; 
       } else {
         clearInterval(vibroOne);
         count_animation = 1;
       }
-    }, 100);
+    }, 200);
   }
 
   jQuery( function() {
