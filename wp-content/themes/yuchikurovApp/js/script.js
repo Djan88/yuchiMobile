@@ -258,7 +258,7 @@ jQuery(document).ready(function () {
         clearInterval(vibroOne);
         count_animation = 0;
       }
-    }, 100);
+    }, 200);
   }
 
   jQuery( function() {
