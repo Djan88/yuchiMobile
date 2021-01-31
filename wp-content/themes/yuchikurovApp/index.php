@@ -84,8 +84,8 @@
                     <div class="row">
                       <div class="col-3 main-item-img"><img src="<?php bloginfo('template_url'); ?>/img/uravn-fav.png" alt="Мыслеуравнитель"></div>
                       <div class="col main-item-content">
-                        <div class="main-item-title">Мыслеуравнитель</div>
-                        <div class="main-item-sub-title">Регрессивное центрирование. Ведите пальцем по шкале</div>
+                        <div class="main-item-title">Уравнитель</div>
+                        <div class="main-item-sub-title">Для начала работы проведите пальцем по шкале</div>
                       </div>
                     </div>
                   </div>
