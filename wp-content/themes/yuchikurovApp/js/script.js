@@ -23,6 +23,7 @@ jQuery(document).ready(function () {
     knife_rate_class_2,
     knife_rate_class_dotted_2,
     vibro,
+    vibroOnAir = false;
     vibroOne;
 
   // Pull to refresh
@@ -251,12 +252,18 @@ jQuery(document).ready(function () {
   vibro = function(count){
     count_animation = 1;
     vibroOne = setInterval(function(){
-      if (count_animation <= count){
-      navigator.vibrate(100);
-      count_animation += 1; 
-      } else {
+      if (vibroOnAir == true) {
+        vibroOnAir = false;
         clearInterval(vibroOne);
-        count_animation = 1;
+        vibro(count);
+      } else {
+        if (count_animation <= count){
+          navigator.vibrate(100);
+          count_animation += 1;
+        } else {
+          clearInterval(vibroOne);
+          count_animation = 1;
+        }
       }
     }, 200);
   }
@@ -290,28 +297,29 @@ jQuery(document).ready(function () {
       },
       stop: function( event, ui ) {
         console.log(handle_val_2);
-        jQuery('.reverce-clean_2').removeClass('hidden')
+        jQuery('.reverce-clean_2').removeClass('hidden');
+        vibroOnAir = true;
         if (handle_val_2 > 1 && handle_val_2 <= 26) {
-          jQuery('.urav_value').text('2');
-          vibro(2);
-        } else if (handle_val_2 > 26 && handle_val_2 <= 55) {
-          jQuery('.urav_value').text('3');
-          vibro(3);
-        } else if (handle_val_2 > 55 && handle_val_2 <= 85) {
-          jQuery('.urav_value').text('4');
-          vibro(4);
-        } else if (handle_val_2 > 85 && handle_val_2 <= 113) {
-          jQuery('.urav_value').text('5');
-          vibro(5);
-        } else if (handle_val_2 > 113 && handle_val_2 <= 140) {
-          jQuery('.urav_value').text('6');
-          vibro(6);
-        } else if (handle_val_2 > 140 && handle_val_2 <= 170) {
           jQuery('.urav_value').text('7');
           vibro(7);
+        } else if (handle_val_2 > 26 && handle_val_2 <= 55) {
+          jQuery('.urav_value').text('6');
+          vibro(6);
+        } else if (handle_val_2 > 55 && handle_val_2 <= 85) {
+          jQuery('.urav_value').text('5');
+          vibro(5);
+        } else if (handle_val_2 > 85 && handle_val_2 <= 113) {
+          jQuery('.urav_value').text('4');
+          vibro(4);
+        } else if (handle_val_2 > 113 && handle_val_2 <= 140) {
+          jQuery('.urav_value').text('3');
+          vibro(3);
+        } else if (handle_val_2 > 140 && handle_val_2 <= 170) {
+          jQuery('.urav_value').text('2');
+          vibro(2);
         } else if (handle_val_2 > 170 && handle_val_2 <= 200) {
-          jQuery('.urav_value').text('8');
-          vibro(8);
+          jQuery('.urav_value').text('1');
+          vibro(1);
         }
       }
     });
