@@ -253,7 +253,7 @@ jQuery(document).ready(function () {
     count_animation = 1;
     vibroOne = setInterval(function(){
       jQuery('.urav_status').text(vibroOnAir);
-      if (vibroOnAir == true) {
+      if (vibroOnAir === true) {
         vibroOnAir = false;
         clearInterval(vibroOne);
         vibro(count);
