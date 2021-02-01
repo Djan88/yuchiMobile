@@ -23,7 +23,7 @@ jQuery(document).ready(function () {
     knife_rate_class_2,
     knife_rate_class_dotted_2,
     vibro,
-    vibroOnAir = false;
+    vibroOnAir = false,
     vibroOne;
 
   // Pull to refresh
