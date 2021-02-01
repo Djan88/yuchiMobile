@@ -253,17 +253,17 @@ jQuery(document).ready(function () {
     count_animation = 1;
     vibroOne = setInterval(function(){
       jQuery('.urav_status').text(count_animation);
-      if (vibroOnAir === true) {
-        vibroOnAir = false;
+      if (vibroOnAir == true) {
         clearInterval(vibroOne);
-        vibro(count);
+        vibroOnAir = false;
       } else {
-        if (count_animation <= count){
+        if (count_animation <= count && vibroOnAir == false){
           navigator.vibrate(100);
           count_animation += 1;
         } else {
           clearInterval(vibroOne);
           count_animation = 1;
+          vibroOnAir = false;
         }
       }
     }, 200);
