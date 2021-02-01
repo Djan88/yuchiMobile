@@ -139,12 +139,7 @@
                   <div class="urav_graph_handle"><i class="fa fa-arrows-alt-h"></i></div>
                   <div class="urav_value"></div>
                 </div>
-                <div class="urav_age hidden">
-                  <table>
-                    <tr>
-                      <td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td>
-                    </tr>
-                  </table>
+                <div class="urav_age">
                   <div class="urav_status">0</div>
                 </div>
                 <div id="slider_2">
