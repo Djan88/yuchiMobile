@@ -146,7 +146,7 @@ jQuery(document).ready(function () {
     }
     jQuery('.app-slide-menu').addClass('hidden').removeAttr('style');
     jQuery('.slider-urav').fadeIn(500).removeClass('hidden').css('display', 'flex');
-    jQuery('.header-text').text('МЫСЛЕУРАВНИТЕЛЬ');
+    jQuery('.header-text').text('УРАВНИТЕЛЬ');
     jQuery('.back-button, .reverce_clean_graph_2').removeClass('hidden');
   });
 
