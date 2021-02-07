@@ -254,7 +254,7 @@ jQuery(document).ready(function () {
     if (count_animation > 1) {
       clearInterval(vibroOne);
       count_animation = 1;
-      // vibro(count);
+      vibro(count);
     } else {
       count_animation = 1;
       vibroOne = setInterval(function(){
