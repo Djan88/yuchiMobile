@@ -24,6 +24,7 @@ jQuery(document).ready(function () {
     knife_rate_class_dotted_2,
     vibro,
     vibroOnAir = false,
+    count_animation = 1,
     vibroOne;
 
   // Pull to refresh
@@ -253,7 +254,7 @@ jQuery(document).ready(function () {
     if (count_animation > 1) {
       clearInterval(vibroOne);
       count_animation = 1;
-      vibro(count);
+      // vibro(count);
     } else {
       count_animation = 1;
       vibroOne = setInterval(function(){
