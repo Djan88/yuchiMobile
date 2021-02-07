@@ -250,7 +250,7 @@ jQuery(document).ready(function () {
   // Мыслеуравнитель
 
   vibro = function(count){
-    if (count_animation >= 1) {
+    if (count_animation > 1) {
       clearInterval(vibroOne);
       count_animation = 1;
       vibro(count);
