@@ -139,9 +139,6 @@
                   <div class="urav_graph_handle"><i class="fa fa-arrows-alt-h"></i></div>
                   <div class="urav_value"></div>
                 </div>
-                <div class="urav_age">
-                  <div class="urav_status">0</div>
-                </div>
                 <div id="slider_2">
                   <div id="custom-handle_2" class="ui-slider-handle"></div>
                 </div>
