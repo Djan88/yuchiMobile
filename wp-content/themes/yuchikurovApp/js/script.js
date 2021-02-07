@@ -250,23 +250,22 @@ jQuery(document).ready(function () {
   // Мыслеуравнитель
 
   vibro = function(count){
-    count_animation = 1;
-    vibroOne = setInterval(function(){
-      jQuery('.urav_status').text(count_animation);
-      if (vibroOnAir == true) {
-        clearInterval(vibroOne);
-        vibroOnAir = false;
-      } else {
-        if (count_animation <= count && vibroOnAir == false){
+    if (count_animation >= 1) {
+      clearInterval(vibroOne);
+      count_animation = 1;
+      vibro(count);
+    } else {
+      count_animation = 1;
+      vibroOne = setInterval(function(){
+        if (count_animation <= count){
           navigator.vibrate(100);
           count_animation += 1;
         } else {
           clearInterval(vibroOne);
           count_animation = 1;
-          vibroOnAir = false;
         }
-      }
-    }, 200);
+      }, 200);
+    }
   }
 
   jQuery( function() {
@@ -299,7 +298,6 @@ jQuery(document).ready(function () {
       stop: function( event, ui ) {
         console.log(handle_val_2);
         jQuery('.reverce-clean_2').removeClass('hidden');
-        vibroOnAir = true;
         if (handle_val_2 > 1 && handle_val_2 <= 26) {
           jQuery('.urav_value').text('7');
           vibro(7);
