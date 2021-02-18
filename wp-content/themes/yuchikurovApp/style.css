@@ -258,6 +258,7 @@ button svg
 {
   border-radius: 6px;
   margin-top: 5px;
+  border: 1px solid #eee;
 }
 .main-item-title
 {
