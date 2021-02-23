@@ -129,13 +129,13 @@ jQuery(document).ready(function () {
   });
 
   jQuery('.main-item-regress').on('click', function(event) {
-    var handle_status = jQuery('#custom-handle').css('left');
-    if (handle_status != '3.5%') {
-      jQuery('.reverce-clean').removeClass('hidden');
-    }
+    // var handle_status = jQuery('#custom-handle').css('left');
+    // if (handle_status != '3.5%') {
+    //   jQuery('.reverce-clean').removeClass('hidden');
+    // }
     jQuery('.app-slide-menu').addClass('hidden').removeAttr('style');
     jQuery('.slider-regress').fadeIn(500).removeClass('hidden').css('display', 'flex');
-    jQuery('.header-text').text('РЕГРЕССИВНАЯ ШКАЛА');
+    jQuery('.header-text').text('ТРЕУГОЛЬНИКИ');
     jQuery('.back-button, .reverce_clean_graph').removeClass('hidden');
   });
 
@@ -375,5 +375,31 @@ jQuery(document).ready(function () {
         navigator.vibrate(100);
       },200);
   }});
+
+
+  // trangle canvas
+
+  function draw() {
+    var canvas = document.getElementById('canvas');
+    if (canvas.getContext){
+      var ctx = canvas.getContext('2d');
+
+      // Filled triangle
+      ctx.beginPath();
+      ctx.moveTo(25,25);
+      ctx.lineTo(105,25);
+      ctx.lineTo(25,105);
+      ctx.fill();
+
+      // Stroked triangle
+      ctx.beginPath();
+      ctx.moveTo(125,125);
+      ctx.lineTo(125,45);
+      ctx.lineTo(45,125);
+      ctx.closePath();
+      ctx.stroke();
+    }
+  }
+  draw();
 
 });

@@ -71,20 +71,20 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col main-item main-item-regress hidden">
+                  <div class="col main-item main-item-regress">
                     <div class="row">
-                      <div class="col-3 main-item-img"><img src="<?php bloginfo('template_url'); ?>/img/regress-fav.png" alt="Регресс"></div>
+                      <div class="col-3 main-item-img"><img src="<?php bloginfo('template_url'); ?>/img/trangle.png" alt="Регресс"></div>
                       <div class="col main-item-content">
-                        <div class="main-item-title">Регрессивная шкала</div>
-                        <div class="main-item-sub-title">Регрессивное центрирование. Ведите пальцем по шкале</div>
+                        <div class="main-item-title">Треугольники</div>
+                        <div class="main-item-sub-title">Слайды визуальных динамических проекций мыслительной активности 1-4 зон DSV</div>
                       </div>
                     </div>
                   </div>
                   <div class="col main-item main-item-urav">
                     <div class="row">
-                      <div class="col-3 main-item-img"><img src="<?php bloginfo('template_url'); ?>/img/uravn-fav.png" alt="Мыслеуравнитель"></div>
+                      <div class="col-3 main-item-img"><img src="<?php bloginfo('template_url'); ?>/img/uravn-fav.png" alt="Оцифратор"></div>
                       <div class="col main-item-content">
-                        <div class="main-item-title">Уравнитель</div>
+                        <div class="main-item-title">Оцифратор</div>
                         <div class="main-item-sub-title">Для начала работы проведите пальцем по шкале</div>
                       </div>
                     </div>
@@ -118,19 +118,7 @@
             </div>
             <div class="col-12 slider-box slider-regress overscreen">
               <div class="regress-wrapper">
-                <div class="reverce_graph">
-                  <div class="reverce_graph_handle"><i class="fa fa-arrows-alt-h"></i></div>
-                </div>
-                <div class="reverce_age">
-                  <table>
-                    <tr>
-                      <td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td>
-                    </tr>
-                  </table>
-                </div>
-                <div id="slider">
-                  <div id="custom-handle" class="ui-slider-handle"></div>
-                </div>
+                <canvas id="canvas"></canvas>
               </div>
             </div>
             <div class="col-12 slider-box slider-urav overscreen">
