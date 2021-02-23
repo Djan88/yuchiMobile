@@ -787,6 +787,7 @@ h3.newsCard_heading
 #canvas
 {
   margin: auto;
+  display: block;
 }
 
 @media (min-width: 992px){
