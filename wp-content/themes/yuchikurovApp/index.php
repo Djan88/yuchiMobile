@@ -73,7 +73,7 @@
                   </div>
                   <div class="col main-item main-item-regress">
                     <div class="row">
-                      <div class="col-3 main-item-img"><img src="<?php bloginfo('template_url'); ?>/img/trangle.png" alt="Регресс"></div>
+                      <div class="col-3 main-item-img"><img src="<?php bloginfo('template_url'); ?>/img/treangle.png" alt="Регресс"></div>
                       <div class="col main-item-content">
                         <div class="main-item-title">Треугольники</div>
                         <div class="main-item-sub-title">Слайды визуальных динамических проекций мыслительной активности 1-4 зон DSV</div>
@@ -118,7 +118,7 @@
             </div>
             <div class="col-12 slider-box slider-regress overscreen">
               <div class="regress-wrapper">
-                <canvas id="canvas"></canvas>
+                <canvas id="canvas" width="300" height="300"></canvas>
               </div>
             </div>
             <div class="col-12 slider-box slider-urav overscreen">
