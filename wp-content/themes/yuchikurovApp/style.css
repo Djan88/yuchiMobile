@@ -784,6 +784,10 @@ h3.newsCard_heading
 {
   font-size: 20px;
 }
+#canvas
+{
+  margin: auto;
+}
 
 @media (min-width: 992px){
   .d-lg-none 
