@@ -118,7 +118,8 @@
             </div>
             <div class="col-12 slider-box slider-regress overscreen">
               <div class="regress-wrapper">
-                <canvas id="canvas" width="350" height="650"></canvas>
+                <!-- <canvas id="canvas" width="350" height="650"></canvas> -->
+                <div class="treangle"></div>
               </div>
             </div>
             <div class="col-12 slider-box slider-urav overscreen">

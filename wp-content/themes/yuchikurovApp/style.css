@@ -789,6 +789,14 @@ h3.newsCard_heading
   margin: auto;
   display: block;
 }
+.treangle 
+{
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-right: 100px solid red;
+  border-bottom: 50px solid transparent;
+}
 
 @media (min-width: 992px){
   .d-lg-none 

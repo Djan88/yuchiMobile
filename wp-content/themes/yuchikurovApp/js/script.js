@@ -379,21 +379,20 @@ jQuery(document).ready(function () {
 
   // trangle canvas
 
-  function draw() {
-    var canvas = document.getElementById('canvas');
-    if (canvas.getContext){
-      var ctx = canvas.getContext('2d');
+  // function draw() {
+  //   var canvas = document.getElementById('canvas');
+  //   if (canvas.getContext){
+  //     var ctx = canvas.getContext('2d');
 
-      // Stroked triangle
-      ctx.beginPath();
-      ctx.moveTo(250,250);
-      ctx.lineTo(30,500);
-      ctx.lineTo(150,195);
-      ctx.closePath();
-      ctx.lineWidth = 5;
-      ctx.stroke();
-    }
-  }
-  draw();
+  //     ctx.beginPath();
+  //     ctx.moveTo(250,250);
+  //     ctx.lineTo(30,500);
+  //     ctx.lineTo(150,195);
+  //     ctx.closePath();
+  //     ctx.lineWidth = 5;
+  //     ctx.stroke();
+  //   }
+  // }
+  // draw();
 
 });
