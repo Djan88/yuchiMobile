@@ -390,6 +390,7 @@ jQuery(document).ready(function () {
       ctx.lineTo(125,45);
       ctx.lineTo(45,125);
       ctx.closePath();
+      ctx.lineWidth = 5;
       ctx.stroke();
     }
   }
