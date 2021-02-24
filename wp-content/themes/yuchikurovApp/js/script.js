@@ -386,7 +386,7 @@ jQuery(document).ready(function () {
 
       // Stroked triangle
       ctx.beginPath();
-      ctx.moveTo(250,350);
+      ctx.moveTo(250,250);
       ctx.lineTo(30,500);
       ctx.lineTo(45,125);
       ctx.closePath();
