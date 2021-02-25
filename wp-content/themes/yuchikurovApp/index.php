@@ -119,6 +119,7 @@
             <div class="col-12 slider-box slider-regress overscreen">
               <div class="regress-wrapper">
                 <!-- <canvas id="canvas" width="350" height="650"></canvas> -->
+                <div class="treangle_handler btn">СТАРТ</div>
                 <div class="treangle"></div>
               </div>
             </div>

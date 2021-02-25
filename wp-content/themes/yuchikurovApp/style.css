@@ -789,13 +789,25 @@ h3.newsCard_heading
   margin: auto;
   display: block;
 }
+.treangle_handler
+{
+  margin: 30px auto;
+}
 .treangle 
 {
   width: 0;
   height: 0;
-  border-top: 50px solid transparent;
-  border-right: 100px solid red;
-  border-bottom: 50px solid transparent;
+  position: absolute;
+  transition: all 2s ease;
+}
+.treangle_1
+{
+  left: 90px;
+  top: 180px;
+  transform: rotate(211deg);
+  border-top: 320px solid transparent;
+  border-right: 160px solid #ffb100;
+  border-bottom: 8px solid transparent;
 }
 
 @media (min-width: 992px){
