@@ -396,7 +396,7 @@ jQuery(document).ready(function () {
   // draw();
 
   jQuery('.treangle_handler').on('click', function(event) {
-    jQuery('.treangle').removeClass('treangle_1').addClass('treangle_2')
+    jQuery('.treangle').removeClass('treangle_1').addClass('treangle_2');
   });
 
 });
