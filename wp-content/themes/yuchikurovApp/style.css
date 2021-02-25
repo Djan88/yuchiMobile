@@ -817,7 +817,7 @@ h3.newsCard_heading
   /*right: 1.5em;*/
   /*top: 10em;*/
   transform: rotate(331deg);
-  border-left: 15em solid transparent;
+  border-left: 14em solid transparent;
   border-right: 3em solid transparent;
   border-bottom: 5.5em solid #ffb100;
 }
@@ -827,7 +827,7 @@ h3.newsCard_heading
   /*top: 10em;*/
   transform: rotate(338deg);
   border-left: 12em solid transparent;
-  border-right: 3em solid transparent;
+  border-right: 2em solid transparent;
   border-bottom: 5.5em solid #ffb100;
 }
 .treangle_3
