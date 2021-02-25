@@ -832,6 +832,15 @@ h3.newsCard_heading
   border-right: 7em solid #ffb100;
   border-bottom: 0em solid transparent;
 }
+.treangle_3
+{
+  right: 27%;
+  top: 10em;
+  transform: rotate(225deg);
+  border-top: 11em solid transparent;
+  border-right: 7em solid #ffb100;
+  border-bottom: 0em solid transparent;
+}
 
 @media (min-width: 992px){
   .d-lg-none 

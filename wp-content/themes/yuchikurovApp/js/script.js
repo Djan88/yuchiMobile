@@ -403,7 +403,16 @@ jQuery(document).ready(function () {
     setTimeout(function(){
       jQuery('.treangle').removeClass('treangle_1').addClass('treangle_2');
       navigator.vibrate(2000);
-    },5000);
+      treangle_2();
+    },4000);
+  }
+
+  treangle_2 = function(){
+    setTimeout(function(){
+      jQuery('.treangle').removeClass('treangle_2').addClass('treangle_3');
+      navigator.vibrate(2000);
+      // treangle_2();
+    },6000);
   }
 
 });
