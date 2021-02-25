@@ -816,48 +816,57 @@ h3.newsCard_heading
 }
 .treangle_1
 {
-  right: 27%;
+  right: 1.5em;
   top: 10em;
-  transform: rotate(225deg);
-  border-top: 15em solid transparent;
-  border-right: 8.8em solid #ffb100;
-  border-bottom: 3em solid transparent;
+  transform: rotate(331deg);
+  border-left: 15em solid transparent;
+  border-right: 3em solid transparent;
+  border-bottom: 6em solid #ffb100;
 }
 .treangle_2
 {
-  right: 27%;
+  right: 2.5em;
   top: 10em;
-  transform: rotate(225deg);
-  border-top: 13em solid transparent;
-  border-right: 8.8em solid #ffb100;
-  border-bottom: 3em solid transparent;
+  transform: rotate(338deg);
+  border-left: 13em solid transparent;
+  border-right: 3em solid transparent;
+  border-bottom: 6em solid #ffb100;
 }
 .treangle_3
 {
-  right: 27%;
+  right: 3.5em;
   top: 10em;
-  transform: rotate(225deg);
-  border-top: 11em solid transparent;
-  border-right: 8.8em solid #ffb100;
-  border-bottom: 3em solid transparent;
+  transform: rotate(345deg);
+  border-left: 11em solid transparent;
+  border-right: 3em solid transparent;
+  border-bottom: 6em solid #ffb100;
 }
 .treangle_4
 {
-  right: 27%;
+  right: 4.5em;
   top: 10em;
-  transform: rotate(225deg);
-  border-top: 9em solid transparent;
-  border-right: 8.8em solid #ffb100;
-  border-bottom: 3em solid transparent;
+  transform: rotate(352deg);
+  border-left: 9em solid transparent;
+  border-right: 3em solid transparent;
+  border-bottom: 6em solid #ffb100;
 }
 .treangle_5
 {
-  right: 27%;
+  right: 5.5em;
   top: 10em;
-  transform: rotate(219deg);
-  border-top: 7em solid transparent;
-  border-right: 8.8em solid #ffb100;
-  border-bottom: 3em solid transparent;
+  transform: rotate(359deg);
+  border-left: 7em solid transparent;
+  border-right: 3em solid transparent;
+  border-bottom: 6em solid #ffb100;
+}
+.treangle_6
+{
+  right: 5.5em;
+  top: 10em;
+  transform: rotate(365deg);
+  border-left: 3em solid transparent;
+  border-right: 3em solid transparent;
+  border-bottom: 6em solid #ffb100;
 }
 
 @media (min-width: 992px){

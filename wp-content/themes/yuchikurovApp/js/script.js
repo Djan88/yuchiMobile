@@ -424,6 +424,13 @@ jQuery(document).ready(function () {
     setTimeout(function(){
       jQuery('.treangle').removeClass('treangle_4').addClass('treangle_5');
       navigator.vibrate(2000);
+      treangle_5();
+    },7000);
+  }
+  treangle_5 = function(){
+    setTimeout(function(){
+      jQuery('.treangle').removeClass('treangle_5').addClass('treangle_6');
+      navigator.vibrate(2000);
       // treangle_2();
     },7000);
   }
