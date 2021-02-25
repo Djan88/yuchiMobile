@@ -402,28 +402,28 @@ jQuery(document).ready(function () {
   treangle_1 = function(){
     setTimeout(function(){
       jQuery('.treangle').removeClass('treangle_1').addClass('treangle_2');
-      navigator.vibrate(2000);
+      navigator.vibrate(200);
       treangle_2();
     },4000);
   }
   treangle_2 = function(){
     setTimeout(function(){
       jQuery('.treangle').removeClass('treangle_2').addClass('treangle_3');
-      navigator.vibrate(2000);
+      navigator.vibrate(200);
       treangle_3();
     },7000);
   }
   treangle_3 = function(){
     setTimeout(function(){
       jQuery('.treangle').removeClass('treangle_3').addClass('treangle_4');
-      navigator.vibrate(2000);
+      navigator.vibrate(200);
       treangle_4();
     },7000);
   }
   treangle_4 = function(){
     setTimeout(function(){
       jQuery('.treangle').removeClass('treangle_4').addClass('treangle_5');
-      navigator.vibrate(2000);
+      navigator.vibrate(200);
       // treangle_5();
     },7000);
   }
