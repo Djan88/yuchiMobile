@@ -801,19 +801,15 @@ h3.newsCard_heading
 .treangle_handler
 {
   margin: 30px auto;
-  position: absolute;
   text-align: center;
-  left: 0;
-  right: 0;
   width: 100px;
-  top: 50px;
 }
 .treangle 
 {
   width: 0;
   height: 0;
   /*position: absolute;*/
-  margin: 230px auto;
+  margin: 4em auto;
   transition: all 2s linear;
 }
 .treangle_1
@@ -821,6 +817,7 @@ h3.newsCard_heading
   /*right: 1.5em;*/
   /*top: 10em;*/
   transform: rotate(331deg);
+  margin-left: -2em;
   border-left: 15em solid transparent;
   border-right: 3em solid transparent;
   border-bottom: 5.5em solid #ffb100;
