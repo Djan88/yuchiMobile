@@ -803,6 +803,7 @@ h3.newsCard_heading
   margin: 30px auto;
   text-align: center;
   opacity: 1;
+  transition: opacity 2s linear;
 }
 .treangle 
 {
