@@ -828,7 +828,7 @@ h3.newsCard_heading
   right: 2.5em;
   top: 10em;
   transform: rotate(338deg);
-  border-left: 13em solid transparent;
+  border-left: 12em solid transparent;
   border-right: 3em solid transparent;
   border-bottom: 6em solid #ffb100;
 }
@@ -837,7 +837,7 @@ h3.newsCard_heading
   right: 3.5em;
   top: 10em;
   transform: rotate(345deg);
-  border-left: 11em solid transparent;
+  border-left: 9em solid transparent;
   border-right: 3em solid transparent;
   border-bottom: 6em solid #ffb100;
 }
@@ -846,7 +846,7 @@ h3.newsCard_heading
   right: 4.5em;
   top: 10em;
   transform: rotate(352deg);
-  border-left: 9em solid transparent;
+  border-left: 6em solid transparent;
   border-right: 3em solid transparent;
   border-bottom: 6em solid #ffb100;
 }
@@ -854,16 +854,7 @@ h3.newsCard_heading
 {
   right: 5.5em;
   top: 10em;
-  transform: rotate(359deg);
-  border-left: 7em solid transparent;
-  border-right: 3em solid transparent;
-  border-bottom: 6em solid #ffb100;
-}
-.treangle_6
-{
-  right: 5.5em;
-  top: 10em;
-  transform: rotate(365deg);
+  transform: rotate(360deg);
   border-left: 3em solid transparent;
   border-right: 3em solid transparent;
   border-bottom: 6em solid #ffb100;
