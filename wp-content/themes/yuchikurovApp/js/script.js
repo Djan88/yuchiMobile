@@ -396,8 +396,14 @@ jQuery(document).ready(function () {
   // draw();
 
   jQuery('.treangle_handler').on('click', function(event) {
-    jQuery('.treangle').removeClass('treangle_1').addClass('treangle_2');
-    navigator.vibrate(2000);
+    treangle_1();
   });
+
+  treangle_1 = function(){
+    setTimeout(function(){
+      jQuery('.treangle').removeClass('treangle_1').addClass('treangle_2');
+      navigator.vibrate(2000);
+    },5000);
+  }
 
 });
