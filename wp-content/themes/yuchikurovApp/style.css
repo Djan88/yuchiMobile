@@ -802,6 +802,7 @@ h3.newsCard_heading
 {
   margin: 30px auto;
   position: absolute;
+  text-align: center;
   left: 0;
   right: 0;
   width: 100px;
@@ -811,13 +812,14 @@ h3.newsCard_heading
 {
   width: 0;
   height: 0;
-  position: absolute;
+  /*position: absolute;*/
+  margin: 230px auto;
   transition: all 2s linear;
 }
 .treangle_1
 {
-  right: 1.5em;
-  top: 10em;
+  /*right: 1.5em;*/
+  /*top: 10em;*/
   transform: rotate(331deg);
   border-left: 15em solid transparent;
   border-right: 3em solid transparent;
@@ -825,8 +827,8 @@ h3.newsCard_heading
 }
 .treangle_2
 {
-  right: 2.5em;
-  top: 10em;
+  /*right: 2.5em;*/
+  /*top: 10em;*/
   transform: rotate(338deg);
   border-left: 12em solid transparent;
   border-right: 3em solid transparent;
@@ -834,8 +836,8 @@ h3.newsCard_heading
 }
 .treangle_3
 {
-  right: 3.5em;
-  top: 10em;
+  /*right: 3.5em;*/
+  /*top: 10em;*/
   transform: rotate(345deg);
   border-left: 9em solid transparent;
   border-right: 3em solid transparent;
@@ -843,8 +845,8 @@ h3.newsCard_heading
 }
 .treangle_4
 {
-  right: 4.5em;
-  top: 10em;
+  /*right: 4.5em;*/
+  /*top: 10em;*/
   transform: rotate(352deg);
   border-left: 6em solid transparent;
   border-right: 3em solid transparent;
@@ -852,8 +854,8 @@ h3.newsCard_heading
 }
 .treangle_5
 {
-  right: 5.5em;
-  top: 10em;
+  /*right: 5.5em;*/
+  /*top: 10em;*/
   transform: rotate(360deg);
   border-left: 3em solid transparent;
   border-right: 3em solid transparent;
