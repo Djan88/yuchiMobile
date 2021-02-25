@@ -399,13 +399,13 @@ jQuery(document).ready(function () {
 
   jQuery('.treangle_handler').on('click', function(event) {
     treangle_1();
-    jQuery('.treangle').addClass('treangle_1');
+    jQuery('.treangle').addClass('treangle_1').removeClass('inopacity');
+    jQuery(this).addClass('inopacity');
   });
 
   treangle_1 = function(){
     setTimeout(function(){
       jQuery('.treangle').removeClass('treangle_1').addClass('treangle_2');
-      jQuery('.treangle_handler').addClass('inopacity');
       navigator.vibrate(200);
       treangle_2();
     },4000);
