@@ -478,7 +478,6 @@ jQuery(document).ready(function () {
       jQuery('.treangle').removeClass('treangle_10').addClass('treangle_1');
       jQuery('.treangle_handler').removeClass('inopacity');
       navigator.vibrate(200);
-      treangle_10();
     },2000);
   }
 
