@@ -825,12 +825,12 @@ h3.newsCard_heading
 }
 .treangle_2
 {
-  left: 90px;
-  top: 180px;
-  transform: rotate(211deg);
-  border-top: 270px solid transparent;
-  border-right: 160px solid #ffb100;
-  border-bottom: 0px solid transparent;
+  left: 27%;
+  top: 10em;
+  transform: rotate(225deg);
+  border-top: 13em solid transparent;
+  border-right: 7em solid #ffb100;
+  border-bottom: 0em solid transparent;
 }
 
 @media (min-width: 992px){
