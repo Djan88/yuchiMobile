@@ -879,6 +879,11 @@ h3.newsCard_heading
   border-left: 4rem solid transparent;
   border-right: 4rem solid transparent;
   border-bottom: 7.5rem solid #ffb100;
+  opacity: 1;
+}
+.inopacity
+{
+  opacity: 0;
 }
 
 @media (min-width: 992px){
