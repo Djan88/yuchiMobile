@@ -133,6 +133,7 @@ jQuery(document).ready(function () {
     // if (handle_status != '3.5%') {
     //   jQuery('.reverce-clean').removeClass('hidden');
     // }
+    jQuery('.treangle').removeClass('hidden');
     jQuery('.app-slide-menu').addClass('hidden').removeAttr('style');
     jQuery('.slider-regress').fadeIn(500).removeClass('hidden').css('display', 'flex');
     jQuery('.header-text').text('ТРЕУГОЛЬНИКИ');
@@ -424,8 +425,49 @@ jQuery(document).ready(function () {
     setTimeout(function(){
       jQuery('.treangle').removeClass('treangle_4').addClass('treangle_5');
       navigator.vibrate(200);
-      // treangle_5();
+      treangle_5();
     },7000);
+  }
+  treangle_5 = function(){
+    setTimeout(function(){
+      jQuery('.treangle').removeClass('treangle_5').addClass('treangle_6');
+      navigator.vibrate(200);
+      treangle_6();
+    },32000);
+  }
+  treangle_6 = function(){
+    setTimeout(function(){
+      jQuery('.treangle').removeClass('treangle_6').addClass('treangle_7');
+      navigator.vibrate(200);
+      treangle_7();
+    },7000);
+  }
+  treangle_7 = function(){
+    setTimeout(function(){
+      jQuery('.treangle').removeClass('treangle_7').addClass('treangle_8');
+      navigator.vibrate(200);
+      treangle_8();
+    },7000);
+  }
+  treangle_8 = function(){
+    setTimeout(function(){
+      jQuery('.treangle').removeClass('treangle_8').addClass('treangle_9');
+      navigator.vibrate(200);
+      treangle_9();
+    },7000);
+  }
+  treangle_9 = function(){
+    setTimeout(function(){
+      jQuery('.treangle').removeClass('treangle_9').addClass('treangle_10');
+      navigator.vibrate(200);
+      treangle_10();
+    },7000);
+  }
+  treangle_10 = function(){
+    setTimeout(function(){
+      jQuery('.treangle').removeClass('treangle_10').addClass('treangle_1 hidden');
+      navigator.vibrate(200);
+    },32000);
   }
 
 });
