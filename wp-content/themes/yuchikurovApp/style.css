@@ -816,7 +816,7 @@ h3.newsCard_heading
 }
 .treangle_1
 {
-  left: 27%;
+  right: 27%;
   top: 10em;
   transform: rotate(225deg);
   border-top: 15em solid transparent;
@@ -825,7 +825,7 @@ h3.newsCard_heading
 }
 .treangle_2
 {
-  left: 27%;
+  right: 27%;
   top: 10em;
   transform: rotate(225deg);
   border-top: 13em solid transparent;
