@@ -820,8 +820,8 @@ h3.newsCard_heading
   top: 10em;
   transform: rotate(225deg);
   border-top: 15em solid transparent;
-  border-right: 7em solid #ffb100;
-  border-bottom: 0em solid transparent;
+  border-right: 8.8em solid #ffb100;
+  border-bottom: 3em solid transparent;
 }
 .treangle_2
 {
@@ -829,8 +829,8 @@ h3.newsCard_heading
   top: 10em;
   transform: rotate(225deg);
   border-top: 13em solid transparent;
-  border-right: 7em solid #ffb100;
-  border-bottom: 0em solid transparent;
+  border-right: 8.8em solid #ffb100;
+  border-bottom: 3em solid transparent;
 }
 .treangle_3
 {
@@ -838,8 +838,8 @@ h3.newsCard_heading
   top: 10em;
   transform: rotate(225deg);
   border-top: 11em solid transparent;
-  border-right: 7em solid #ffb100;
-  border-bottom: 0em solid transparent;
+  border-right: 8.8em solid #ffb100;
+  border-bottom: 3em solid transparent;
 }
 .treangle_4
 {
@@ -847,17 +847,17 @@ h3.newsCard_heading
   top: 10em;
   transform: rotate(225deg);
   border-top: 9em solid transparent;
-  border-right: 7em solid #ffb100;
-  border-bottom: 0em solid transparent;
+  border-right: 8.8em solid #ffb100;
+  border-bottom: 3em solid transparent;
 }
 .treangle_5
 {
   right: 27%;
   top: 10em;
-  transform: rotate(225deg);
+  transform: rotate(219deg);
   border-top: 7em solid transparent;
-  border-right: 7em solid #ffb100;
-  border-bottom: 0em solid transparent;
+  border-right: 8.8em solid #ffb100;
+  border-bottom: 3em solid transparent;
 }
 
 @media (min-width: 992px){
