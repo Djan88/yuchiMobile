@@ -817,70 +817,70 @@ h3.newsCard_heading
   transform: rotate(-29deg);
   border-left: 17rem solid transparent;
   border-right: 4rem solid transparent;
-  border-bottom: 7rem solid #ffb100;
+  border-bottom: 6.5rem solid #ffb100;
 }
 .treangle_2
 {
   transform: rotate(-22deg);
   border-left: 14rem solid transparent;
   border-right: 4rem solid transparent;
-  border-bottom: 7rem solid #ffb100;
+  border-bottom: 6.5rem solid #ffb100;
 }
 .treangle_3
 {
   transform: rotate(-15deg);
   border-left: 11rem solid transparent;
   border-right: 4rem solid transparent;
-  border-bottom: 7rem solid #ffb100;
+  border-bottom: 6.5rem solid #ffb100;
 }
 .treangle_4
 {
   transform: rotate(-7deg);
   border-left: 7rem solid transparent;
   border-right: 4rem solid transparent;
-  border-bottom: 7rem solid #ffb100;
+  border-bottom: 6.5rem solid #ffb100;
 }
 .treangle_5
 {
   transform: rotate(0deg);
   border-left: 4rem solid transparent;
   border-right: 4rem solid transparent;
-  border-bottom: 7rem solid #ffb100;
+  border-bottom: 6.5rem solid #ffb100;
 }
 .treangle_6
 {
   transform: rotate(29deg);
   border-left: 4rem solid transparent;
   border-right: 17rem solid transparent;
-  border-bottom: 7rem solid #ffb100;
+  border-bottom: 6.5rem solid #ffb100;
 }
 .treangle_7
 {
   transform: rotate(22deg);
   border-left: 4rem solid transparent;
   border-right: 14rem solid transparent;
-  border-bottom: 7rem solid #ffb100;
+  border-bottom: 6.5rem solid #ffb100;
 }
 .treangle_8
 {
   transform: rotate(15deg);
   border-left: 4rem solid transparent;
   border-right: 11rem solid transparent;
-  border-bottom: 7rem solid #ffb100;
+  border-bottom: 6.5rem solid #ffb100;
 }
 .treangle_9
 {
   transform: rotate(7deg);
   border-left: 4rem solid transparent;
   border-right: 7rem solid transparent;
-  border-bottom: 7rem solid #ffb100;
+  border-bottom: 6.5rem solid #ffb100;
 }
 .treangle_10
 {
   transform: rotate(0deg);
   border-left: 4rem solid transparent;
   border-right: 4rem solid transparent;
-  border-bottom: 7rem solid #ffb100;
+  border-bottom: 6.5rem solid #ffb100;
   opacity: 1;
 }
 .inopacity, .inopacity.treangle_handler
