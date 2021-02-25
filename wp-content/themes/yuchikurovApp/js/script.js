@@ -397,7 +397,7 @@ jQuery(document).ready(function () {
 
   jQuery('.treangle_handler').on('click', function(event) {
     jQuery('.treangle').removeClass('treangle_1').addClass('treangle_2');
-    navigator.vibrate(3000);
+    navigator.vibrate(2000);
   });
 
 });

@@ -812,16 +812,16 @@ h3.newsCard_heading
   width: 0;
   height: 0;
   position: absolute;
-  transition: all 3s ease;
+  transition: all 2s linear;
 }
 .treangle_1
 {
-  left: 90px;
+  left: 27%;
   top: 180px;
-  transform: rotate(211deg);
-  border-top: 320px solid transparent;
-  border-right: 160px solid #ffb100;
-  border-bottom: 8px solid transparent;
+  transform: rotate(225deg);
+  border-top: 15em solid transparent;
+  border-right: 7em solid #ffb100;
+  border-bottom: 0em solid transparent;
 }
 .treangle_2
 {
