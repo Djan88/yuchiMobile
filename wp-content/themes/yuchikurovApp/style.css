@@ -817,7 +817,7 @@ h3.newsCard_heading
 .treangle_1
 {
   left: 27%;
-  top: 180px;
+  top: 10em;
   transform: rotate(225deg);
   border-top: 15em solid transparent;
   border-right: 7em solid #ffb100;
