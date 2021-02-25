@@ -817,7 +817,6 @@ h3.newsCard_heading
   /*right: 1.5em;*/
   /*top: 10em;*/
   transform: rotate(331deg);
-  margin: 4em -2em 0 0;
   border-left: 15em solid transparent;
   border-right: 3em solid transparent;
   border-bottom: 5.5em solid #ffb100;
@@ -826,7 +825,6 @@ h3.newsCard_heading
 {
   /*right: 2.5em;*/
   /*top: 10em;*/
-  margin: 4em auto 0;
   transform: rotate(338deg);
   border-left: 12em solid transparent;
   border-right: 3em solid transparent;
