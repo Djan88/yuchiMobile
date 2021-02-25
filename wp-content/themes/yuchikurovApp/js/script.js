@@ -133,7 +133,8 @@ jQuery(document).ready(function () {
     // if (handle_status != '3.5%') {
     //   jQuery('.reverce-clean').removeClass('hidden');
     // }
-    jQuery('.treangle').removeClass('inopacity');
+    jQuery('.treangle').removeClass('inopacity').addClass('treangle_1');
+    jQuery('.treangle, .treangle_handler').removeClass('inopacity');
     jQuery('.app-slide-menu').addClass('hidden').removeAttr('style');
     jQuery('.slider-regress').fadeIn(500).removeClass('hidden').css('display', 'flex');
     jQuery('.header-text').text('ТРЕУГОЛЬНИКИ');
@@ -398,11 +399,13 @@ jQuery(document).ready(function () {
 
   jQuery('.treangle_handler').on('click', function(event) {
     treangle_1();
+    jQuery('.treangle').addClass('treangle_1');
   });
 
   treangle_1 = function(){
     setTimeout(function(){
       jQuery('.treangle').removeClass('treangle_1').addClass('treangle_2');
+      jQuery('.treangle_handler').addClass('inopacity');
       navigator.vibrate(200);
       treangle_2();
     },4000);
@@ -465,9 +468,18 @@ jQuery(document).ready(function () {
   }
   treangle_10 = function(){
     setTimeout(function(){
-      jQuery('.treangle').removeClass('treangle_10').addClass('treangle_1 inopacity');
+      jQuery('.treangle').addClass('inopacity');
       navigator.vibrate(200);
+      treangle_11();
     },32000);
+  }
+  treangle_11 = function(){
+    setTimeout(function(){
+      jQuery('.treangle').removeClass('treangle_10').addClass('treangle_1');
+      jQuery('.treangle_handler').removeClass('inopacity');
+      navigator.vibrate(200);
+      treangle_10();
+    },2000);
   }
 
 });

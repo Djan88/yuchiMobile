@@ -802,6 +802,7 @@ h3.newsCard_heading
 {
   margin: 30px auto;
   text-align: center;
+  opacity: 1;
 }
 .treangle 
 {
@@ -881,7 +882,7 @@ h3.newsCard_heading
   border-bottom: 7.5rem solid #ffb100;
   opacity: 1;
 }
-.inopacity
+.inopacity, .inopacity.treangle_handler
 {
   opacity: 0;
 }
