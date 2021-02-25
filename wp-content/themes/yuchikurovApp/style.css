@@ -784,14 +784,27 @@ h3.newsCard_heading
 {
   font-size: 20px;
 }
-#canvas
+/*#canvas
 {
   margin: auto;
   display: block;
+}*/
+.slider-box.slider-regress
+{
+  height: 100vh;
+  position: fixed;
+}
+.regress-wrapper
+{
+  text-align: center;
 }
 .treangle_handler
 {
   margin: 30px auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 170px;
 }
 .treangle 
 {
@@ -808,6 +821,15 @@ h3.newsCard_heading
   border-top: 320px solid transparent;
   border-right: 160px solid #ffb100;
   border-bottom: 8px solid transparent;
+}
+.treangle_2
+{
+  left: 90px;
+  top: 180px;
+  transform: rotate(211deg);
+  border-top: 270px solid transparent;
+  border-right: 160px solid #ffb100;
+  border-bottom: 0px solid transparent;
 }
 
 @media (min-width: 992px){
