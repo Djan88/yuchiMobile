@@ -120,7 +120,7 @@
               <div class="regress-wrapper">
                 <!-- <canvas id="canvas" width="350" height="650"></canvas> -->
                 <div class="treangle_handler btn btn-lg btn-primary">СТАРТ</div>
-                <div class="treangle treangle_1"></div>
+                <div class="treangle"></div>
               </div>
             </div>
             <div class="col-12 slider-box slider-urav overscreen">
