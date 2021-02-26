@@ -811,7 +811,7 @@ h3.newsCard_heading
 {
   width: 0;
   height: 0;
-  margin: 9rem auto;
+  margin: 12rem auto;
   display: block;
   transition: all 2s linear;
 }
