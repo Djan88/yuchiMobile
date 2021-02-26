@@ -446,7 +446,7 @@ jQuery(document).ready(function () {
   }
 
   jQuery('.treangle_handler').on('click', function(event) {
-    treangle_1();
+    treangle_0();
     jQuery('.treangle').addClass('treangle_0').removeClass('inopacity');
     jQuery('#time').removeClass('inopacity');
     jQuery(this).addClass('inopacity');
