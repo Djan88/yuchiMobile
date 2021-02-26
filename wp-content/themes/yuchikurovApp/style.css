@@ -818,7 +818,7 @@ h3.newsCard_heading
 .treangle_0
 {
   transform: translateX(-11rem) rotate(-62deg);
-  border-left: 32rem solid transparent;
+  border-left: 31rem solid transparent;
   border-right: 4rem solid transparent;
   border-bottom: 6.5rem solid #ffd400;
 }
@@ -889,7 +889,7 @@ h3.newsCard_heading
 {
   transform: translateX(-4rem) rotate(62deg);
   border-left: 4rem solid transparent;
-  border-right: 32rem solid transparent;
+  border-right: 31rem solid transparent;
   border-bottom: 6.5rem solid #ffd400;
 }
 .treangle_5_2
