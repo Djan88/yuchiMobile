@@ -25,7 +25,8 @@ jQuery(document).ready(function () {
     vibro,
     vibroOnAir = false,
     count_animation = 1,
-    vibroOne;
+    vibroOne,
+    treangle_status = 0;
 
   // Pull to refresh
   PullToRefresh.init({
@@ -189,6 +190,18 @@ jQuery(document).ready(function () {
       jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
       jQuery('.header-text').text('ПОЛЕЗНЫЕ РЕСУРСЫ');
       jQuery('.back-button, .reverce_clean_graph_2').addClass('hidden');
+      // screen.orientation.lock('portrait');
+      // jQuery('.frame').removeClass('hidden');
+    },
+    threshold:0
+  });
+  jQuery(".slider-regress").swipe( {
+    swipeRight:function(event, direction, distance, duration, fingerCount) {
+      jQuery('.slider-box').addClass('hidden').removeAttr('style');
+      jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
+      jQuery('.header-text').text('ПОЛЕЗНЫЕ РЕСУРСЫ');
+      jQuery('.back-button, .reverce_clean_graph_2').addClass('hidden');
+      treangle_status = 0;
       // screen.orientation.lock('portrait');
       // jQuery('.frame').removeClass('hidden');
     },
@@ -446,6 +459,7 @@ jQuery(document).ready(function () {
 
   jQuery('.treangle_handler').on('click', function(event) {
     treangle_0();
+    console.log('test');
     jQuery('#time').removeClass('inopacity');
     jQuery(this).addClass('inopacity');
     timer.onTick(format).start();
@@ -620,6 +634,10 @@ jQuery(document).ready(function () {
       jQuery('#time').addClass('inopacity');
       navigator.vibrate(200);
     },2000);
+  }
+
+  treangle_exit = function(){
+    treangle_status = 0;
   }
 
 });
