@@ -377,4 +377,164 @@ jQuery(document).ready(function () {
         navigator.vibrate(100);
       },200);
   }});
+
+// ===========================
+  // trangle
+// ===========================
+
+  function CountDownTimer(duration, granularity) {
+    this.duration = duration;
+    this.granularity = granularity || 1000;
+    this.tickFtns = [];
+    this.running = false;
+  }
+
+  CountDownTimer.prototype.start = function() {
+    if (this.running) {
+      return;
+    }
+    this.running = true;
+    var start = Date.now(),
+        that = this,
+        diff, obj;
+
+    (function timer() {
+      diff = that.duration - (((Date.now() - start) / 1000) | 0);
+
+      if (diff > 0) {
+        setTimeout(timer, that.granularity);
+      } else {
+        diff = 0;
+        that.running = false;
+      }
+
+      obj = CountDownTimer.parse(diff);
+      that.tickFtns.forEach(function(ftn) {
+        ftn.call(this, obj.minutes, obj.seconds);
+      }, that);
+    }());
+  };
+
+  CountDownTimer.prototype.onTick = function(ftn) {
+    if (typeof ftn === 'function') {
+      this.tickFtns.push(ftn);
+    }
+    return this;
+  };
+
+  CountDownTimer.prototype.expired = function() {
+    return !this.running;
+  };
+
+  CountDownTimer.parse = function(seconds) {
+    return {
+      'minutes': (seconds / 60) | 0,
+      'seconds': (seconds % 60) | 0
+    };
+  };
+
+  window.onload = function() {
+
+    var display = document.querySelector('#time'),
+        timer = new CountDownTimer(150);
+
+    timer.onTick(format).onTick(restart).start();
+
+    function restart() {
+      if (this.expired()) {
+        setTimeout(function() { timer.start(); }, 1000);
+      }
+    }
+
+    function format(minutes, seconds) {
+      minutes = minutes < 10 ? "0" + minutes : minutes;
+      seconds = seconds < 10 ? "0" + seconds : seconds;
+      display.textContent = minutes + ':' + seconds;
+    }
+  };
+
+  jQuery('.treangle_handler').on('click', function(event) {
+    treangle_1();
+    jQuery('.treangle').addClass('treangle_1').removeClass('inopacity');
+    jQuery(this).addClass('inopacity');
+  });
+
+  treangle_1 = function(){
+    setTimeout(function(){
+      jQuery('.treangle').removeClass('treangle_1').addClass('treangle_2');
+      navigator.vibrate(200);
+      treangle_2();
+    },4000);
+  }
+  treangle_2 = function(){
+    setTimeout(function(){
+      jQuery('.treangle').removeClass('treangle_2').addClass('treangle_3');
+      navigator.vibrate(200);
+      treangle_3();
+    },7000);
+  }
+  treangle_3 = function(){
+    setTimeout(function(){
+      jQuery('.treangle').removeClass('treangle_3').addClass('treangle_4');
+      navigator.vibrate(200);
+      treangle_4();
+    },7000);
+  }
+  treangle_4 = function(){
+    setTimeout(function(){
+      jQuery('.treangle').removeClass('treangle_4').addClass('treangle_5');
+      navigator.vibrate(200);
+      treangle_5();
+    },7000);
+  }
+  treangle_5 = function(){
+    setTimeout(function(){
+      jQuery('.treangle').removeClass('treangle_5').addClass('treangle_6');
+      navigator.vibrate(200);
+      treangle_6();
+    },14000);
+  }
+  treangle_6 = function(){
+    setTimeout(function(){
+      jQuery('.treangle').removeClass('treangle_6').addClass('treangle_7');
+      navigator.vibrate(200);
+      treangle_7();
+    },7000);
+  }
+  treangle_7 = function(){
+    setTimeout(function(){
+      jQuery('.treangle').removeClass('treangle_7').addClass('treangle_8');
+      navigator.vibrate(200);
+      treangle_8();
+    },7000);
+  }
+  treangle_8 = function(){
+    setTimeout(function(){
+      jQuery('.treangle').removeClass('treangle_8').addClass('treangle_9');
+      navigator.vibrate(200);
+      treangle_9();
+    },7000);
+  }
+  treangle_9 = function(){
+    setTimeout(function(){
+      jQuery('.treangle').removeClass('treangle_9').addClass('treangle_10');
+      navigator.vibrate(200);
+      treangle_10();
+    },7000);
+  }
+  treangle_10 = function(){
+    setTimeout(function(){
+      jQuery('.treangle').addClass('inopacity');
+      navigator.vibrate(200);
+      treangle_11();
+    },14000);
+  }
+  treangle_11 = function(){
+    setTimeout(function(){
+      jQuery('.treangle').removeClass('treangle_10').addClass('treangle_1');
+      jQuery('.treangle_handler').removeClass('inopacity');
+      navigator.vibrate(200);
+    },2000);
+  }
+
 });
