@@ -455,7 +455,21 @@ jQuery(document).ready(function () {
 
   treangle_0 = function(){
     setTimeout(function(){
-      jQuery('.treangle').removeClass('treangle_0').addClass('treangle_1');
+      jQuery('.treangle').removeClass('treangle_0').addClass('treangle_0_1');
+      navigator.vibrate(200);
+      treangle_0_1();
+    },4000);
+  }
+  treangle_0_1 = function(){
+    setTimeout(function(){
+      jQuery('.treangle').removeClass('treangle_0_1').addClass('treangle_0_2');
+      navigator.vibrate(200);
+      treangle_0_2();
+    },4000);
+  }
+  treangle_0_2 = function(){
+    setTimeout(function(){
+      jQuery('.treangle').removeClass('treangle_0_2').addClass('treangle_1');
       navigator.vibrate(200);
       treangle_1();
     },4000);
@@ -497,7 +511,21 @@ jQuery(document).ready(function () {
   }
   treangle_5_1 = function(){
     setTimeout(function(){
-      jQuery('.treangle').removeClass('treangle_5_1').addClass('treangle_6');
+      jQuery('.treangle').removeClass('treangle_5_1').addClass('treangle_5_2');
+      navigator.vibrate(200);
+      treangle_5_2();
+    },7000);
+  }
+  treangle_5_2 = function(){
+    setTimeout(function(){
+      jQuery('.treangle').removeClass('treangle_5_2').addClass('treangle_5_3');
+      navigator.vibrate(200);
+      treangle_5_3();
+    },7000);
+  }
+  treangle_5_3 = function(){
+    setTimeout(function(){
+      jQuery('.treangle').removeClass('treangle_5_3').addClass('treangle_6');
       navigator.vibrate(200);
       treangle_6();
     },7000);
@@ -541,6 +569,7 @@ jQuery(document).ready(function () {
     setTimeout(function(){
       jQuery('.treangle').removeClass('treangle_10').addClass('treangle_0');
       jQuery('.treangle_handler').removeClass('inopacity');
+      jQuery('#time').addClass('inopacity');
       navigator.vibrate(200);
     },2000);
   }
