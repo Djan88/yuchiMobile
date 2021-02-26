@@ -432,7 +432,7 @@ jQuery(document).ready(function () {
 
 // timer start
   var display = document.querySelector('#time'),
-      timer = new CountDownTimer(158);
+      timer = new CountDownTimer(160);
 
   function format(minutes, seconds) {
     minutes = minutes < 10 ? "0" + minutes : minutes;
