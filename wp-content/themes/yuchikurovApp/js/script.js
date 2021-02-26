@@ -133,7 +133,6 @@ jQuery(document).ready(function () {
     // if (handle_status != '3.5%') {
     //   jQuery('.reverce-clean').removeClass('hidden');
     // }
-    jQuery('.treangle').removeClass('inopacity').addClass('treangle_0');
     jQuery('.treangle, .treangle_handler').removeClass('inopacity');
     jQuery('.app-slide-menu').addClass('hidden').removeAttr('style');
     jQuery('.slider-regress').fadeIn(500).removeClass('hidden').css('display', 'flex');
