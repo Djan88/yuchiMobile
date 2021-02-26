@@ -462,7 +462,7 @@ jQuery(document).ready(function () {
   }
   treangle_1 = function(){
     setTimeout(function(){
-      jQuery('.treangle').removeClass('treangle_0').addClass('treangle_2');
+      jQuery('.treangle').removeClass('treangle_1').addClass('treangle_2');
       navigator.vibrate(200);
       treangle_2();
     },4000);
@@ -525,21 +525,21 @@ jQuery(document).ready(function () {
   }
   treangle_9 = function(){
     setTimeout(function(){
-      jQuery('.treangle').removeClass('treangle_9').addClass('treangle_00');
+      jQuery('.treangle').removeClass('treangle_9').addClass('treangle_10');
       navigator.vibrate(200);
-      treangle_00();
+      treangle_10();
     },7000);
   }
-  treangle_00 = function(){
+  treangle_10 = function(){
     setTimeout(function(){
       jQuery('.treangle').addClass('inopacity');
       navigator.vibrate(200);
-      treangle_01();
+      treangle_11();
     },14000);
   }
-  treangle_01 = function(){
+  treangle_11 = function(){
     setTimeout(function(){
-      jQuery('.treangle').removeClass('treangle_00').addClass('treangle_0');
+      jQuery('.treangle').removeClass('treangle_10').addClass('treangle_0');
       jQuery('.treangle_handler').removeClass('inopacity');
       navigator.vibrate(200);
     },2000);
