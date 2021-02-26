@@ -73,7 +73,7 @@
                   </div>
                   <div class="col main-item main-item-regress">
                     <div class="row">
-                      <div class="col-3 main-item-img"><img src="<?php bloginfo('template_url'); ?>/img/treangle.png" alt="Регресс"></div>
+                      <div class="col-3 main-item-img"><img src="<?php bloginfo('template_url'); ?>/img/treang.png" alt="Регресс"></div>
                       <div class="col main-item-content">
                         <div class="main-item-title">Треугольники</div>
                         <div class="main-item-sub-title">Визуальные динамические проекции мыслительной активности 1-4 зон DSV</div>
