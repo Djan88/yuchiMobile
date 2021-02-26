@@ -121,7 +121,7 @@
                 <!-- <canvas id="canvas" width="350" height="650"></canvas> -->
                 <div class="treangle_handler btn btn-lg btn-primary">СТАРТ</div>
                 <span id="time" class="inopacity"></span>
-                <div class="treangle inopacity"></div>
+                <div class="treangle treangle_0 inopacity"></div>
               </div>
             </div>
             <div class="col-12 slider-box slider-urav overscreen">
