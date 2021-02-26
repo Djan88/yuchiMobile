@@ -454,6 +454,7 @@ jQuery(document).ready(function () {
   });
 
   treangle_0 = function(){
+    console.log('0');
     setTimeout(function(){
       jQuery('.treangle').removeClass('treangle_0').addClass('treangle_0_1');
       navigator.vibrate(200);
@@ -461,6 +462,7 @@ jQuery(document).ready(function () {
     },4000);
   }
   treangle_0_1 = function(){
+    console.log('0_1');
     setTimeout(function(){
       jQuery('.treangle').removeClass('treangle_0_1').addClass('treangle_0_2');
       navigator.vibrate(200);
@@ -468,6 +470,7 @@ jQuery(document).ready(function () {
     },4000);
   }
   treangle_0_2 = function(){
+    console.log('0_2');
     setTimeout(function(){
       jQuery('.treangle').removeClass('treangle_0_2').addClass('treangle_1');
       navigator.vibrate(200);
@@ -475,6 +478,7 @@ jQuery(document).ready(function () {
     },4000);
   }
   treangle_1 = function(){
+    console.log('1');
     setTimeout(function(){
       jQuery('.treangle').removeClass('treangle_1').addClass('treangle_2');
       navigator.vibrate(200);
@@ -482,6 +486,7 @@ jQuery(document).ready(function () {
     },4000);
   }
   treangle_2 = function(){
+    console.log('2');
     setTimeout(function(){
       jQuery('.treangle').removeClass('treangle_2').addClass('treangle_3');
       navigator.vibrate(200);
@@ -489,6 +494,7 @@ jQuery(document).ready(function () {
     },7000);
   }
   treangle_3 = function(){
+    console.log('3');
     setTimeout(function(){
       jQuery('.treangle').removeClass('treangle_3').addClass('treangle_4');
       navigator.vibrate(200);
@@ -496,6 +502,7 @@ jQuery(document).ready(function () {
     },7000);
   }
   treangle_4 = function(){
+    console.log('4');
     setTimeout(function(){
       jQuery('.treangle').removeClass('treangle_4').addClass('treangle_5');
       navigator.vibrate(200);
@@ -503,6 +510,7 @@ jQuery(document).ready(function () {
     },7000);
   }
   treangle_5 = function(){
+    console.log('5');
     setTimeout(function(){
       jQuery('.treangle').removeClass('treangle_5').addClass('treangle_5_1');
       navigator.vibrate(200);
@@ -510,6 +518,7 @@ jQuery(document).ready(function () {
     },14000);
   }
   treangle_5_1 = function(){
+    console.log('5_1');
     setTimeout(function(){
       jQuery('.treangle').removeClass('treangle_5_1').addClass('treangle_5_2');
       navigator.vibrate(200);
@@ -517,6 +526,7 @@ jQuery(document).ready(function () {
     },7000);
   }
   treangle_5_2 = function(){
+    console.log('5_2');
     setTimeout(function(){
       jQuery('.treangle').removeClass('treangle_5_2').addClass('treangle_5_3');
       navigator.vibrate(200);
@@ -524,6 +534,7 @@ jQuery(document).ready(function () {
     },7000);
   }
   treangle_5_3 = function(){
+    console.log('5_3');
     setTimeout(function(){
       jQuery('.treangle').removeClass('treangle_5_3').addClass('treangle_6');
       navigator.vibrate(200);
@@ -531,6 +542,7 @@ jQuery(document).ready(function () {
     },7000);
   }
   treangle_6 = function(){
+    console.log('6');
     setTimeout(function(){
       jQuery('.treangle').removeClass('treangle_6').addClass('treangle_7');
       navigator.vibrate(200);
@@ -538,6 +550,7 @@ jQuery(document).ready(function () {
     },7000);
   }
   treangle_7 = function(){
+    console.log('7');
     setTimeout(function(){
       jQuery('.treangle').removeClass('treangle_7').addClass('treangle_8');
       navigator.vibrate(200);
@@ -545,6 +558,7 @@ jQuery(document).ready(function () {
     },7000);
   }
   treangle_8 = function(){
+    console.log('8');
     setTimeout(function(){
       jQuery('.treangle').removeClass('treangle_8').addClass('treangle_9');
       navigator.vibrate(200);
@@ -552,6 +566,7 @@ jQuery(document).ready(function () {
     },7000);
   }
   treangle_9 = function(){
+    console.log('9');
     setTimeout(function(){
       jQuery('.treangle').removeClass('treangle_9').addClass('treangle_10');
       navigator.vibrate(200);
@@ -559,6 +574,7 @@ jQuery(document).ready(function () {
     },7000);
   }
   treangle_10 = function(){
+    console.log('10');
     setTimeout(function(){
       jQuery('.treangle').addClass('inopacity');
       navigator.vibrate(200);
@@ -566,6 +582,7 @@ jQuery(document).ready(function () {
     },14000);
   }
   treangle_11 = function(){
+    console.log('11');
     setTimeout(function(){
       jQuery('.treangle').removeClass('treangle_10').addClass('treangle_0');
       jQuery('.treangle_handler').removeClass('inopacity');
