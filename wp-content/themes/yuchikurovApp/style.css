@@ -887,6 +887,14 @@ h3.newsCard_heading
 {
   opacity: 0;
 }
+#time 
+{
+  position: absolute;
+  right: 15px;
+  top: 0px;
+  font-size: 25px;
+  font-weight: 600;
+}
 
 @media (min-width: 992px){
   .d-lg-none 

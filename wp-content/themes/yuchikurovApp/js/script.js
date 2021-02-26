@@ -437,15 +437,9 @@ jQuery(document).ready(function () {
 
 // timer start
   var display = document.querySelector('#time'),
-      timer = new CountDownTimer(150);
+      timer = new CountDownTimer(5);
 
-  timer.onTick(format).onTick(restart).start();
-
-  function restart() {
-    if (this.expired()) {
-      setTimeout(function() { timer.start(); }, 1000);
-    }
-  }
+  timer.onTick(format).start();
 
   function format(minutes, seconds) {
     minutes = minutes < 10 ? "0" + minutes : minutes;
