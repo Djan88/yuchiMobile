@@ -133,7 +133,7 @@ jQuery(document).ready(function () {
     // if (handle_status != '3.5%') {
     //   jQuery('.reverce-clean').removeClass('hidden');
     // }
-    jQuery('.treangle').removeClass('inopacity').addClass('treangle_1');
+    jQuery('.treangle').removeClass('inopacity').addClass('treangle_0');
     jQuery('.treangle, .treangle_handler').removeClass('inopacity');
     jQuery('.app-slide-menu').addClass('hidden').removeAttr('style');
     jQuery('.slider-regress').fadeIn(500).removeClass('hidden').css('display', 'flex');
@@ -462,7 +462,7 @@ jQuery(document).ready(function () {
   }
   treangle_1 = function(){
     setTimeout(function(){
-      jQuery('.treangle').removeClass('treangle_1').addClass('treangle_2');
+      jQuery('.treangle').removeClass('treangle_0').addClass('treangle_2');
       navigator.vibrate(200);
       treangle_2();
     },4000);
@@ -525,21 +525,21 @@ jQuery(document).ready(function () {
   }
   treangle_9 = function(){
     setTimeout(function(){
-      jQuery('.treangle').removeClass('treangle_9').addClass('treangle_10');
+      jQuery('.treangle').removeClass('treangle_9').addClass('treangle_00');
       navigator.vibrate(200);
-      treangle_10();
+      treangle_00();
     },7000);
   }
-  treangle_10 = function(){
+  treangle_00 = function(){
     setTimeout(function(){
       jQuery('.treangle').addClass('inopacity');
       navigator.vibrate(200);
-      treangle_11();
+      treangle_01();
     },14000);
   }
-  treangle_11 = function(){
+  treangle_01 = function(){
     setTimeout(function(){
-      jQuery('.treangle').removeClass('treangle_10').addClass('treangle_0');
+      jQuery('.treangle').removeClass('treangle_00').addClass('treangle_0');
       jQuery('.treangle_handler').removeClass('inopacity');
       navigator.vibrate(200);
     },2000);
