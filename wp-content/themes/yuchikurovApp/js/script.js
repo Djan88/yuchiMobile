@@ -635,9 +635,4 @@ jQuery(document).ready(function () {
       navigator.vibrate(200);
     },2000);
   }
-
-  treangle_exit = function(){
-    treangle_status = 0;
-  }
-
 });
