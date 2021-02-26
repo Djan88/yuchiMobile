@@ -548,7 +548,7 @@ jQuery(document).ready(function () {
   }
   treangle_5_5 = function(){
     setTimeout(function(){
-      jQuery('.treangle').removeClass('treangle_5_6').addClass('treangle_6');
+      jQuery('.treangle').removeClass('treangle_5_5').addClass('treangle_6');
       navigator.vibrate(200);
       treangle_6();
     },7000);
