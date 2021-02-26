@@ -120,7 +120,7 @@
               <div class="regress-wrapper">
                 <!-- <canvas id="canvas" width="350" height="650"></canvas> -->
                 <div class="treangle_handler btn btn-lg btn-primary">СТАРТ</div>
-                <span id="time"></span>
+                <span id="time" class="inopacity"></span>
                 <div class="treangle"></div>
               </div>
             </div>

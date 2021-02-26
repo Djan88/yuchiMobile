@@ -439,8 +439,6 @@ jQuery(document).ready(function () {
   var display = document.querySelector('#time'),
       timer = new CountDownTimer(5);
 
-  timer.onTick(format).start();
-
   function format(minutes, seconds) {
     minutes = minutes < 10 ? "0" + minutes : minutes;
     seconds = seconds < 10 ? "0" + seconds : seconds;
@@ -449,10 +447,19 @@ jQuery(document).ready(function () {
 
   jQuery('.treangle_handler').on('click', function(event) {
     treangle_1();
-    jQuery('.treangle').addClass('treangle_1').removeClass('inopacity');
+    jQuery('.treangle').addClass('treangle_0').removeClass('inopacity');
+    jQuery('#time').removeClass('inopacity');
     jQuery(this).addClass('inopacity');
+    timer.onTick(format).start();
   });
 
+  treangle_0 = function(){
+    setTimeout(function(){
+      jQuery('.treangle').removeClass('treangle_0').addClass('treangle_1');
+      navigator.vibrate(200);
+      treangle_1();
+    },4000);
+  }
   treangle_1 = function(){
     setTimeout(function(){
       jQuery('.treangle').removeClass('treangle_1').addClass('treangle_2');
@@ -483,10 +490,17 @@ jQuery(document).ready(function () {
   }
   treangle_5 = function(){
     setTimeout(function(){
-      jQuery('.treangle').removeClass('treangle_5').addClass('treangle_6');
+      jQuery('.treangle').removeClass('treangle_5').addClass('treangle_5_1');
+      navigator.vibrate(200);
+      treangle_5_1();
+    },14000);
+  }
+  treangle_5_1 = function(){
+    setTimeout(function(){
+      jQuery('.treangle').removeClass('treangle_5_1').addClass('treangle_6');
       navigator.vibrate(200);
       treangle_6();
-    },14000);
+    },7000);
   }
   treangle_6 = function(){
     setTimeout(function(){
@@ -525,7 +539,7 @@ jQuery(document).ready(function () {
   }
   treangle_11 = function(){
     setTimeout(function(){
-      jQuery('.treangle').removeClass('treangle_10').addClass('treangle_1');
+      jQuery('.treangle').removeClass('treangle_10').addClass('treangle_0');
       jQuery('.treangle_handler').removeClass('inopacity');
       navigator.vibrate(200);
     },2000);
