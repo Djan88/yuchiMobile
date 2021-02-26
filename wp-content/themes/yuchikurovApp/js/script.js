@@ -459,6 +459,7 @@ jQuery(document).ready(function () {
 
   jQuery('.treangle_handler').on('click', function(event) {
     treangle_0();
+    console.log('test');
     jQuery('#time').removeClass('inopacity');
     jQuery(this).addClass('inopacity');
     timer.onTick(format).start();
