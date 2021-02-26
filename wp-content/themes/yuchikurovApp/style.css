@@ -248,6 +248,7 @@ button svg
 .main-item, .main-item:hover, .main-item:focus
 {
   color: #000;
+  font-size: 17px;
   font-size: 1rem;
   padding: 5px 21px;
   position: relative;
