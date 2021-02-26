@@ -382,6 +382,8 @@ jQuery(document).ready(function () {
   // trangle
 // ===========================
 
+
+// timer init
   function CountDownTimer(duration, granularity) {
     this.duration = duration;
     this.granularity = granularity || 1000;
@@ -433,25 +435,23 @@ jQuery(document).ready(function () {
     };
   };
 
-  window.onload = function() {
+// timer start
+  var display = document.querySelector('#time'),
+      timer = new CountDownTimer(150);
 
-    var display = document.querySelector('#time'),
-        timer = new CountDownTimer(150);
+  timer.onTick(format).onTick(restart).start();
 
-    timer.onTick(format).onTick(restart).start();
-
-    function restart() {
-      if (this.expired()) {
-        setTimeout(function() { timer.start(); }, 1000);
-      }
+  function restart() {
+    if (this.expired()) {
+      setTimeout(function() { timer.start(); }, 1000);
     }
+  }
 
-    function format(minutes, seconds) {
-      minutes = minutes < 10 ? "0" + minutes : minutes;
-      seconds = seconds < 10 ? "0" + seconds : seconds;
-      display.textContent = minutes + ':' + seconds;
-    }
-  };
+  function format(minutes, seconds) {
+    minutes = minutes < 10 ? "0" + minutes : minutes;
+    seconds = seconds < 10 ? "0" + seconds : seconds;
+    display.textContent = minutes + ':' + seconds;
+  }
 
   jQuery('.treangle_handler').on('click', function(event) {
     treangle_1();
