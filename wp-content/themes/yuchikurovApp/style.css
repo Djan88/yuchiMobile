@@ -797,6 +797,8 @@ h3.newsCard_heading
 .regress-wrapper
 {
   text-align: center;
+  white-space: nowrap;
+  overflow: visible;
 }
 .treangle_handler
 {
@@ -810,6 +812,7 @@ h3.newsCard_heading
   width: 0;
   height: 0;
   margin: 9rem auto;
+  display: block;
   transition: all 2s linear;
 }
 .treangle_0
@@ -884,70 +887,70 @@ h3.newsCard_heading
 }
 .treangle_5_1
 {
-  transform: translateX(1rem) rotate(62deg);
+  transform: translateX(-4rem) rotate(62deg);
   border-left: 4rem solid transparent;
   border-right: 32rem solid transparent;
   border-bottom: 6.5rem solid #ffb100;
 }
 .treangle_5_2
 {
-  transform: translateX(2rem) rotate(55deg);
+  transform: translateX(-2rem) rotate(55deg);
   border-left: 4rem solid transparent;
   border-right: 29rem solid transparent;
   border-bottom: 6.5rem solid #ffb100;
 }
 .treangle_5_3
 {
-  transform: translateX(2rem) rotate(48deg);
+  transform: translateX(-1rem) rotate(48deg);
   border-left: 4rem solid transparent;
   border-right: 26rem solid transparent;
   border-bottom: 6.5rem solid #ffb100;
 }
 .treangle_5_4
 {
-  transform: translateX(2rem) rotate(41deg);
+  transform: translateX(0rem) rotate(41deg);
   border-left: 4rem solid transparent;
   border-right: 23rem solid transparent;
   border-bottom: 6.5rem solid #ffb100;
 }
 .treangle_5_5
 {
-  transform: translateX(2rem) rotate(36deg);
+  transform: translateX(1rem) rotate(36deg);
   border-left: 4rem solid transparent;
   border-right: 20rem solid transparent;
   border-bottom: 6.5rem solid #ffb100;
 }
 .treangle_6
 {
-  transform: translateX(3rem) rotate(29deg);
+  transform: translateX(2rem) rotate(29deg);
   border-left: 4rem solid transparent;
   border-right: 17rem solid transparent;
   border-bottom: 6.5rem solid #ffb100;
 }
 .treangle_7
 {
-  transform: translateX(4rem) rotate(22deg);
+  transform: translateX(1rem) rotate(22deg);
   border-left: 4rem solid transparent;
   border-right: 14rem solid transparent;
   border-bottom: 6.5rem solid #ffb100;
 }
 .treangle_8
 {
-  transform: translateX(6rem) rotate(15deg);
+  transform: translateX(1rem) rotate(15deg);
   border-left: 4rem solid transparent;
   border-right: 11rem solid transparent;
   border-bottom: 6.5rem solid #ffb100;
 }
 .treangle_9
 {
-  transform: translateX(8rem) rotate(7deg);
+  transform: translateX(1rem) rotate(7deg);
   border-left: 4rem solid transparent;
   border-right: 7rem solid transparent;
   border-bottom: 6.5rem solid #ffb100;
 }
 .treangle_10
 {
-  transform: translateX(11rem) rotate(0deg);
+  transform: translateX(0rem) rotate(0deg);
   border-left: 4rem solid transparent;
   border-right: 4rem solid transparent;
   border-bottom: 6.5rem solid #ffb100;
