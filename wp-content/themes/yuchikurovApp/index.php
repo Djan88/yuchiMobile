@@ -58,7 +58,7 @@
                       <div class="col-3 main-item-img"><img src="<?php bloginfo('template_url'); ?>/img/formuls-fav.png" alt="Формулы"></div>
                       <div class="col main-item-content">
                         <div class="main-item-title">Формулы</div>
-                        <div class="main-item-sub-title">Биологическое Центрирование. Читайте формулы справа налево</div>
+                        <div class="main-item-sub-title">Читайте формулы справа налево</div>
                       </div>
                     </div>
                   </div>
@@ -67,7 +67,7 @@
                       <div class="col-3 main-item-img"><img src="<?php bloginfo('template_url'); ?>/img/elems-fav_.png" alt="Первоэлементы"></div>
                       <div class="col main-item-content">
                         <div class="main-item-title">Первоэлементы</div>
-                        <div class="main-item-sub-title">Биологическое Центрирование. Коррекция первоэлементов</div>
+                        <div class="main-item-sub-title">Коррекция первоэлементов</div>
                       </div>
                     </div>
                   </div>
