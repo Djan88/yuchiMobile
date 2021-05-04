@@ -8,6 +8,14 @@ function onDeviceReady() {
   });
 
   window.plugins.PushbotsPlugin.initialize("60913fccdfc42d6107762814", {"android":{"sender_id":"GOOGLE_SENDER_ID", "fcm_app_id":"FCM_APPID", "web_api_key":"WEB_API_KEY", "project_id":"PROJECT_ID"}});
+  // Only with First time registration
+  window.plugins.PushbotsPlugin.on("registered", function(token){
+    console.log("Registration Id:" + token);
+  });
+  //Get user registrationId/token and userId on PushBots, with evey launch of the app even launching with notification
+  window.plugins.PushbotsPlugin.on("user:ids", function(data){
+    console.log("user:ids" + JSON.stringify(data));
+  });
 }
 
 jQuery(document).ready(function () {
