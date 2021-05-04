@@ -7,7 +7,7 @@ function onDeviceReady() {
     navigator.vibrate(25);
   });
 
-  window.plugins.PushbotsPlugin.initialize("60913fccdfc42d6107762814", {"android":{"sender_id":"GOOGLE_SENDER_ID", "fcm_app_id":"FCM_APPID", "web_api_key":"WEB_API_KEY", "project_id":"PROJECT_ID"});
+  window.plugins.PushbotsPlugin.initialize("60913fccdfc42d6107762814", {"android":{"sender_id":"GOOGLE_SENDER_ID", "fcm_app_id":"FCM_APPID", "web_api_key":"WEB_API_KEY", "project_id":"PROJECT_ID"}});
 }
 
 jQuery(document).ready(function () {
