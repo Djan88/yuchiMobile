@@ -504,6 +504,10 @@ button svg
    display: flex;
    align-items: flex-end;
 }
+.frame.frame-full
+{
+  height: 210px;
+}
 .slider-box.slider-regress, .slider-box.slider-urav
 {
   margin-top: 0;

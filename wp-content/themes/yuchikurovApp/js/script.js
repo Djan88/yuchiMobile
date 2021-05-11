@@ -93,6 +93,13 @@ jQuery(document).ready(function () {
 
   });
 
+  jQuery('.frame a').on('click', function(event) {
+    jQuery('.frame').addClass('frame-full');
+    setTimeout(function(){
+      jQuery('.frame').removeClass('frame-full');
+    },500);
+  });
+
   jQuery('.box').on('click', function(event) {
     jQuery('.app-main, .app-second').addClass('hidden').removeAttr('style');
     jQuery('.app-slide').fadeIn(500).removeClass('hidden').css('display', 'flex');
