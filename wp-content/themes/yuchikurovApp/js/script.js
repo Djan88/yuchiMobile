@@ -96,7 +96,7 @@ jQuery(document).ready(function () {
   jQuery('.box').on('click', function(event) {
     jQuery('.app-main, .app-second').addClass('hidden').removeAttr('style');
     jQuery('.app-slide').fadeIn(500).removeClass('hidden').css('display', 'flex');
-    jQuery('.header-text').text('ПОЛЕЗНЫЕ РЕСУРСЫ');
+    jQuery('.header-text').text('ШКОЛА ДОКТОРА ЧИКУРОВА');
     jQuery('.back-button, .reverce_clean_graph, .reverce_clean_graph_2').addClass('hidden');
     jQuery('.slider-box').addClass('hidden').removeAttr('style');
     jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
@@ -107,7 +107,7 @@ jQuery(document).ready(function () {
   jQuery('.home').on('click', function(event) {
     jQuery('.app-slide, .app-second').addClass('hidden').removeAttr('style');
     jQuery('.app-main').fadeIn(500).removeClass('hidden').css('display', 'flex');
-    jQuery('.header-text').text('ШКОЛА ДОКТОРА ЧИКУРОВА');
+    jQuery('.header-text').text('ПОЛЕЗНЫЕ РЕСУРСЫ');
     jQuery('.back-button, .reverce_clean_graph, .reverce_clean_graph_2').addClass('hidden');
     // screen.orientation.lock('portrait');
     // jQuery('.frame').removeClass('hidden');
@@ -164,7 +164,7 @@ jQuery(document).ready(function () {
   jQuery('.back-button').on('click', function(event) {
     jQuery('.slider-box').addClass('hidden').removeAttr('style');
     jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
-    jQuery('.header-text').text('ПОЛЕЗНЫЕ РЕСУРСЫ');
+    jQuery('.header-text').text('ШКОЛА ДОКТОРА ЧИКУРОВА');
     jQuery('.back-button, .reverce_clean_graph, .reverce_clean_graph_2').addClass('hidden');
   });
 
@@ -172,7 +172,7 @@ jQuery(document).ready(function () {
     swipeRight:function(event, direction, distance, duration, fingerCount) {
       jQuery('.slider-box').addClass('hidden').removeAttr('style');
       jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
-      jQuery('.header-text').text('ПОЛЕЗНЫЕ РЕСУРСЫ');
+      jQuery('.header-text').text('ШКОЛА ДОКТОРА ЧИКУРОВА');
       jQuery('.back-button, .reverce_clean_graph, .reverce_clean_graph_2').addClass('hidden');
       // screen.orientation.lock('portrait');
       // jQuery('.frame').removeClass('hidden');
@@ -186,7 +186,7 @@ jQuery(document).ready(function () {
     swipeRight:function(event, direction, distance, duration, fingerCount) {
       jQuery('.slider-box').addClass('hidden').removeAttr('style');
       jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
-      jQuery('.header-text').text('ПОЛЕЗНЫЕ РЕСУРСЫ');
+      jQuery('.header-text').text('ШКОЛА ДОКТОРА ЧИКУРОВА');
       jQuery('.back-button, .reverce_clean_graph').addClass('hidden');
     },
     threshold:0
@@ -195,7 +195,7 @@ jQuery(document).ready(function () {
     swipeRight:function(event, direction, distance, duration, fingerCount) {
       jQuery('.slider-box').addClass('hidden').removeAttr('style');
       jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
-      jQuery('.header-text').text('ПОЛЕЗНЫЕ РЕСУРСЫ');
+      jQuery('.header-text').text('ШКОЛА ДОКТОРА ЧИКУРОВА');
       jQuery('.back-button, .reverce_clean_graph_2').addClass('hidden');
     },
     threshold:0

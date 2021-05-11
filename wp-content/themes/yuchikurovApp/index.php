@@ -26,7 +26,7 @@
               <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
             </svg>
           </div>
-          <span class="col header-text">ШКОЛА ДОКТОРА ЧИКУРОВА</span>
+          <span class="col header-text">ПОЛЕЗНЫЕ РЕСУРСЫ</span>
           <div class="col-2 reverce_clean_graph hidden">
             <div class="reverce-clean hidden">
               <svg width="1em" height="1em" viewBox="0 -5 16 20" class="bi bi-trash" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -50,93 +50,6 @@
       <div class="col page">
         <main id="panel">
           <div class="container app-slide formuls">
-            <div class="row app-slide-menu">
-              <div class="col">
-                <div class="row">
-                  <div class="col main-item main-item-formuls">
-                    <div class="row">
-                      <div class="col-3 main-item-img"><img src="<?php bloginfo('template_url'); ?>/img/formuls-fav.png" alt="Формулы"></div>
-                      <div class="col main-item-content">
-                        <div class="main-item-title">Формулы</div>
-                        <div class="main-item-sub-title">Читайте формулы справа налево</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col main-item main-item-elems">
-                    <div class="row">
-                      <div class="col-3 main-item-img"><img src="<?php bloginfo('template_url'); ?>/img/elems-fav_.png" alt="Первоэлементы"></div>
-                      <div class="col main-item-content">
-                        <div class="main-item-title">Первоэлементы</div>
-                        <div class="main-item-sub-title">Коррекция первоэлементов</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col main-item main-item-regress">
-                    <div class="row">
-                      <div class="col-3 main-item-img"><img src="<?php bloginfo('template_url'); ?>/img/treang.png" alt="Регресс"></div>
-                      <div class="col main-item-content">
-                        <div class="main-item-title">Треугольники</div>
-                        <div class="main-item-sub-title">Визуальные динамические проекции мыслительной активности 1-4 зон DSV</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col main-item main-item-urav">
-                    <div class="row">
-                      <div class="col-3 main-item-img"><img src="<?php bloginfo('template_url'); ?>/img/uravn-fav.png" alt="Оцифратор"></div>
-                      <div class="col main-item-content">
-                        <div class="main-item-title">Оцифратор</div>
-                        <div class="main-item-sub-title">Для начала работы проведите пальцем по шкале</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 slider-box slider-formuls overscreen">
-              <!-- Swiper -->
-              <div class="swiper-container swiper-container-formuls">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/img/otvorenie.png" alt="Отворение"></div>
-                  <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/img/trauma.png" alt="Травма"></div>
-                  <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/img/kopje.png" alt="Копье"></div>
-                  <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/img/filtr.png" alt="Фильтр"></div>
-                  <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/img/solis.png" alt="Solis"></div>
-                  <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/img/live_voda.png" alt="Живая Вода"></div>
-                  <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/img/mertv_voda.png" alt="Мертвая Вода"></div>
-                  <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/img/lovushka.png" alt="Ловушка"></div>
-                  <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/img/csv_util.png" alt="ЧСВ Утилизатор"></div>
-                </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination swiper-pagination-formuls"></div>
-              </div>
-            </div>
-            <div class="col-12 slider-box slider-elems overscreen">
-              <div class="propeller_title" style="position: absolute;"></div>
-              <div class="propeller_field">
-                <img class="propeller_rotor" src="<?php bloginfo('template_url'); ?>/img/treangle_alt.png" alt="rotor">
-              </div>
-            </div>
-            <div class="col-12 slider-box slider-regress overscreen">
-              <div class="regress-wrapper">
-                <!-- <canvas id="canvas" width="350" height="650"></canvas> -->
-                <div class="treangle_handler btn btn-lg btn-primary">СТАРТ</div>
-                <span id="time" class="inopacity"></span>
-                <div class="treangle treangle_0 inopacity"></div>
-              </div>
-            </div>
-            <div class="col-12 slider-box slider-urav overscreen">
-              <div class="urav-wrapper">
-                <div class="urav_graph">
-                  <div class="urav_graph_handle"><i class="fa fa-arrows-alt-h"></i></div>
-                  <div class="urav_value"></div>
-                </div>
-                <div id="slider_2">
-                  <div id="custom-handle_2" class="ui-slider-handle"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="container app-main main">
             <div class="row">
               <div class="col">
                 <h2>Сайты Школы</h2>
@@ -243,6 +156,93 @@
                       </div>
                     </div>
                   </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container app-main main">
+            <div class="row app-slide-menu">
+              <div class="col">
+                <div class="row">
+                  <div class="col main-item main-item-formuls">
+                    <div class="row">
+                      <div class="col-3 main-item-img"><img src="<?php bloginfo('template_url'); ?>/img/formuls-fav.png" alt="Формулы"></div>
+                      <div class="col main-item-content">
+                        <div class="main-item-title">Формулы</div>
+                        <div class="main-item-sub-title">Читайте формулы справа налево</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col main-item main-item-elems">
+                    <div class="row">
+                      <div class="col-3 main-item-img"><img src="<?php bloginfo('template_url'); ?>/img/elems-fav_.png" alt="Первоэлементы"></div>
+                      <div class="col main-item-content">
+                        <div class="main-item-title">Первоэлементы</div>
+                        <div class="main-item-sub-title">Коррекция первоэлементов</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col main-item main-item-regress">
+                    <div class="row">
+                      <div class="col-3 main-item-img"><img src="<?php bloginfo('template_url'); ?>/img/treang.png" alt="Регресс"></div>
+                      <div class="col main-item-content">
+                        <div class="main-item-title">Треугольники</div>
+                        <div class="main-item-sub-title">Визуальные динамические проекции мыслительной активности 1-4 зон DSV</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col main-item main-item-urav">
+                    <div class="row">
+                      <div class="col-3 main-item-img"><img src="<?php bloginfo('template_url'); ?>/img/uravn-fav.png" alt="Оцифратор"></div>
+                      <div class="col main-item-content">
+                        <div class="main-item-title">Оцифратор</div>
+                        <div class="main-item-sub-title">Для начала работы проведите пальцем по шкале</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 slider-box slider-formuls overscreen">
+              <!-- Swiper -->
+              <div class="swiper-container swiper-container-formuls">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/img/otvorenie.png" alt="Отворение"></div>
+                  <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/img/trauma.png" alt="Травма"></div>
+                  <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/img/kopje.png" alt="Копье"></div>
+                  <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/img/filtr.png" alt="Фильтр"></div>
+                  <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/img/solis.png" alt="Solis"></div>
+                  <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/img/live_voda.png" alt="Живая Вода"></div>
+                  <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/img/mertv_voda.png" alt="Мертвая Вода"></div>
+                  <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/img/lovushka.png" alt="Ловушка"></div>
+                  <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/img/csv_util.png" alt="ЧСВ Утилизатор"></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination swiper-pagination-formuls"></div>
+              </div>
+            </div>
+            <div class="col-12 slider-box slider-elems overscreen">
+              <div class="propeller_title" style="position: absolute;"></div>
+              <div class="propeller_field">
+                <img class="propeller_rotor" src="<?php bloginfo('template_url'); ?>/img/treangle_alt.png" alt="rotor">
+              </div>
+            </div>
+            <div class="col-12 slider-box slider-regress overscreen">
+              <div class="regress-wrapper">
+                <!-- <canvas id="canvas" width="350" height="650"></canvas> -->
+                <div class="treangle_handler btn btn-lg btn-primary">СТАРТ</div>
+                <span id="time" class="inopacity"></span>
+                <div class="treangle treangle_0 inopacity"></div>
+              </div>
+            </div>
+            <div class="col-12 slider-box slider-urav overscreen">
+              <div class="urav-wrapper">
+                <div class="urav_graph">
+                  <div class="urav_graph_handle"><i class="fa fa-arrows-alt-h"></i></div>
+                  <div class="urav_value"></div>
+                </div>
+                <div id="slider_2">
+                  <div id="custom-handle_2" class="ui-slider-handle"></div>
                 </div>
               </div>
             </div>
