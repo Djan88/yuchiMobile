@@ -279,7 +279,7 @@ jQuery(document).ready(function () {
           clearInterval(vibroOne);
           count_animation = 1;
         }
-      }, 200);
+      }, 1000);
     }
   }
 
