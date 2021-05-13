@@ -97,7 +97,7 @@ jQuery(document).ready(function () {
     jQuery('.frame').addClass('frame-full');
     setTimeout(function(){
       jQuery('.frame').removeClass('frame-full');
-    },500);
+    },1000);
   });
 
   jQuery('.box').on('click', function(event) {
