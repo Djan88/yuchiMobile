@@ -988,7 +988,7 @@ h3.newsCard_heading
   text-align: center;
   display: flex;
   margin: auto;
-  padding-top: 40px;
+  padding-bottom: 20px;
   justify-content: center;
 }
 .socials
@@ -997,7 +997,7 @@ h3.newsCard_heading
 }
 .ch_socials
 {
-  width: 130px;
+  width: 100px;
   display: inline-block;
 }
 .ch_socials span
