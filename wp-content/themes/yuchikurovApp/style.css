@@ -984,7 +984,8 @@ h3.newsCard_heading
   text-align: center;
   display: block;
   margin: auto;
-  width: 30%;
+  width: 70%;
+  padding-top: 40px;
   max-width: 180px;
 }
 @media (min-width: 992px){
