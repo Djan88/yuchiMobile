@@ -12,7 +12,7 @@
   <!-- <link href="<?php //bloginfo('template_url'); ?>/css/animate.css" rel="stylesheet"> -->
   <link href="<?php bloginfo('template_url'); ?>/css/open-iconic-bootstrap.css" rel="stylesheet">
   <link href="<?php bloginfo('template_url'); ?>/css/swipe-bundle.min.css" rel="stylesheet">
-  <link href="<?php bloginfo('template_url'); ?>/style.css" rel="stylesheet">
+  <link href="<?php bloginfo('template_url'); ?>/style_.css" rel="stylesheet">
   <?php wp_head(); ?>
 </head>
 
