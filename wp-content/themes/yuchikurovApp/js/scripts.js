@@ -21,7 +21,7 @@ function onDeviceReady() {
 
 jQuery(document).ready(function () {
 
-  var knife,
+  let knife,
     knifeDate,
     knifeDateOld,
     knifeDateDiff,
@@ -36,7 +36,8 @@ jQuery(document).ready(function () {
     vibro,
     vibroOnAir = false,
     count_animation = 1,
-    vibroOne;
+    vibroOne,
+    triangleStatus = 0
 
   // Pull to refresh
   PullToRefresh.init({
@@ -48,7 +49,7 @@ jQuery(document).ready(function () {
   });
 
 
-  var swiper = new Swiper('.swiper-container-formuls', {
+  let swiper = new Swiper('.swiper-container-formuls', {
     direction: 'vertical',
     slidesPerView: 1,
     spaceBetween: 30,
@@ -59,7 +60,7 @@ jQuery(document).ready(function () {
     },
   });
 
-  var swiper_elems = new Swiper('.swiper-container-elems', {
+  let swiper_elems = new Swiper('.swiper-container-elems', {
     direction: 'vertical',
     slidesPerView: 1,
     spaceBetween: 30,
@@ -147,7 +148,7 @@ jQuery(document).ready(function () {
   });
 
   jQuery('.main-item-regress').on('click', function(event) {
-    // var handle_status = jQuery('#custom-handle').css('left');
+    // let handle_status = jQuery('#custom-handle').css('left');
     // if (handle_status != '3.5%') {
     //   jQuery('.reverce-clean').removeClass('hidden');
     // }
@@ -159,7 +160,7 @@ jQuery(document).ready(function () {
   });
 
   jQuery('.main-item-urav').on('click', function(event) {
-    var handle_status = jQuery('#custom-handle_2').css('left');
+    let handle_status = jQuery('#custom-handle_2').css('left');
     if (handle_status != '3.5%') {
       jQuery('.reverce-clean_2').removeClass('hidden');
     }
@@ -173,6 +174,7 @@ jQuery(document).ready(function () {
     jQuery('.slider-box').addClass('hidden').removeAttr('style');
     jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
     jQuery('.header-text').text('ШКОЛА ДОКТОРА ЧИКУРОВА');
+    triangleStatus = 0;
     jQuery('.back-button, .reverce_clean_graph, .reverce_clean_graph_2').addClass('hidden');
   });
 
@@ -215,8 +217,8 @@ jQuery(document).ready(function () {
   // Regressive centering
 
   jQuery( function() {
-    var handle = jQuery("#custom-handle");
-    var handle_val;
+    let handle = jQuery("#custom-handle");
+    let handle_val;
     jQuery("#slider").slider({
       value: 7,
       min: 0,
@@ -287,8 +289,8 @@ jQuery(document).ready(function () {
   }
 
   jQuery( function() {
-    var handle_2 = jQuery("#custom-handle_2");
-    var handle_val_2;
+    let handle_2 = jQuery("#custom-handle_2");
+    let handle_val_2;
     jQuery("#slider_2").slider({
       value: 7,
       min: 0,
@@ -411,7 +413,7 @@ jQuery(document).ready(function () {
       return;
     }
     this.running = true;
-    var start = Date.now(),
+    let start = Date.now(),
         that = this,
         diff, obj;
 
@@ -451,7 +453,7 @@ jQuery(document).ready(function () {
   };
 
 // timer start
-  var display = document.querySelector('#time'),
+  let display = document.querySelector('#time'),
       timer = new CountDownTimer(158);
 
   function format(minutes, seconds) {
@@ -462,6 +464,7 @@ jQuery(document).ready(function () {
 
   jQuery('.treangle_handler').on('click', function(event) {
     treangle_0();
+    triangleStatus = 1;
     jQuery('#time').removeClass('inopacity');
     jQuery(this).addClass('inopacity');
     timer.onTick(format).start();
@@ -472,140 +475,260 @@ jQuery(document).ready(function () {
     setTimeout(function(){
       jQuery('.treangle').removeClass('treangle_0').addClass('treangle_0_1');
       navigator.vibrate(200);
-      treangle_0_1();
+      if (triangleStatus === 0) {
+        jQuery('.treangle').removeClass('treangle_10');
+        jQuery('.treangle_handler').removeClass('inopacity');
+        jQuery('#time').addClass('inopacity');
+      } else {
+        treangle_0_1();
+      }
     },9000);
   }
   treangle_0_1 = function(){
     setTimeout(function(){
       jQuery('.treangle').removeClass('treangle_0_1').addClass('treangle_0_2');
       navigator.vibrate(200);
-      treangle_0_2();
+      if (triangleStatus === 0) {
+        jQuery('.treangle').removeClass('treangle_10');
+        jQuery('.treangle_handler').removeClass('inopacity');
+        jQuery('#time').addClass('inopacity');
+      } else {
+        treangle_0_2();
+      }
     },7000);
   }
   treangle_0_2 = function(){
     setTimeout(function(){
       jQuery('.treangle').removeClass('treangle_0_2').addClass('treangle_0_3');
       navigator.vibrate(200);
-      treangle_0_3();
+      if (triangleStatus === 0) {
+        jQuery('.treangle').removeClass('treangle_10');
+        jQuery('.treangle_handler').removeClass('inopacity');
+        jQuery('#time').addClass('inopacity');
+      } else {
+        treangle_0_3();
+      }
     },7000);
   }
   treangle_0_3 = function(){
     setTimeout(function(){
       jQuery('.treangle').removeClass('treangle_0_3').addClass('treangle_0_4');
       navigator.vibrate(200);
-      treangle_0_4();
+      if (triangleStatus === 0) {
+        jQuery('.treangle').removeClass('treangle_10');
+        jQuery('.treangle_handler').removeClass('inopacity');
+        jQuery('#time').addClass('inopacity');
+      } else {
+        treangle_0_4();
+      }
     },7000);
   }
   treangle_0_4 = function(){
     setTimeout(function(){
       jQuery('.treangle').removeClass('treangle_0_4').addClass('treangle_1');
       navigator.vibrate(200);
-      treangle_1();
+      if (triangleStatus === 0) {
+        jQuery('.treangle').removeClass('treangle_10');
+        jQuery('.treangle_handler').removeClass('inopacity');
+        jQuery('#time').addClass('inopacity');
+      } else {
+        treangle_1();
+      }
     },7000);
   }
   treangle_1 = function(){
     setTimeout(function(){
       jQuery('.treangle').removeClass('treangle_1').addClass('treangle_2');
       navigator.vibrate(200);
-      treangle_2();
+      if (triangleStatus === 0) {
+        jQuery('.treangle').removeClass('treangle_10');
+        jQuery('.treangle_handler').removeClass('inopacity');
+        jQuery('#time').addClass('inopacity');
+      } else {
+        treangle_2();
+      }
     },7000);
   }
   treangle_2 = function(){
     setTimeout(function(){
       jQuery('.treangle').removeClass('treangle_2').addClass('treangle_3');
       navigator.vibrate(200);
-      treangle_3();
+      if (triangleStatus === 0) {
+        jQuery('.treangle').removeClass('treangle_10');
+        jQuery('.treangle_handler').removeClass('inopacity');
+        jQuery('#time').addClass('inopacity');
+      } else {
+        treangle_3();
+      }
     },7000);
   }
   treangle_3 = function(){
     setTimeout(function(){
       jQuery('.treangle').removeClass('treangle_3').addClass('treangle_4');
       navigator.vibrate(200);
-      treangle_4();
+      if (triangleStatus === 0) {
+        jQuery('.treangle').removeClass('treangle_10');
+        jQuery('.treangle_handler').removeClass('inopacity');
+        jQuery('#time').addClass('inopacity');
+      } else {
+        treangle_4();
+      }
     },7000);
   }
   treangle_4 = function(){
     setTimeout(function(){
       jQuery('.treangle').removeClass('treangle_4').addClass('treangle_5');
       navigator.vibrate(200);
-      treangle_5();
+      if (triangleStatus === 0) {
+        jQuery('.treangle').removeClass('treangle_10');
+        jQuery('.treangle_handler').removeClass('inopacity');
+        jQuery('#time').addClass('inopacity');
+      } else {
+        treangle_5();
+      }
     },7000);
   }
   treangle_5 = function(){
     setTimeout(function(){
       jQuery('.treangle').removeClass('treangle_5').addClass('treangle_5_1');
       navigator.vibrate(200);
-      treangle_5_1();
+      if (triangleStatus === 0) {
+        jQuery('.treangle').removeClass('treangle_10');
+        jQuery('.treangle_handler').removeClass('inopacity');
+        jQuery('#time').addClass('inopacity');
+      } else {
+        treangle_5_1();
+      }
     },14000);
   }
   treangle_5_1 = function(){
     setTimeout(function(){
       jQuery('.treangle').removeClass('treangle_5_1').addClass('treangle_5_2');
       navigator.vibrate(200);
-      treangle_5_2();
+      if (triangleStatus === 0) {
+        jQuery('.treangle').removeClass('treangle_10');
+        jQuery('.treangle_handler').removeClass('inopacity');
+        jQuery('#time').addClass('inopacity');
+      } else {
+        treangle_5_2();
+      }
     },7000);
   }
   treangle_5_2 = function(){
     setTimeout(function(){
       jQuery('.treangle').removeClass('treangle_5_2').addClass('treangle_5_3');
       navigator.vibrate(200);
-      treangle_5_3();
+      if (triangleStatus === 0) {
+        jQuery('.treangle').removeClass('treangle_10');
+        jQuery('.treangle_handler').removeClass('inopacity');
+        jQuery('#time').addClass('inopacity');
+      } else {
+        treangle_5_3();
+      }
     },7000);
   }
   treangle_5_3 = function(){
     setTimeout(function(){
       jQuery('.treangle').removeClass('treangle_5_3').addClass('treangle_5_4');
       navigator.vibrate(200);
-      treangle_5_4();
+      if (triangleStatus === 0) {
+        jQuery('.treangle').removeClass('treangle_10');
+        jQuery('.treangle_handler').removeClass('inopacity');
+        jQuery('#time').addClass('inopacity');
+      } else {
+        treangle_5_4();
+      }
     },7000);
   }
   treangle_5_4 = function(){
     setTimeout(function(){
       jQuery('.treangle').removeClass('treangle_5_4').addClass('treangle_5_5');
       navigator.vibrate(200);
-      treangle_5_5();
+      if (triangleStatus === 0) {
+        jQuery('.treangle').removeClass('treangle_10');
+        jQuery('.treangle_handler').removeClass('inopacity');
+        jQuery('#time').addClass('inopacity');
+      } else {
+        treangle_5_5();
+      }
     },7000);
   }
   treangle_5_5 = function(){
     setTimeout(function(){
       jQuery('.treangle').removeClass('treangle_5_5').addClass('treangle_6');
       navigator.vibrate(200);
-      treangle_6();
+      if (triangleStatus === 0) {
+        jQuery('.treangle').removeClass('treangle_10');
+        jQuery('.treangle_handler').removeClass('inopacity');
+        jQuery('#time').addClass('inopacity');
+      } else {
+        treangle_6();
+      }
     },7000);
   }
   treangle_6 = function(){
     setTimeout(function(){
       jQuery('.treangle').removeClass('treangle_6').addClass('treangle_7');
       navigator.vibrate(200);
-      treangle_7();
+      if (triangleStatus === 0) {
+        jQuery('.treangle').removeClass('treangle_10');
+        jQuery('.treangle_handler').removeClass('inopacity');
+        jQuery('#time').addClass('inopacity');
+      } else {
+        treangle_7();
+      }
     },7000);
   }
   treangle_7 = function(){
     setTimeout(function(){
       jQuery('.treangle').removeClass('treangle_7').addClass('treangle_8');
       navigator.vibrate(200);
-      treangle_8();
+      if (triangleStatus === 0) {
+        jQuery('.treangle').removeClass('treangle_10');
+        jQuery('.treangle_handler').removeClass('inopacity');
+        jQuery('#time').addClass('inopacity');
+      } else {
+        treangle_8();
+      }
     },7000);
   }
   treangle_8 = function(){
     setTimeout(function(){
       jQuery('.treangle').removeClass('treangle_8').addClass('treangle_9');
       navigator.vibrate(200);
-      treangle_9();
+      if (triangleStatus === 0) {
+        jQuery('.treangle').removeClass('treangle_10');
+        jQuery('.treangle_handler').removeClass('inopacity');
+        jQuery('#time').addClass('inopacity');
+      } else {
+        treangle_9();
+      }
     },7000);
   }
   treangle_9 = function(){
     setTimeout(function(){
       jQuery('.treangle').removeClass('treangle_9').addClass('treangle_10');
       navigator.vibrate(200);
-      treangle_10();
+      if (triangleStatus === 0) {
+        jQuery('.treangle').removeClass('treangle_10');
+        jQuery('.treangle_handler').removeClass('inopacity');
+        jQuery('#time').addClass('inopacity');
+      } else {
+        treangle_10();
+      }
     },7000);
   }
   treangle_10 = function(){
     setTimeout(function(){
       jQuery('.treangle').addClass('inopacity');
       navigator.vibrate(200);
-      treangle_11();
+      if (triangleStatus === 0) {
+        jQuery('.treangle').removeClass('treangle_10');
+        jQuery('.treangle_handler').removeClass('inopacity');
+        jQuery('#time').addClass('inopacity');
+      } else {
+        treangle_11();
+      }
     },14000);
   }
   treangle_11 = function(){
@@ -614,6 +737,7 @@ jQuery(document).ready(function () {
       jQuery('.treangle_handler').removeClass('inopacity');
       jQuery('#time').addClass('inopacity');
       navigator.vibrate(200);
+      triangleStatus = 0;
     },2000);
   }
 
