@@ -979,6 +979,10 @@ h3.newsCard_heading
 {
   max-width: 120px;
 }
+.app-second
+{
+  justify-content: center;
+}
 .social_wrap
 {
   text-align: center;
@@ -991,6 +995,16 @@ h3.newsCard_heading
 .socials
 {
   width: 100%;
+}
+.ch_socials
+{
+  width: 100%;
+  min-width: 130px;
+  display: inline-block;
+}
+.ch_socials span
+{
+  color: #eee;
 }
 @media (min-width: 992px){
   .d-lg-none 
