@@ -249,16 +249,16 @@
           </div>
           <div class="container app-second second hidden">
             <div class="row">
-              <div class="col social_wrap">
+              <div class="col-xs-6 col-sm-3 col-md-3 social_wrap">
                 <a href="https://telegram.me/chikurov_school" class="ch_socials ch_socials_tg"><img src="<?php bloginfo('template_url'); ?>/img/telegram_icon.png" alt="telegram_icon"><span>Telegram</span></a>
               </div>
-              <div class="col social_wrap">
+              <div class="col-xs-6 col-sm-3 col-md-3 social_wrap">
                 <a href="https://telegram.me/chikurov_school" class="ch_socials ch_socials_tg"><img src="<?php bloginfo('template_url'); ?>/img/whatsapp_icon.png" alt="whatsapp_icon"><span>WhatsApp</span></a>
               </div>
-              <div class="col social_wrap">
+              <div class="col-xs-6 col-sm-3 col-md-3 social_wrap">
                 <a href="https://telegram.me/chikurov_school" class="ch_socials ch_socials_tg"><img src="<?php bloginfo('template_url'); ?>/img/viber_icon.png" alt="viber_icon"><span>Viber</span></a>
               </div>
-              <div class="col social_wrap">
+              <div class="col-xs-6 col-sm-3 col-md-3 social_wrap">
                 <a href="https://telegram.me/chikurov_school" class="ch_socials ch_socials_tg"><img src="<?php bloginfo('template_url'); ?>/img/mail_icon.png" alt="mail_icon"><span>Email</span></a>
               </div>
             </div>
