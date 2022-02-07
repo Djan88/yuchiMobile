@@ -1008,9 +1008,9 @@ h3.newsCard_heading
   padding-top: 10px;
   display: inline-block;
 }
-.ch_socials span img
+.ch_socials img
 {
-  width: 100px;
+  width: 90px;
 }
 @media (min-width: 992px){
   .d-lg-none 
