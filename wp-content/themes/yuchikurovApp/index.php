@@ -253,13 +253,13 @@
                 <a href="https://telegram.me/chikurov_school" class="ch_socials ch_socials_tg"><img src="<?php bloginfo('template_url'); ?>/img/telegram_icon.png" alt="telegram_icon"><span>Telegram</span></a>
               </div>
               <div class="col-xs-6 col-sm-6 col-md-3 social_wrap">
-                <a href="https://telegram.me/chikurov_school" class="ch_socials ch_socials_tg"><img src="<?php bloginfo('template_url'); ?>/img/whatsapp_icon.png" alt="whatsapp_icon"><span>WhatsApp</span></a>
+                <a href="https://api.whatsapp.com/send?phone=79855381468" class="ch_socials ch_socials_tg"><img src="<?php bloginfo('template_url'); ?>/img/whatsapp_icon.png" alt="whatsapp_icon"><span>WhatsApp</span></a>
               </div>
               <div class="col-xs-6 col-sm-6 col-md-3 social_wrap">
-                <a href="https://telegram.me/chikurov_school" class="ch_socials ch_socials_tg"><img src="<?php bloginfo('template_url'); ?>/img/viber_icon.png" alt="viber_icon"><span>Viber</span></a>
+                <a href="viber://chat?number=+79855381468" class="ch_socials ch_socials_tg"><img src="<?php bloginfo('template_url'); ?>/img/viber_icon.png" alt="viber_icon"><span>Viber</span></a>
               </div>
               <div class="col-xs-6 col-sm-6 col-md-3 social_wrap">
-                <a href="https://telegram.me/chikurov_school" class="ch_socials ch_socials_tg"><img src="<?php bloginfo('template_url'); ?>/img/mail_icon.png" alt="mail_icon"><span>Email</span></a>
+                <a href="mailto:info@chikurov.com" class="ch_socials ch_socials_tg"><img src="<?php bloginfo('template_url'); ?>/img/mail_icon.png" alt="mail_icon"><span>Email</span></a>
               </div>
             </div>
           </div>

@@ -123,7 +123,7 @@ jQuery(document).ready(function () {
   jQuery('.calendar').on('click', function(event) {
     jQuery('.app-slide, .app-main').addClass('hidden').removeAttr('style');
     jQuery('.app-second').fadeIn(500).removeClass('hidden').css('display', 'flex');
-    jQuery('.header-text').text('НОВОСТИ ШКОЛЫ');
+    jQuery('.header-text').text('КОНТАКТЫ');
     jQuery('.back-button, .reverce_clean_graph, .reverce_clean_graph_2').addClass('hidden');
     jQuery('.slider-box').addClass('hidden').removeAttr('style');
     jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');

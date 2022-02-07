@@ -1004,7 +1004,10 @@ h3.newsCard_heading
 }
 .ch_socials span
 {
-  color: #eee;
+  color: #555;
+  font-weight: 600;
+  padding-top: 10px;
+  display: inline-block;
 }
 @media (min-width: 992px){
   .d-lg-none 
