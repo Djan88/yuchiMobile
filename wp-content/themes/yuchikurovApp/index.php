@@ -248,48 +248,9 @@
             </div>
           </div>
           <div class="container app-second second hidden">
-            <div class="row">
-              <div class="col">
-                <div class="row">
-                  <div class="col"></div>
-                  <div class="col col_social">
-                    <a href="https://telegram.me/chikurov_school" class="ch_socials ch_socials_tg"><img src="<?php bloginfo('template_url'); ?>/img/telegram_icon.png" alt="telegram_icon"><span>Telegram</span></a>
-                  </div>
-                  <div class="col"></div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <div class="row">
-                  <div class="col"></div>
-                  <div class="col col_social">
-                    <a href="https://telegram.me/chikurov_school" class="ch_socials ch_socials_tg"><img src="<?php bloginfo('template_url'); ?>/img/whatsapp_icon.png" alt="telegram_icon"><span>WhatsApp</span></a>
-                  </div>
-                  <div class="col"></div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <div class="row">
-                  <div class="col"></div>
-                  <div class="col col_social">
-                    <a href="https://telegram.me/chikurov_school" class="ch_socials ch_socials_tg"><img src="<?php bloginfo('template_url'); ?>/img/viber_icon.png" alt="telegram_icon"><span>Viber</span></a>
-                  </div>
-                  <div class="col"></div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <div class="row">
-                  <div class="col"></div>
-                  <div class="col col_social">
-                    <a href="https://telegram.me/chikurov_school" class="ch_socials ch_socials_tg"><img src="<?php bloginfo('template_url'); ?>/img/mail_icon.png" alt="telegram_icon"><span>Email</span></a>
-                  </div>
-                  <div class="col"></div>
-                </div>
+            <div class="row justify-content-center">
+              <div class="col col_social">
+                <a href="https://telegram.me/chikurov_school" class="ch_socials ch_socials_tg"><img src="<?php bloginfo('template_url'); ?>/img/telegram_icon.png" alt="telegram_icon"><span>Telegram</span></a>
               </div>
             </div>
           </div>
