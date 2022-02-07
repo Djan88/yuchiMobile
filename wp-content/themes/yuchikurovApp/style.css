@@ -988,6 +988,10 @@ h3.newsCard_heading
   padding-top: 40px;
   max-width: 180px;
 }
+.socials
+{
+  width: 100%;
+}
 @media (min-width: 992px){
   .d-lg-none 
   {

@@ -248,7 +248,7 @@
             </div>
           </div>
           <div class="container app-second second hidden">
-            <div class="row">
+            <div class="row socials">
               <div class="col-xs-6 col-sm-3 col-md-3 social_wrap">
                 <a href="https://telegram.me/chikurov_school" class="ch_socials ch_socials_tg"><img src="<?php bloginfo('template_url'); ?>/img/telegram_icon.png" alt="telegram_icon"><span>Telegram</span></a>
               </div>
