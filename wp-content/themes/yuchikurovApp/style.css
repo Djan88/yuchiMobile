@@ -975,6 +975,10 @@ h3.newsCard_heading
   font-weight: 600;
   opacity: 1;
 }
+.col-3.main-item-img 
+{
+  max-width: 120px;
+}
 
 @media (min-width: 992px){
   .d-lg-none 

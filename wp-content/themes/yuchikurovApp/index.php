@@ -248,27 +248,55 @@
             </div>
           </div>
           <div class="container app-second second hidden">
-            <div class="row" id="news">
+            <div class="row">
+              <div class="col"></div>
+              <div class="col col_social">
+                <a href="https://telegram.me/chikurov_school" class="ch_socials ch_socials_tg"><img src="<?php bloginfo('template_url'); ?>/img/telegram_icon.png" alt="telegram_icon"><span>Telegram</span></a>
+              </div>
+              <div class="col"></div>
+            </div>
+            <div class="row">
+              <div class="col"></div>
+              <div class="col col_social">
+                <a href="https://telegram.me/chikurov_school" class="ch_socials ch_socials_tg"><img src="<?php bloginfo('template_url'); ?>/img/whatsapp_icon.png" alt="telegram_icon"><span>WhatsApp</span></a>
+              </div>
+              <div class="col"></div>
+            </div>
+            <div class="row">
+              <div class="col"></div>
+              <div class="col col_social">
+                <a href="https://telegram.me/chikurov_school" class="ch_socials ch_socials_tg"><img src="<?php bloginfo('template_url'); ?>/img/viber_icon.png" alt="telegram_icon"><span>Viber</span></a>
+              </div>
+              <div class="col"></div>
+            </div>
+            <div class="row">
+              <div class="col"></div>
+              <div class="col col_social">
+                <a href="https://telegram.me/chikurov_school" class="ch_socials ch_socials_tg"><img src="<?php bloginfo('template_url'); ?>/img/mail_icon.png" alt="telegram_icon"><span>Email</span></a>
+              </div>
+              <div class="col"></div>
+            </div>
+            <!-- <div class="row" id="news">
               <?php
               // The Query
-              $query_news = new WP_Query( array( 'category_name' => 'news', 'posts_per_page' => '-1' ) );
-              $cur_news = 0;
-              while ($query_news->have_posts()) : $query_news->the_post();
-                echo '<div class="newsCard col-12">';
-                echo '<h3 class="newsCard_heading">';
-                echo the_title();
-                echo '</h3>';
-                echo '<div class="newsCard_date">';
-                echo the_time('j F Y');
-                echo '</div>';
-                echo '<div class="newsCard_content">';
-                echo the_content(); 
-                echo '</div>';
-                echo '</div>';
-              endwhile;
+              $query_news //= new WP_Query( array( 'category_name' => 'news', 'posts_per_page' => '-1' ) );
+              $cur_news //= 0;
+              //while ($query_news->have_posts()) : $query_news->the_post();
+               // echo '<div class="newsCard col-12">';
+                //echo '<h3 class="newsCard_heading">';
+                //echo the_title();
+                //echo '</h3>';
+                //echo '<div class="newsCard_date">';
+                //echo the_time('j F Y');
+                //echo '</div>';
+                //echo '<div class="newsCard_content">';
+                //echo the_content(); 
+                //echo '</div>';
+                //echo '</div>';
+              //endwhile;
               wp_reset_postdata();
               ?>
-            </div>
+            </div> -->
           </div>
         </main>
       </div>
