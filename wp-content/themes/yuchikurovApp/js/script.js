@@ -243,7 +243,7 @@ jQuery(document).ready(function () {
       stop: function( event, ui ) {
         console.log(handle_val);
         navigator.vibrate(100);
-        jQuery('.reverce-clean').removeClass('hidden')
+        jQuery('.reverce-clean').removeClass('hidden');
         if (handle_val <= 60) {
           mode_speed = 2;
         } else if (handle_val > 60 && handle_val <= 111) {
@@ -265,6 +265,7 @@ jQuery(document).ready(function () {
   // Мыслеуравнитель
 
   vibro = function(count){
+    document.jQuery('#custom-handle_2').addClass('hidden');
     if (count_animation > 1) {
       clearInterval(vibroOne);
       count_animation = 1;
@@ -278,6 +279,7 @@ jQuery(document).ready(function () {
         } else {
           clearInterval(vibroOne);
           count_animation = 1;
+          document.jQuery('#custom-handle_2').removeClass('hidden');
         }
       }, 1000);
     }
