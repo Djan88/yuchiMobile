@@ -997,7 +997,7 @@ h3.newsCard_heading
 }
 .ch_socials
 {
-  width: 100px;
+  width: 120px;
   display: inline-block;
 }
 .ch_socials span
@@ -1006,6 +1006,10 @@ h3.newsCard_heading
   font-weight: 600;
   padding-top: 10px;
   display: inline-block;
+}
+.ch_socials span img
+{
+  width: 100px;
 }
 @media (min-width: 992px){
   .d-lg-none 
