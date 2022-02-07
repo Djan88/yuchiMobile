@@ -265,7 +265,7 @@ jQuery(document).ready(function () {
   // Мыслеуравнитель
 
   vibro = function(count){
-    document.jQuery('#custom-handle_2').addClass('hidden');
+    jQuery('#custom-handle_2').addClass('hidden');
     if (count_animation > 1) {
       clearInterval(vibroOne);
       count_animation = 1;
@@ -279,7 +279,7 @@ jQuery(document).ready(function () {
         } else {
           clearInterval(vibroOne);
           count_animation = 1;
-          document.jQuery('#custom-handle_2').removeClass('hidden');
+          jQuery('#custom-handle_2').removeClass('hidden');
         }
       }, 1000);
     }
