@@ -2,6 +2,7 @@ document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady() {
   // Cordova is now initialized. Have fun!
   screen.orientation.lock('portrait');
+  ClearData.cache();
 
   jQuery('.tabbar li a').on('click', function(event) {
     navigator.vibrate(25);
