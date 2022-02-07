@@ -982,7 +982,7 @@ h3.newsCard_heading
 .social_wrap
 {
   text-align: center;
-  display: block;
+  display: flex;
   margin: auto;
   width: 70%;
   padding-top: 40px;
