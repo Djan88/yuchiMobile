@@ -979,7 +979,14 @@ h3.newsCard_heading
 {
   max-width: 120px;
 }
-
+.social_wrap
+{
+  text-align: center;
+  display: block;
+  margin: auto;
+  width: 30%;
+  max-width: 180px;
+}
 @media (min-width: 992px){
   .d-lg-none 
   {

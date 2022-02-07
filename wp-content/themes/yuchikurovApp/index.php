@@ -248,10 +248,8 @@
             </div>
           </div>
           <div class="container app-second second hidden">
-            <div class="row justify-content-center">
-              <div class="col col_social">
-                <a href="https://telegram.me/chikurov_school" class="ch_socials ch_socials_tg"><img src="<?php bloginfo('template_url'); ?>/img/telegram_icon.png" alt="telegram_icon"><span>Telegram</span></a>
-              </div>
+            <div class="social_wrap">
+              <a href="https://telegram.me/chikurov_school" class="ch_socials ch_socials_tg"><img src="<?php bloginfo('template_url'); ?>/img/telegram_icon.png" alt="telegram_icon"><span>Telegram</span></a>
             </div>
           </div>
         </main>
