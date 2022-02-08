@@ -249,7 +249,7 @@
           </div>
           <div class="container app-second second hidden">
             <div class="row_tel">
-              <a class="social_tel" href="tel:+79855381468">+7 (985) 538-14-68</a>
+              <a class="social_tel" href="tel:+79855381468"><i class="bi bi-telephone"></i> +7 (985) 538-14-68</a>
             </div>
             <div class="row socials">
               <div class="col social_wrap">
