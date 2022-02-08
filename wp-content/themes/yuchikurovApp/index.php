@@ -248,10 +248,8 @@
             </div>
           </div>
           <div class="container app-second second hidden">
-            <div class="row_tel">
-              <a class="social_tel" href="tel:+79855381468"><i class="bi bi-telephone"></i> +7 (985) 538-14-68</a>
-            </div>
             <div class="row socials">
+              <a class="col-12 social_tel" href="tel:+79855381468"><i class="bi bi-telephone"></i> +7 (985) 538-14-68</a>
               <div class="col social_wrap">
                 <a href="https://telegram.me/chikurov_school" class="ch_socials ch_socials_tg"><img src="<?php bloginfo('template_url'); ?>/img/telegram_icon.png" alt="telegram_icon"><span>Telegram</span></a>
               </div>
