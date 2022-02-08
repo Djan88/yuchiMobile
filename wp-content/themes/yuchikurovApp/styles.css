@@ -1022,6 +1022,14 @@ a.social_tel
   font-size: 1.5rem;
   color: #ff206d;
 }
+a.social_tel svg
+{
+  width: 30px;
+  height: 30px;
+  padding-right: 3px;
+  padding-top: 9px;
+  display: inline-block;
+}
 @media (min-width: 992px){
   .d-lg-none 
   {
