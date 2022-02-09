@@ -448,7 +448,7 @@ button svg
 }
  .tabbar li a.phone div:before {
    --s-y: 0.75;
-   height: 2px;
+   height: 1px;
    width: 10px;
    background: var(--primary);
    left: 34%;
@@ -466,23 +466,19 @@ button svg
  .tabbar li a.phone div em:before, .tabbar li a.phone div em:after {
    content: '';
    display: block;
-   width: 2px;
+   width: 1px;
    height: 10px;
    background: var(--primary);
    position: absolute;
-   top: 20px;
+   top: 18px;
    left: 40%;
    backface-visibility: hidden;
-   transform: rotate(302deg);
+   transform: rotate(305deg);
    transform-origin: 100% 50%;
 }
 .tabbar li a.phone div em:after
 {
   background: transparent;
-}
-.tabbar li.active a.phone div:before
-{
- background: var(--icon-active);
 }
 .tabbar li.active a.phone em:after
 {
@@ -493,9 +489,6 @@ button svg
 }
  .tabbar li.active a div svg {
    fill: var(--icon-active);
-}
- .tabbar li.active a.phone em:before, .tabbar li.active a.phone em:after {
-   background: var(--icon-active);
 }
  .tabbar li:not(.active) a div {
    transition: transform 0.4s ease;
