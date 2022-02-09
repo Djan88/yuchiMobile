@@ -528,7 +528,7 @@ button svg
  .tabbar.move:after {
    animation: move-after 1.2s linear forwards;
 }
-.tabbar li a div svg#phone
+.tabbar li a div svg#phone, .tabbar li.move a div svg#phone
 {
   fill: var(--primary);
 }
