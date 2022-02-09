@@ -348,11 +348,8 @@ button svg
    stroke-width: 1px;
    stroke: var(--primary);
 }
-.tabbar li a div svg#phone
+.tabbar li a div:before 
 {
-  fill: var(--primary);
-}
- .tabbar li a div:before {
    --s-x: 1;
    --s-y: 1;
    content: '';
@@ -497,6 +494,10 @@ button svg
 }
  .tabbar.move:after {
    animation: move-after 1.2s linear forwards;
+}
+.tabbar li a div svg#phone, em#phone_vibes
+{
+  fill: var(--primary);
 }
  .frame {
    width: 100%;

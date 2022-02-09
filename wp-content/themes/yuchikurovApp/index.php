@@ -316,7 +316,7 @@
               </g>
               </svg>
               <em>
-                <svg id="phone_vibes" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                <!-- <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                    viewBox="0 0 473.806 473.806" style="enable-background:new 0 0 473.806 473.806;" xml:space="preserve">
                 <g>
                   <g>
@@ -328,7 +328,7 @@
                       c0.8,0,1.5-0.1,2.3-0.2C469.556,223.306,474.556,216.306,473.256,209.006z"/>
                   </g>
                 </g>
-                </svg>
+                </svg> -->
               </em>
             </div>
           </a>
