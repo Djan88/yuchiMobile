@@ -510,7 +510,7 @@ button svg
    animation: icon 1.2s linear forwards;
 }
  .tabbar li.move a div svg {
-   animation: svg 0.4s linear forwards;
+   animation: svg 1.2s linear forwards;
 }
  .tabbar li.move a.box div:before {
    animation: element-far 1.2s linear forwards;
@@ -529,6 +529,15 @@ button svg
 }
  .tabbar li.move a.calendar div em:before, .tabbar li.move a.calendar div em:after {
    animation: calendar-3 1.2s linear forwards;
+}
+ .tabbar li.move a.phone div:before {
+   animation: element-close 1.2s linear forwards;
+}
+ .tabbar li.move a.phone div em {
+   animation: phone-2 1.2s linear forwards;
+}
+ .tabbar li.move a.phone div em:before, .tabbar li.move a.phone div em:after {
+   animation: phone-3 1.2s linear forwards;
 }
  .tabbar.move:before {
    animation: move 1.2s linear forwards;
@@ -769,6 +778,31 @@ button svg
   }
 }
  @keyframes calendar-3 {
+   75% {
+     background: var(--primary);
+  }
+   80%, 100% {
+     background: var(--icon-active);
+  }
+}
+ @keyframes phone-2 {
+   30% {
+     transform: translateY(0);
+  }
+   40% {
+     transform: translateY(0px);
+  }
+   70% {
+     transform: translateY(-8px);
+  }
+   85% {
+     transform: translateY(0);
+  }
+   100% {
+     transform: translateY(0);
+  }
+}
+ @keyframes phone-3 {
    75% {
      background: var(--primary);
   }
