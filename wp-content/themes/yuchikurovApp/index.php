@@ -193,9 +193,9 @@
                   </div>
                   <div class="col main-item main-item-urav">
                     <div class="row">
-                      <div class="col-3 main-item-img"><img src="<?php bloginfo('template_url'); ?>/img/uravn-fav.png" alt="Оцифратор"></div>
+                      <div class="col-3 main-item-img"><img src="<?php bloginfo('template_url'); ?>/img/uravn-fav.png" alt="Уравнитель"></div>
                       <div class="col main-item-content">
-                        <div class="main-item-title">Оцифратор</div>
+                        <div class="main-item-title">Уравнитель</div>
                         <div class="main-item-sub-title">Для начала работы проведите пальцем по шкале</div>
                       </div>
                     </div>
