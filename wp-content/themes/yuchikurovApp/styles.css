@@ -501,7 +501,7 @@ button svg
    transition: transform 0.4s ease;
 }
  .tabbar li:not(.active) a div svg {
-   /*transition: fill 0.4s ease;*/
+   transition: fill 0.1s ease;
 }
  .tabbar li:not(.active) a:active {
    transform: scale(0.92);
@@ -543,7 +543,6 @@ button svg
 .tabbar li.active a div svg#phone
 {
   fill: var(--icon-active);
-  transition: fill 0.1s ease;
 }
 .frame {
    width: 100%;
