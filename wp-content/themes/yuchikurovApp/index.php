@@ -290,7 +290,7 @@
           </a>
         </li>
         <li>
-          <a href="" class="calendar">
+          <a href="" class="phone">
             <div>
               <svg id="phone" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  viewBox="0 0 473.806 473.806" style="enable-background:new 0 0 473.806 473.806;" xml:space="preserve">
