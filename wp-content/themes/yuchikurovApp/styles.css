@@ -348,6 +348,10 @@ button svg
    stroke-width: 1px;
    stroke: var(--primary);
 }
+.tabbar li a div svg#phone
+{
+  fill: var(--primary);
+}
  .tabbar li a div:before {
    --s-x: 1;
    --s-y: 1;
@@ -356,6 +360,7 @@ button svg
    position: absolute;
    z-index: 1;
    transform: scaleX(var(--s-x)) scaleY(var(--s-y));
+}
 }
  .tabbar li a.box div:before {
    --s-x: 0.75;
