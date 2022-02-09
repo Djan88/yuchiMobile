@@ -543,10 +543,7 @@ button svg
 .tabbar li.active a div svg#phone
 {
   fill: var(--icon-active);
-}
-svg#phone
-{
-  transition: all none;
+  transition: fill 0.1s ease;
 }
 .frame {
    width: 100%;
