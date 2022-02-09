@@ -293,7 +293,7 @@
           <a href="" class="calendar">
             <div>
               <svg>
-                <use xlink:href="#calendar">
+                <use xlink:href="#phone">
               </svg>
               <em></em>
             </div>
@@ -310,6 +310,9 @@
         </symbol>
         <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="calendar">
             <path d="M5,4.5 C4.17157288,4.5 3.5,5.17157288 3.5,6 L3.5,19 C3.5,19.8284271 4.17157288,20.5 5,20.5 L19,20.5 C19.8284271,20.5 20.5,19.8284271 20.5,19 L20.5,6 C20.5,5.17157288 19.8284271,4.5 19,4.5 L5,4.5 Z"></path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="phone">
+            <path d="M1.188 0c-.11 0-.188.077-.188.188v7.625c0 .11.077.188.188.188h4.625c.11 0 .188-.077.188-.188v-7.625c0-.11-.077-.188-.188-.188h-4.625zm.813 1h3v5h-3v-5zm1.5 5.5c.28 0 .5.22.5.5s-.22.5-.5.5-.5-.22-.5-.5.22-.5.5-.5z" id="phone"></path>
         </symbol>
     </svg>
   </div>
