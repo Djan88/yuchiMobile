@@ -358,7 +358,6 @@ button svg
    z-index: 1;
    transform: scaleX(var(--s-x)) scaleY(var(--s-y));
 }
-}
  .tabbar li a.box div:before {
    --s-x: 0.75;
    left: 50%;
@@ -495,7 +494,7 @@ button svg
  .tabbar.move:after {
    animation: move-after 1.2s linear forwards;
 }
-.tabbar li a div svg#phone, em#phone_vibes
+.tabbar li a div svg#phone
 {
   fill: var(--primary);
 }
