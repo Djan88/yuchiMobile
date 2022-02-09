@@ -524,7 +524,7 @@ button svg
    animation: calendar-3 1.2s linear forwards;
 }
  .tabbar li.move a.phone div:before {
-   animation: element-far 1.2s linear forwards;
+   animation: element-close-phone 1.2s linear forwards;
 }
  .tabbar li.move a.phone div em {
    animation: phone-2 1.2s linear forwards;
@@ -738,6 +738,14 @@ button svg
      transform: translateY(0) scaleX(var(--s-x)) scaleY(var(--s-y));
   }
 }
+ @keyframes element-close-phone {
+   30% {
+     transition: fill 0.1s linear;
+  }
+   100% {
+     transition: fill 0.1s linear;
+  }
+}
  @keyframes element-far {
    30% {
      transform: translateY(0) scaleX(var(--s-x)) scaleY(var(--s-y));
@@ -785,10 +793,10 @@ button svg
      transform: translateY(0);
   }
    40% {
-     transform: translateY(0px);
+     transform: translateY(16px);
   }
    70% {
-     transform: translateY(0px);
+     transform: translateY(28px);
   }
    85% {
      transform: translateY(0);
