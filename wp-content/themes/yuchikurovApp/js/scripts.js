@@ -122,7 +122,7 @@ jQuery(document).ready(function () {
     // jQuery('.frame').removeClass('hidden');
   });
 
-  jQuery('.calendar').on('click', function(event) {
+  jQuery('.phone').on('click', function(event) {
     jQuery('.app-slide, .app-main').addClass('hidden').removeAttr('style');
     jQuery('.app-second').fadeIn(500).removeClass('hidden').css('display', 'flex');
     jQuery('.header-text').text('КОНТАКТЫ');
