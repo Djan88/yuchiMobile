@@ -480,7 +480,7 @@ button svg
 {
   background: transparent;
 }
-.tabbar li.avtive a.phone div:before
+.tabbar li.active a.phone div:before
 {
  background: var(--icon-active);
 }
