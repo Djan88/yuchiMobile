@@ -547,7 +547,9 @@ button svg
 }
 .tabbar li a div svg#phone, .tabbar li.move a div svg#phone
 {
-  fill: var(--primary);
+  stroke: var(--primary);
+  stroke-miterlimit: 10;
+  stroke-width: 20;
 }
 .tabbar li.active a div svg#phone
 {
