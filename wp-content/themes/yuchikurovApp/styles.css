@@ -472,6 +472,7 @@ button svg
    position: absolute;
    top: 18px;
    left: 40%;
+   transition: background 0.1s linear;
    backface-visibility: hidden;
    transform: rotate(305deg);
    transform-origin: 100% 50%;
