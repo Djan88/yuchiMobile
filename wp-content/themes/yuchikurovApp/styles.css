@@ -501,7 +501,7 @@ button svg
    transition: transform 0.4s ease;
 }
  .tabbar li:not(.active) a div svg {
-   transition: fill 0.1s ease;
+   transition: fill 0.4s ease;
 }
  .tabbar li:not(.active) a:active {
    transform: scale(0.92);
@@ -510,7 +510,7 @@ button svg
    animation: icon 1.2s linear forwards;
 }
  .tabbar li.move a div svg {
-   animation: svg 1.2s linear forwards;
+   animation: svg 0.4s linear forwards;
 }
  .tabbar li.move a.box div:before {
    animation: element-far 1.2s linear forwards;
