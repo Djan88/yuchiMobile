@@ -532,7 +532,11 @@ button svg
 {
   fill: var(--primary);
 }
- .frame {
+.tabbar li.active a div svg#phone
+{
+  fill: var(--icon-active);
+}
+.frame {
    width: 100%;
    position: fixed;
    left: 0;
