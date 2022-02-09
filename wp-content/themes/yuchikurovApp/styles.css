@@ -530,9 +530,9 @@ button svg
  .tabbar li.move a.calendar div em:before, .tabbar li.move a.calendar div em:after {
    animation: calendar-3 1.2s linear forwards;
 }
-/* .tabbar li.move a.phone div:before {
-   animation: element-close 1.2s linear forwards;
-}*/
+ .tabbar li.move a.phone div:before {
+   animation: element-close-phone 1.2s linear forwards;
+}
  .tabbar li.move a.phone div em {
    animation: phone-2 1.2s linear forwards;
 }
@@ -741,6 +741,14 @@ button svg
   }
    100% {
      transform: translateY(0) scaleX(var(--s-x)) scaleY(var(--s-y));
+  }
+}
+ @keyframes element-close-phone {
+   30% {
+     transition: fill 0.1s linear;
+  }
+   100% {
+     transition: fill 0.1s linear;
   }
 }
  @keyframes element-far {
