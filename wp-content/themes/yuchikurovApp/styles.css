@@ -544,6 +544,10 @@ button svg
 {
   fill: var(--icon-active);
 }
+svg#phone
+{
+  transition: all none;
+}
 .frame {
    width: 100%;
    position: fixed;
