@@ -293,7 +293,7 @@
           <a href="" class="calendar">
             <div>
               <svg>
-                <use xlink:href="#calendar">
+                <use xlink:href="#phone">
               </svg>
               <em></em>
             </div>
