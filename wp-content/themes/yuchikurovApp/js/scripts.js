@@ -105,7 +105,7 @@ jQuery(document).ready(function () {
   jQuery('.box').on('click', function(event) {
     jQuery('.app-main, .app-second').addClass('hidden').removeAttr('style');
     jQuery('.app-slide').fadeIn(500).removeClass('hidden').css('display', 'flex');
-    jQuery('.header-text').text('ШКОЛА ДОКТОРА ЧИКУРОВА');
+    jQuery('.header-text').text('CHIKUROV');
     jQuery('.back-button, .reverce_clean_graph, .reverce_clean_graph_2').addClass('hidden');
     jQuery('.slider-box').addClass('hidden').removeAttr('style');
     jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
