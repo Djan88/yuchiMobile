@@ -173,7 +173,7 @@ jQuery(document).ready(function () {
   jQuery('.back-button').on('click', function(event) {
     jQuery('.slider-box').addClass('hidden').removeAttr('style');
     jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
-    jQuery('.header-text').text('ШКОЛА ДОКТОРА ЧИКУРОВА');
+    jQuery('.header-text').text('CHIKUROV');
     triangleStatus = 0;
     jQuery('.back-button, .reverce_clean_graph, .reverce_clean_graph_2').addClass('hidden');
   });
@@ -182,7 +182,7 @@ jQuery(document).ready(function () {
     swipeRight:function(event, direction, distance, duration, fingerCount) {
       jQuery('.slider-box').addClass('hidden').removeAttr('style');
       jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
-      jQuery('.header-text').text('ШКОЛА ДОКТОРА ЧИКУРОВА');
+      jQuery('.header-text').text('CHIKUROV');
       jQuery('.back-button, .reverce_clean_graph, .reverce_clean_graph_2').addClass('hidden');
       // screen.orientation.lock('portrait');
       // jQuery('.frame').removeClass('hidden');
@@ -196,7 +196,7 @@ jQuery(document).ready(function () {
     swipeRight:function(event, direction, distance, duration, fingerCount) {
       jQuery('.slider-box').addClass('hidden').removeAttr('style');
       jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
-      jQuery('.header-text').text('ШКОЛА ДОКТОРА ЧИКУРОВА');
+      jQuery('.header-text').text('CHIKUROV');
       jQuery('.back-button, .reverce_clean_graph').addClass('hidden');
     },
     threshold:0
@@ -205,7 +205,7 @@ jQuery(document).ready(function () {
     swipeRight:function(event, direction, distance, duration, fingerCount) {
       jQuery('.slider-box').addClass('hidden').removeAttr('style');
       jQuery('.app-slide-menu').fadeIn(500).removeClass('hidden').css('display', 'flex');
-      jQuery('.header-text').text('ШКОЛА ДОКТОРА ЧИКУРОВА');
+      jQuery('.header-text').text('CHIKUROV');
       jQuery('.back-button, .reverce_clean_graph_2').addClass('hidden');
     },
     threshold:0
