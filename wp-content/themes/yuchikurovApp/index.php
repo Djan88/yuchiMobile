@@ -12,7 +12,7 @@
   <!-- <link href="<?php //bloginfo('template_url'); ?>/css/animate.css" rel="stylesheet"> -->
   <link href="<?php bloginfo('template_url'); ?>/css/open-iconic-bootstrap.css" rel="stylesheet">
   <link href="<?php bloginfo('template_url'); ?>/css/swipe-bundle.min.css" rel="stylesheet">
-  <link href="<?php bloginfo('template_url'); ?>/styles.css" rel="stylesheet">
+  <link href="<?php bloginfo('template_url'); ?>/style.css" rel="stylesheet">
   <?php wp_head(); ?>
 </head>
 
@@ -349,7 +349,7 @@
   <script src="<?php bloginfo('template_url'); ?>/js/propeller.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/swiper-bundle.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/jquery.touchSwipe.min.js"></script>
-  <script src="<?php bloginfo('template_url'); ?>/js/scripts.js"></script>
+  <script src="<?php bloginfo('template_url'); ?>/js/script.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/stacktrace.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/fire_base.js"></script>
 </body>
