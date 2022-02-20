@@ -464,7 +464,7 @@ jQuery(document).ready(function () {
   }
 
   triangleReset = function(){
-    jQuery('.treangle').removeClass('treangle_0_1, treangle_0_2, treangle_0_3, treangle_0_4, treangle_1, treangle_2, treangle_3, treangle_4, treangle_5, treangle_5_1, treangle_5_2, treangle_5_3, treangle_5_4, treangle_5_5, treangle_6, treangle_7, treangle_8, treangle_9, treangle_10, treangle_11');
+    jQuery('.treangle').removeClass('treangle_0_1 treangle_0_2 treangle_0_3 treangle_0_4 treangle_1 treangle_2 treangle_3 treangle_4 treangle_5 treangle_5_1 treangle_5_2 treangle_5_3 treangle_5_4 treangle_5_5 treangle_6 treangle_7 treangle_8 treangle_9 treangle_10 treangle_11');
     jQuery('.treangle').addClass('treangle_0');
     jQuery('.treangle_handler').removeClass('inopacity');
     // jQuery('#time, .treangle').addClass('inopacity');
