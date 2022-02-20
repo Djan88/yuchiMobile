@@ -37,7 +37,8 @@ jQuery(document).ready(function () {
     vibroOnAir = false,
     count_animation = 1,
     vibroOne,
-    triangleStatus = 0
+    triangleStatus = 0,
+    triangleReset
 
   // Pull to refresh
   PullToRefresh.init({
@@ -420,7 +421,7 @@ jQuery(document).ready(function () {
     (function timer() {
       diff = that.duration - (((Date.now() - start) / 1000) | 0);
 
-      if (diff > 0) {
+      if (diff > 0 && triangleStatus !== 0) {
         setTimeout(timer, that.granularity);
       } else {
         diff = 0;
@@ -462,6 +463,13 @@ jQuery(document).ready(function () {
     display.textContent = minutes + ':' + seconds;
   }
 
+  triangleReset = function(){
+    jQuery('.treangle').removeClass('treangle_0_1, treangle_0_2, treangle_0_3, treangle_0_4, treangle_1, treangle_2, treangle_3, treangle_4, treangle_5, treangle_5_1, treangle_5_2, treangle_5_3, treangle_5_4, treangle_5_5, treangle_6, treangle_7, treangle_8, treangle_9, treangle_10, treangle_11');
+    jQuery('.treangle').addClass('treangle_0');
+    jQuery('.treangle_handler').removeClass('inopacity');
+    // jQuery('#time, .treangle').addClass('inopacity');
+  }
+
   jQuery('.treangle_handler').on('click', function(event) {
     treangle_0();
     triangleStatus = 1;
@@ -475,9 +483,7 @@ jQuery(document).ready(function () {
     setTimeout(function(){
       jQuery('.treangle').removeClass('treangle_0').addClass('treangle_0_1');
       if (triangleStatus === 0) {
-        jQuery('.treangle').removeClass('treangle_10');
-        jQuery('.treangle_handler').removeClass('inopacity');
-        jQuery('#time, .treangle').addClass('inopacity');
+        triangleReset();
       } else {
         navigator.vibrate(200);
         treangle_0_1();
@@ -488,9 +494,7 @@ jQuery(document).ready(function () {
     setTimeout(function(){
       jQuery('.treangle').removeClass('treangle_0_1').addClass('treangle_0_2');
       if (triangleStatus === 0) {
-        jQuery('.treangle').removeClass('treangle_10');
-        jQuery('.treangle_handler').removeClass('inopacity');
-        jQuery('#time, .treangle').addClass('inopacity');
+        triangleReset();
       } else {
         navigator.vibrate(200);
         treangle_0_2();
